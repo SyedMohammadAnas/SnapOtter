@@ -3,6 +3,7 @@ import { KeyRound } from "lucide-react";
 import QRCodeStyling from "qr-code-styling";
 import { type FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router";
+import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useAuth } from "@/hooks/use-auth";
 import { useTimeouts } from "@/hooks/use-timeouts";
@@ -742,14 +743,14 @@ export function LoginPage() {
                   {error}
                 </p>
               )}
-              <button
+              <Button
                 type="button"
                 onClick={handleEnrollComplete}
                 disabled={enrollmentLoading || enrollmentCode.length < 6}
-                className="w-full py-3 rounded-lg bg-primary/80 text-primary-foreground font-medium hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="h-auto w-full py-3"
               >
                 {enrollmentLoading ? t.auth.verifying : t.settings.security.twoFactorConfirmButton}
-              </button>
+              </Button>
             </div>
           ) : showMfaPrompt ? (
             <div className="space-y-4">
@@ -808,14 +809,14 @@ export function LoginPage() {
                   {error}
                 </p>
               )}
-              <button
+              <Button
                 type="button"
                 onClick={handleMfaComplete}
                 disabled={mfaLoading || !mfaCodeReady}
-                className="w-full py-3 rounded-lg bg-primary/80 text-primary-foreground font-medium hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="h-auto w-full py-3"
               >
                 {mfaLoading ? t.auth.verifying : t.auth.verify}
-              </button>
+              </Button>
               <p className="text-xs text-muted-foreground text-center">{t.auth.mfaRecoveryHint}</p>
               <button
                 type="button"
@@ -920,13 +921,13 @@ export function LoginPage() {
                     {error}
                   </p>
                 )}
-                <button
+                <Button
                   type="submit"
                   disabled={loading || !username || !password}
-                  className="w-full py-3 rounded-lg bg-primary/80 text-primary-foreground font-medium hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="h-auto w-full py-3"
                 >
                   {loading ? t.auth.loggingIn : t.auth.loginButton}
-                </button>
+                </Button>
               </form>
               {!ssoEnforced && (oidcEnabled || samlEnabled) && (
                 <>

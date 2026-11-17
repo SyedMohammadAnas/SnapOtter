@@ -1,8 +1,13 @@
 import { APP_VERSION } from "@snapotter/shared";
-import { BookOpen, Keyboard, X } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { BookOpen, Keyboard } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { useTranslation } from "@/contexts/i18n-context";
-import { useFocusTrap } from "@/hooks/use-focus-trap";
 import { formatShortcut } from "@/hooks/use-keyboard-shortcuts";
 import { format } from "@/lib/format.js";
 
@@ -33,69 +38,34 @@ const SHORTCUTS = [
 
 export function HelpDialog({ open, onClose }: HelpDialogProps) {
   const { t } = useTranslation();
-  const dialogRef = useRef<HTMLDivElement>(null);
-  useFocusTrap(dialogRef, open);
-  useEffect(() => {
-    if (!open) return;
-    const handler = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [open, onClose]);
-
-  if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm cursor-default"
-        onClick={onClose}
-      />
+    <Dialog open={open} onOpenChange={(next) => !next && onClose()}>
+      <DialogContent className="max-h-[85dvh] max-w-lg gap-0 overflow-hidden p-0 sm:max-w-lg">
+        <DialogHeader className="border-b border-border p-4 text-start">
+          <DialogTitle id="help-dialog-title">{t.help.heading}</DialogTitle>
+          <DialogDescription className="sr-only">
+            {t.help.gettingStarted.description}
+          </DialogDescription>
+        </DialogHeader>
 
-      <div
-        ref={dialogRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="help-dialog-title"
-        className="relative bg-background border border-border rounded-xl shadow-2xl w-full max-w-lg max-h-[85dvh] flex flex-col overflow-hidden"
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-border shrink-0">
-          <h2 id="help-dialog-title" className="text-lg font-semibold text-foreground">
-            {t.help.heading}
-          </h2>
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-1.5 rounded-lg hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-            aria-label={t.a11y.closeHelp}
-          >
-            <X className="h-4 w-4" />
-          </button>
-        </div>
-
-        {/* Content */}
-        <div className="flex-1 overflow-y-auto p-5 space-y-6">
-          {/* Getting started */}
+        <div className="flex-1 space-y-6 overflow-y-auto p-5">
           <section className="space-y-2">
             <div className="flex items-center gap-2 text-foreground">
               <BookOpen className="h-4 w-4" />
               <h3 className="text-sm font-semibold">{t.help.gettingStarted.heading}</h3>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm leading-relaxed text-muted-foreground">
               {t.help.gettingStarted.description}
             </p>
           </section>
 
-          {/* Keyboard shortcuts */}
           <section className="space-y-3">
             <div className="flex items-center gap-2 text-foreground">
               <Keyboard className="h-4 w-4" />
               <h3 className="text-sm font-semibold">{t.help.keyboardShortcuts.heading}</h3>
             </div>
-            <div className="rounded-lg border border-border overflow-hidden">
+            <div className="overflow-hidden rounded-lg border border-border">
               {SHORTCUTS.map((s, i) => (
                 <div
                   key={s.keys}
@@ -112,19 +82,18 @@ export function HelpDialog({ open, onClose }: HelpDialogProps) {
             </div>
           </section>
 
-          {/* Version */}
-          <div className="text-xs text-muted-foreground pt-2 border-t border-border">
+          <div className="border-t border-border pt-2 text-xs text-muted-foreground">
             {format(t.help.versionLabel, { version: APP_VERSION })}
           </div>
         </div>
-      </div>
-    </div>
+      </DialogContent>
+    </Dialog>
   );
 }
 
 function Kbd({ keys }: { keys: string }) {
   return (
-    <kbd className="px-1.5 py-0.5 rounded bg-muted border border-border text-xs font-mono text-muted-foreground">
+    <kbd className="rounded border border-border bg-muted px-1.5 py-0.5 font-mono text-xs text-muted-foreground">
       {formatShortcut(keys)}
     </kbd>
   );
