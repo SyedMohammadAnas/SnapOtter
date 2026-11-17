@@ -142,6 +142,10 @@ export function useToolProcessor(toolId: string) {
   const resultEntryRef = useRef<{ id: string; file: File; processedUrl: string } | null>(null);
   const elapsedRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const xhrRef = useRef<XMLHttpRequest | null>(null);
+  // AbortController for the chunked gateway upload (/u/*). Separate from the
+  // tool XHR: large files upload via fetch/XHR chunks before the run POST, so
+  // aborting xhrRef alone cannot stop those PUTs.
+  const uploadAbortRef = useRef<AbortController | null>(null);
   const requestTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const eventSourceRef = useRef<EventSource | null>(null);
   const stallTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -224,6 +228,7 @@ export function useToolProcessor(toolId: string) {
     activeEntryIdRef.current = null;
     activeFileRef.current = null;
     uploadedFullyRef.current = false;
+    uploadAbortRef.current = null;
     setActiveJob(null, null);
   }, [setActiveJob]);
 
@@ -331,6 +336,12 @@ export function useToolProcessor(toolId: string) {
     } catch (_e) {
       console.debug("Ignored xhr.abort error:", _e);
     }
+    try {
+      uploadAbortRef.current?.abort();
+    } catch (_e) {
+      console.debug("Ignored upload abort error:", _e);
+    }
+    uploadAbortRef.current = null;
     batchRunRef.current = null;
     activeJobIdRef.current = null;
     activeEntryIdRef.current = null;
@@ -1211,6 +1222,12 @@ export function useToolProcessor(toolId: string) {
           }
           xhrRef.current = null;
         }
+        try {
+          uploadAbortRef.current?.abort();
+        } catch (_e) {
+          console.debug("Ignored upload abort error:", _e);
+        }
+        uploadAbortRef.current = null;
       }
     };
   }, [toolId]);
@@ -1761,9 +1778,22 @@ export function useToolProcessor(toolId: string) {
           xhr.send(formData);
         } else {
           const toolPath = apiToolPath(toolId).replace(/^\/api\/v1\/tools\//, "");
+          // Arm cancel before any chunk PUT leaves: ProgressCard only shows
+          // Cancel when activeJobId is set, and the server job does not exist
+          // until the later /u/:id/run POST returns 202.
+          const uploadAbort = new AbortController();
+          uploadAbortRef.current = uploadAbort;
+          setActiveJob(clientJobId, async () => {
+            if (uploadAbortRef.current && !uploadAbortRef.current.signal.aborted) {
+              uploadAbortRef.current.abort();
+              return;
+            }
+            await cancelCurrentJob();
+          });
           void (async () => {
             try {
               const up = await uploadFileChunked(chunkFile as File, {
+                signal: uploadAbort.signal,
                 onProgress: (p) => {
                   if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
                   setProgress((prev) =>
@@ -1773,18 +1803,33 @@ export function useToolProcessor(toolId: string) {
                   );
                 },
               });
+              if (uploadAbortRef.current === uploadAbort) {
+                uploadAbortRef.current = null;
+              }
               if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
               if (storeWasReset()) return;
               xhr.open("POST", appUrl(`/u/${up.id}/run/${toolPath}`));
               xhr.setRequestHeader("content-type", "application/json");
               xhr.send(JSON.stringify({ settings: cleanSettings, clientJobId }));
             } catch (err) {
+              if (uploadAbortRef.current === uploadAbort) {
+                uploadAbortRef.current = null;
+              }
               if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
               if (storeWasReset()) return;
               clearRequestTimer();
-              const message =
-                err instanceof Error && err.message ? err.message : t.errors.processingInterrupted;
-              const teardownError = endSyncRun({ message, category: "upload_error" });
+              const aborted =
+                (err instanceof DOMException && err.name === "AbortError") ||
+                (err instanceof Error && err.name === "AbortError");
+              const message = aborted
+                ? "Canceled"
+                : err instanceof Error && err.message
+                  ? err.message
+                  : t.errors.processingInterrupted;
+              const teardownError = endSyncRun({
+                message,
+                category: aborted ? undefined : "upload_error",
+              });
               if (teardownError) throw teardownError.cause;
             }
           })();
