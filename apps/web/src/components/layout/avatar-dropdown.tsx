@@ -1,14 +1,5 @@
 import { LogOut, Settings } from "lucide-react";
-import { useState } from "react";
-import { buttonVariants } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useAuth } from "@/hooks/use-auth";
 import { logout } from "@/lib/logout";
@@ -16,7 +7,6 @@ import { cn } from "@/lib/utils";
 
 interface AvatarDropdownProps {
   onSettingsClick: () => void;
-  /** Kept for call-site compatibility; shadcn menu uses theme tokens. */
   variant?: "light" | "dark";
 }
 
@@ -28,11 +18,12 @@ function readStoredUsername(): string {
   }
 }
 
-export function AvatarDropdown({ onSettingsClick }: AvatarDropdownProps) {
+export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDropdownProps) {
   const { t } = useTranslation();
   const { authEnabled, loading, username: sessionUsername, email } = useAuth();
   const [open, setOpen] = useState(false);
   const [logoutFailed, setLogoutFailed] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   // The session is the source of truth: OIDC/SAML logins never run the login
   // form, so the localStorage copy it writes doesn't exist for them (#862).
@@ -41,6 +32,21 @@ export function AvatarDropdown({ onSettingsClick }: AvatarDropdownProps) {
   // wait for that fetch; flashing it mid-load is #862's symptom again.
   const username = sessionUsername || readStoredUsername() || (loading ? "" : "admin");
   const initial = username.charAt(0).toUpperCase();
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    if (open) document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
+
+  // A reopened menu shouldn't greet the user with the last attempt's error.
+  useEffect(() => {
+    if (!open) setLogoutFailed(false);
+  }, [open]);
 
   const handleLogout = async () => {
     setLogoutFailed(false);
@@ -53,52 +59,83 @@ export function AvatarDropdown({ onSettingsClick }: AvatarDropdownProps) {
   };
 
   return (
-    <DropdownMenu
-      open={open}
-      onOpenChange={(next) => {
-        setOpen(next);
-        if (!next) setLogoutFailed(false);
-      }}
-    >
-      <DropdownMenuTrigger
+    <div ref={ref} className="relative">
+      <button
         type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="w-7 h-7 rounded-full bg-primary text-[#1a1814] flex items-center justify-center text-xs font-semibold hover:opacity-90 transition-opacity"
         aria-label={username}
         data-testid="user-menu"
-        className={cn(
-          buttonVariants({ variant: "default", size: "icon-sm" }),
-          "rounded-full bg-primary text-[#1a1814] hover:bg-primary/90",
-        )}
       >
         {initial}
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-56">
-        <DropdownMenuLabel className="truncate font-medium">{email || username}</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem
-          data-testid="open-settings"
-          onClick={() => {
-            setOpen(false);
-            onSettingsClick();
-          }}
+      </button>
+      {open && (
+        <div
+          className={cn(
+            "absolute top-full mt-1 end-0 w-56 rounded-lg border shadow-lg z-50",
+            variant === "dark"
+              ? "bg-[#2a2a2a] border-[#444] text-[#e0e0e0]"
+              : "bg-card border-border text-foreground",
+          )}
         >
-          <Settings className="h-4 w-4" />
-          {t.common.settings}
-        </DropdownMenuItem>
-        {authEnabled ? (
-          <>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem onClick={() => void handleLogout()}>
-              <LogOut className="h-4 w-4" />
-              {t.auth.logout}
-            </DropdownMenuItem>
-            {logoutFailed ? (
-              <p role="alert" className="px-3 pb-2 text-xs text-destructive">
-                {t.auth.logoutFailed}
-              </p>
-            ) : null}
-          </>
-        ) : null}
-      </DropdownMenuContent>
-    </DropdownMenu>
+          {/* User info */}
+          <div
+            className={cn(
+              "px-3 py-2.5 text-sm font-medium truncate",
+              variant === "dark" ? "text-[#e0e0e0]" : "text-foreground",
+            )}
+          >
+            {email || username}
+          </div>
+
+          <div className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")} />
+
+          {/* Settings */}
+          <button
+            type="button"
+            data-testid="open-settings"
+            onClick={() => {
+              setOpen(false);
+              onSettingsClick();
+            }}
+            className={cn(
+              "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
+              variant === "dark"
+                ? "hover:bg-[#333] text-[#e0e0e0]"
+                : "hover:bg-muted text-foreground",
+            )}
+          >
+            <Settings className="h-4 w-4" />
+            {t.common.settings}
+          </button>
+
+          {authEnabled && (
+            <>
+              <div
+                className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")}
+              />
+              <button
+                type="button"
+                onClick={handleLogout}
+                className={cn(
+                  "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
+                  variant === "dark"
+                    ? "hover:bg-[#333] text-[#e0e0e0]"
+                    : "hover:bg-muted text-foreground",
+                )}
+              >
+                <LogOut className="h-4 w-4" />
+                {t.auth.logout}
+              </button>
+              {logoutFailed && (
+                <p role="alert" className="px-3 pb-2 text-xs text-destructive">
+                  {t.auth.logoutFailed}
+                </p>
+              )}
+            </>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
