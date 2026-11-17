@@ -1548,10 +1548,15 @@ export function useToolProcessor(toolId: string) {
             finishStoppedRun(stopped, xhr.status === 202, false);
             return;
           }
-          if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
+          // A 2xx sync body is the authoritative result of the POST we started:
+          // land it even if a ref/store check drifted during the upload, otherwise
+          // the UI waits on an SSE stream that never carries a frame for a sync job.
+          const isSuccess = xhr.status >= 200 && xhr.status < 300;
+          if (!isSuccess && (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId))
+            return;
           clearRequestTimer();
           uploadedFullyRef.current = false;
-          if (storeWasReset()) return;
+          if (!isSuccess && storeWasReset()) return;
 
           if (xhr.status === 202) {
             asyncModeRef.current = true;
