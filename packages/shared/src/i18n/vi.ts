@@ -2729,7 +2729,7 @@ export const vi: TranslationKeys = {
       modeHtml: "Tệp HTML",
       htmlFile: "Tệp HTML",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Định dạng đầu ra",
       quality: "Chất lượng",
       devicePreset: "Thiết bị",
@@ -5262,9 +5262,6 @@ export const vi: TranslationKeys = {
       githubLink: "Kho mã nguồn GitHub",
       docsLink: "Tài liệu",
       apiRefLink: "Tham chiếu API (Swagger)",
-      licenseLabel: "Giấy phép:",
-      licenseDescription:
-        "SnapOtter là phần mềm mã nguồn mở được cấp phép theo GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

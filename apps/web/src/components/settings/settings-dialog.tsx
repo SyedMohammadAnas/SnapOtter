@@ -4411,14 +4411,6 @@ function AboutSection() {
           </span>
         </div>
       </div>
-
-      <div className="flex items-center gap-4 text-sm">
-        <span className="text-muted-foreground">{t.settings.about.licenseLabel}</span>
-        <div>
-          <span className="font-mono text-foreground">AGPLv3</span>
-          <p className="text-xs text-muted-foreground">{t.settings.about.licenseDescription}</p>
-        </div>
-      </div>
     </div>
   );
 }

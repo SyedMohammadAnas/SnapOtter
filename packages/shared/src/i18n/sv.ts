@@ -2730,7 +2730,7 @@ export const sv: TranslationKeys = {
       modeHtml: "HTML-fil",
       htmlFile: "HTML-fil",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Utdataformat",
       quality: "Kvalitet",
       devicePreset: "Enhet",
@@ -5274,9 +5274,6 @@ export const sv: TranslationKeys = {
       githubLink: "GitHub-arkiv",
       docsLink: "Dokumentation",
       apiRefLink: "API-referens (Swagger)",
-      licenseLabel: "Licens:",
-      licenseDescription:
-        "SnapOtter är programvara med öppen källkod licensierad under GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

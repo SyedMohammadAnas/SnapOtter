@@ -2733,7 +2733,7 @@ export const id: TranslationKeys = {
       modeHtml: "File HTML",
       htmlFile: "File HTML",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Format Output",
       quality: "Kualitas",
       devicePreset: "Perangkat",
@@ -5276,9 +5276,6 @@ export const id: TranslationKeys = {
       githubLink: "Repositori GitHub",
       docsLink: "Dokumentasi",
       apiRefLink: "Referensi API (Swagger)",
-      licenseLabel: "Lisensi:",
-      licenseDescription:
-        "SnapOtter adalah perangkat lunak sumber terbuka berlisensi GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

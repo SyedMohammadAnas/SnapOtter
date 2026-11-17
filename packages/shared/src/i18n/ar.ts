@@ -2709,7 +2709,7 @@ export const ar: TranslationKeys = {
       modeHtml: "ملف HTML",
       htmlFile: "ملف HTML",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "صيغة المخرجات",
       quality: "الجودة",
       devicePreset: "الجهاز",
@@ -5231,9 +5231,6 @@ export const ar: TranslationKeys = {
       githubLink: "مستودع GitHub",
       docsLink: "التوثيق",
       apiRefLink: "مرجع API (Swagger)",
-      licenseLabel: "الرخصة:",
-      licenseDescription:
-        "SnapOtter برنامج مفتوح المصدر مرخّص بموجب رخصة GNU Affero العمومية الإصدار 3 (AGPLv3).",
     },
   },
   auth: {

@@ -2687,7 +2687,7 @@ export const th: TranslationKeys = {
       modeHtml: "ไฟล์ HTML",
       htmlFile: "ไฟล์ HTML",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "รูปแบบเอาต์พุต",
       quality: "คุณภาพ",
       devicePreset: "อุปกรณ์",
@@ -5195,9 +5195,6 @@ export const th: TranslationKeys = {
       githubLink: "คลังเก็บโค้ด GitHub",
       docsLink: "เอกสารประกอบ",
       apiRefLink: "อ้างอิง API (Swagger)",
-      licenseLabel: "สัญญาอนุญาต:",
-      licenseDescription:
-        "SnapOtter เป็นซอฟต์แวร์โอเพนซอร์สภายใต้สัญญาอนุญาต GNU Affero General Public License v3 (AGPLv3)",
     },
   },
   auth: {

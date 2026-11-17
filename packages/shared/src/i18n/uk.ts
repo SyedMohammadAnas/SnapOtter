@@ -2741,7 +2741,7 @@ export const uk: TranslationKeys = {
       modeHtml: "HTML-файл",
       htmlFile: "HTML-файл",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Формат виводу",
       quality: "Якість",
       devicePreset: "Пристрій",
@@ -5286,9 +5286,6 @@ export const uk: TranslationKeys = {
       githubLink: "Репозиторій GitHub",
       docsLink: "Документація",
       apiRefLink: "Довідник API (Swagger)",
-      licenseLabel: "Ліцензія:",
-      licenseDescription:
-        "SnapOtter: програмне забезпечення з відкритим кодом, ліцензоване за GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

@@ -2739,7 +2739,7 @@ export const it: TranslationKeys = {
       modeHtml: "File HTML",
       htmlFile: "File HTML",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Formato di output",
       quality: "Qualità",
       devicePreset: "Dispositivo",
@@ -5295,9 +5295,6 @@ export const it: TranslationKeys = {
       githubLink: "Repository GitHub",
       docsLink: "Documentazione",
       apiRefLink: "Riferimento API (Swagger)",
-      licenseLabel: "Licenza:",
-      licenseDescription:
-        "SnapOtter è un software open-source distribuito con licenza GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

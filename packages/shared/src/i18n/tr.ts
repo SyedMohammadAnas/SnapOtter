@@ -2737,7 +2737,7 @@ export const tr: TranslationKeys = {
       modeHtml: "HTML Dosyası",
       htmlFile: "HTML Dosyası",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Çıktı Formatı",
       quality: "Kalite",
       devicePreset: "Cihaz",
@@ -5283,9 +5283,6 @@ export const tr: TranslationKeys = {
       githubLink: "GitHub Deposu",
       docsLink: "Dokümantasyon",
       apiRefLink: "API Referansı (Swagger)",
-      licenseLabel: "Lisans:",
-      licenseDescription:
-        "SnapOtter, GNU Affero Genel Kamu Lisansı v3 (AGPLv3) altında lisanslanan açık kaynaklı bir yazılımdır.",
     },
   },
   auth: {

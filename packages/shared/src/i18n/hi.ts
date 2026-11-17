@@ -2537,7 +2537,7 @@ export const hi: TranslationKeys = {
       modeHtml: "HTML फ़ाइल",
       htmlFile: "HTML फ़ाइल",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "आउटपुट फ़ॉर्मेट",
       quality: "क्वालिटी",
       devicePreset: "डिवाइस",
@@ -5058,9 +5058,6 @@ export const hi: TranslationKeys = {
       githubLink: "GitHub रिपॉज़िटरी",
       docsLink: "डॉक्यूमेंटेशन",
       apiRefLink: "API रेफरेंस (Swagger)",
-      licenseLabel: "लाइसेंस:",
-      licenseDescription:
-        "SnapOtter GNU Affero General Public License v3 (AGPLv3) के तहत लाइसेंस प्राप्त ओपन-सोर्स सॉफ़्टवेयर है।",
     },
   },
   auth: {

@@ -2664,7 +2664,7 @@ export const ko: TranslationKeys = {
       modeHtml: "HTML 파일",
       htmlFile: "HTML 파일",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "출력 형식",
       quality: "품질",
       devicePreset: "기기",
@@ -5191,9 +5191,6 @@ export const ko: TranslationKeys = {
       githubLink: "GitHub 저장소",
       docsLink: "문서",
       apiRefLink: "API 레퍼런스 (Swagger)",
-      licenseLabel: "라이선스:",
-      licenseDescription:
-        "SnapOtter는 GNU Affero General Public License v3 (AGPLv3)로 라이선스된 오픈 소스 소프트웨어입니다.",
     },
   },
   auth: {

@@ -2468,7 +2468,7 @@ export const zhTW: TranslationKeys = {
       modeHtml: "HTML 檔案",
       htmlFile: "HTML 檔案",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "輸出格式",
       quality: "品質",
       devicePreset: "裝置",
@@ -4973,9 +4973,6 @@ export const zhTW: TranslationKeys = {
       githubLink: "GitHub儲存庫",
       docsLink: "說明文件",
       apiRefLink: "API參考（Swagger）",
-      licenseLabel: "授權條款：",
-      licenseDescription:
-        "SnapOtter 是以 GNU Affero General Public License v3 (AGPLv3) 授權的開源軟體。",
     },
   },
   auth: {

@@ -2747,7 +2747,7 @@ export const nl: TranslationKeys = {
       modeHtml: "HTML-bestand",
       htmlFile: "HTML-bestand",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Uitvoerformaat",
       quality: "Kwaliteit",
       devicePreset: "Apparaat",
@@ -5298,9 +5298,6 @@ export const nl: TranslationKeys = {
       githubLink: "GitHub-repository",
       docsLink: "Documentatie",
       apiRefLink: "API-referentie (Swagger)",
-      licenseLabel: "Licentie:",
-      licenseDescription:
-        "SnapOtter is opensourcesoftware gelicentieerd onder de GNU Affero General Public License v3 (AGPLv3).",
     },
   },
   auth: {

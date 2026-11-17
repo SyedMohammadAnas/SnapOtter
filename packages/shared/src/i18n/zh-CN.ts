@@ -2468,7 +2468,7 @@ export const zhCN: TranslationKeys = {
       modeHtml: "HTML 文件",
       htmlFile: "HTML 文件",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "输出格式",
       quality: "质量",
       devicePreset: "设备",
@@ -4973,8 +4973,6 @@ export const zhCN: TranslationKeys = {
       githubLink: "GitHub 仓库",
       docsLink: "文档",
       apiRefLink: "API 参考（Swagger）",
-      licenseLabel: "许可证：",
-      licenseDescription: "SnapOtter 是基于 GNU Affero 通用公共许可证 v3 (AGPLv3) 的开源软件。",
     },
   },
   auth: {

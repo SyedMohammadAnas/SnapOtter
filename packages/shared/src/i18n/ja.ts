@@ -2689,7 +2689,7 @@ export const ja: TranslationKeys = {
       modeHtml: "HTML ファイル",
       htmlFile: "HTML ファイル",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "出力形式",
       quality: "品質",
       devicePreset: "デバイス",
@@ -5224,9 +5224,6 @@ export const ja: TranslationKeys = {
       githubLink: "GitHubリポジトリ",
       docsLink: "ドキュメント",
       apiRefLink: "APIリファレンス（Swagger）",
-      licenseLabel: "ライセンス:",
-      licenseDescription:
-        "SnapOtter は GNU Affero General Public License v3 (AGPLv3) に基づくオープンソースソフトウェアです。",
     },
   },
   auth: {

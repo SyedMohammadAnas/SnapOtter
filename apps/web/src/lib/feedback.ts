@@ -288,7 +288,7 @@ export async function submitFeedback(payload: FeedbackPayload): Promise<Feedback
 const FEEDBACK_ISSUE_NEW_URL = "https://github.com/snapotter-hq/snapotter/issues/new";
 const MAX_FEEDBACK_LEN = 2000;
 
-export const SNAPOTTER_FEEDBACK_EMAIL = "contact@snapotter.com";
+export const FEEDBACK_EMAIL = "legendaryhercules786@gmail.com";
 
 /** Normalize newlines, trim, and clamp so the message is safe to put in a URL. */
 function sanitizeFeedbackMessage(message: string): string {
@@ -312,5 +312,5 @@ export function buildFeedbackGithubUrl(message: string): string {
 export function buildFeedbackMailtoUrl(message: string): string {
   const subject = encodeURIComponent("Konvertt feedback");
   const body = encodeURIComponent(sanitizeFeedbackMessage(message));
-  return `mailto:${SNAPOTTER_FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
+  return `mailto:${FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
 }
