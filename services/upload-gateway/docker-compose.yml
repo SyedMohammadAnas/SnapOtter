@@ -1,0 +1,18 @@
+services:
+  upload-gateway:
+    build: .
+    container_name: konvertt-upload-gateway
+    network_mode: host
+    environment:
+      PORT: "8790"
+      DATA_DIR: /data
+      ENGINE_URL: http://127.0.0.1:1349
+      ENGINE_API_KEY: ${ENGINE_API_KEY}
+      CHUNK_SIZE: "8388608"
+      MAX_FILE_BYTES: "1073741824"
+      RETENTION_MS: "3600000"
+      ANON_DAILY_FILES: "25"
+      ANON_DAILY_BYTES: "209715200"
+    volumes:
+      - /mnt/Storage1/konvertt-uploads:/data
+    restart: unless-stopped

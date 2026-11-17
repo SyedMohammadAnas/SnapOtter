@@ -3,6 +3,7 @@
   "cleanUrls": false,
   "rewrites": [
     { "source": "/api/:path*", "destination": "https://konvertt-engine.thegacs.in/api/:path*" },
-    { "source": "/((?!api/|assets/|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/u/:path*", "destination": "https://konvertt-upload.thegacs.in/u/:path*" },
+    { "source": "/((?!api/|u/|assets/|.*\\..*).*)", "destination": "/index.html" }
   ]
 }
