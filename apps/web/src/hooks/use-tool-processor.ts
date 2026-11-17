@@ -1785,7 +1785,14 @@ export function useToolProcessor(toolId: string) {
           uploadAbortRef.current = uploadAbort;
           setActiveJob(clientJobId, async () => {
             if (uploadAbortRef.current && !uploadAbortRef.current.signal.aborted) {
+              // Abort the in-flight chunk PUTs and settle immediately: the
+              // server has no job yet, and waiting on the upload promise's
+              // rejection left the progress card spinning after Cancel.
               uploadAbortRef.current.abort();
+              uploadAbortRef.current = null;
+              clearRequestTimer();
+              const teardownError = endSyncRun({ message: "Canceled" });
+              if (teardownError) throw teardownError.cause;
               return;
             }
             await cancelCurrentJob();
@@ -1815,6 +1822,7 @@ export function useToolProcessor(toolId: string) {
               if (uploadAbortRef.current === uploadAbort) {
                 uploadAbortRef.current = null;
               }
+              // Cancel already settled via setActiveJob above.
               if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
               if (storeWasReset()) return;
               clearRequestTimer();
