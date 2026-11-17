@@ -1,5 +1,6 @@
-import { LogOut, Settings } from "lucide-react";
+import { LogIn, LogOut, Settings } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useAuth } from "@/hooks/use-auth";
 import { logout } from "@/lib/logout";
@@ -20,18 +21,19 @@ function readStoredUsername(): string {
 
 export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDropdownProps) {
   const { t } = useTranslation();
-  const { authEnabled, loading, username: sessionUsername, email } = useAuth();
+  const { authEnabled, loading, isAuthenticated, username: sessionUsername, email } = useAuth();
   const [open, setOpen] = useState(false);
   const [logoutFailed, setLogoutFailed] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   // The session is the source of truth: OIDC/SAML logins never run the login
   // form, so the localStorage copy it writes doesn't exist for them (#862).
-  // localStorage only bridges the gap until the session fetch resolves, and
-  // the "admin" terminal fallback (no-auth mode has no session to name) must
-  // wait for that fetch; flashing it mid-load is #862's symptom again.
-  const username = sessionUsername || readStoredUsername() || (loading ? "" : "admin");
-  const initial = username.charAt(0).toUpperCase();
+  // Guests have no username — show a short label instead of inventing "admin".
+  const username =
+    sessionUsername ||
+    readStoredUsername() ||
+    (loading ? "" : isAuthenticated ? "admin" : t.auth.loginButton || "Log in");
+  const initial = isAuthenticated ? username.charAt(0).toUpperCase() : "?";
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -43,7 +45,6 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
 
-  // A reopened menu shouldn't greet the user with the last attempt's error.
   useEffect(() => {
     if (!open) setLogoutFailed(false);
   }, [open]);
@@ -57,6 +58,19 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
     }
     window.location.href = destination;
   };
+
+  if (authEnabled && !loading && !isAuthenticated) {
+    return (
+      <Link
+        to="/login"
+        className="inline-flex h-8 items-center gap-1.5 rounded-lg border border-border bg-card px-2.5 text-xs font-medium text-foreground hover:border-primary hover:bg-primary-subtle transition-colors"
+        data-testid="guest-login"
+      >
+        <LogIn className="h-3.5 w-3.5" aria-hidden="true" />
+        {t.auth.loginButton}
+      </Link>
+    );
+  }
 
   return (
     <div ref={ref} className="relative">
@@ -78,7 +92,6 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
               : "bg-card border-border text-foreground",
           )}
         >
-          {/* User info */}
           <div
             className={cn(
               "px-3 py-2.5 text-sm font-medium truncate",
@@ -90,7 +103,6 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
 
           <div className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")} />
 
-          {/* Settings */}
           <button
             type="button"
             data-testid="open-settings"

@@ -1,7 +1,7 @@
 {
-  "name": "SnapOtter",
-  "short_name": "SnapOtter",
-  "description": "Open-source, self-hosted file processing platform",
+  "name": "Konvertt",
+  "short_name": "Konvertt",
+  "description": "File conversion and processing tools",
   "start_url": "./",
   "scope": "./",
   "icons": [

@@ -20,6 +20,27 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Drop any leftover service worker / Cache Storage from the previous
+      // Konvertt SPA on this hostname so hard-refresh is not required.
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (reg) {
+            reg.unregister();
+          });
+        });
+        // Install a one-shot kill-switch worker that unregisters itself after
+        // replacing any still-controlling old worker for this origin.
+        navigator.serviceWorker.register("/sw.js").catch(function () {});
+      }
+      if (window.caches && caches.keys) {
+        caches.keys().then(function (keys) {
+          keys.forEach(function (key) {
+            caches.delete(key);
+          });
+        });
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

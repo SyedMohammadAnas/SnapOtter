@@ -445,15 +445,23 @@ async function defaultTeamId(): Promise<string> {
 }
 
 export async function ensureAnonymousUser(): Promise<void> {
+  // Auth-off installs treat anonymous as the sole admin. Guest mode (auth on)
+  // keeps anonymous as a normal user so unsigned visitors cannot manage the box.
+  const role = env.AUTH_ENABLED ? "user" : "admin";
   const [existing] = await db.select().from(schema.users).where(eq(schema.users.id, "anonymous"));
-  if (existing) return;
+  if (existing) {
+    if (existing.role !== role) {
+      await db.update(schema.users).set({ role }).where(eq(schema.users.id, "anonymous"));
+    }
+    return;
+  }
 
   await db
     .insert(schema.users)
     .values({
       id: "anonymous",
       username: "anonymous",
-      role: "admin",
+      role,
       team: await defaultTeamId(),
       mustChangePassword: false,
       authProvider: "local",
@@ -2174,6 +2182,16 @@ export async function authMiddleware(app: FastifyInstance): Promise<void> {
     if (!token) {
       // Public routes don't require a token
       if (isPublic) return;
+      // Guest mode: unsigned callers act as the synthetic anonymous user so
+      // tools work without a login. Signed-in sessions still win when present.
+      if (env.ALLOW_GUEST_ACCESS) {
+        (request as FastifyRequest & { user?: AuthUser }).user = {
+          id: "anonymous",
+          username: "anonymous",
+          role: "user",
+        };
+        return;
+      }
       return reply.status(401).send({ error: "Authentication required" });
     }
 

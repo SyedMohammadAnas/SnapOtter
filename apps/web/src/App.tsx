@@ -122,12 +122,10 @@ function AuthGuard({ children }: { children: React.ReactNode }) {
     );
   }
 
-  if (authEnabled && !isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
-
-  // Force password change before allowing access to the app
-  if (authEnabled && mustChangePassword) {
+  // Guests may use tools without signing in. Login stays available at /login
+  // (and via the header). Only force a redirect when a signed-in user must
+  // change their password.
+  if (authEnabled && isAuthenticated && mustChangePassword) {
     return <Navigate to="/change-password" replace />;
   }
 

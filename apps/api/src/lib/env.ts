@@ -118,6 +118,12 @@ const envSchema = z
       .enum(["true", "false"])
       .default("true")
       .transform((v) => v === "true"),
+    // When auth is on, still let unsigned visitors use tools as the synthetic
+    // "anonymous" user (role user). Google/OIDC sign-in keeps a real session.
+    ALLOW_GUEST_ACCESS: z
+      .enum(["true", "false"])
+      .default("true")
+      .transform((v) => v === "true"),
     DEFAULT_USERNAME: z.string().default("admin"),
     DEFAULT_PASSWORD: z.string().default("admin"),
     SKIP_MUST_CHANGE_PASSWORD: z

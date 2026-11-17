@@ -43,6 +43,15 @@ const ANON_ADMIN_PERMISSIONS: readonly Permission[] = [
   "security:manage",
 ];
 
+/** Matches the built-in `user` role — what unsigned guests get from the API. */
+const GUEST_PERMISSIONS: readonly Permission[] = [
+  "tools:use",
+  "files:own",
+  "apikeys:own",
+  "pipelines:own",
+  "settings:read",
+];
+
 interface AuthConfig {
   authEnabled: boolean;
   oidcEnabled?: boolean;
@@ -187,12 +196,13 @@ export function useAuth() {
             setState({
               loading: false,
               authEnabled: true,
+              // Guest: not signed in, but tools work via ALLOW_GUEST_ACCESS.
               isAuthenticated: false,
               mustChangePassword: false,
               username: null,
               email: null,
-              role: null,
-              permissions: [],
+              role: "user",
+              permissions: [...GUEST_PERMISSIONS],
               oidcEnabled: config.oidcEnabled ?? false,
               oidcProviderName: config.oidcProviderName ?? null,
               samlEnabled: config.samlEnabled ?? false,

@@ -237,6 +237,9 @@ await ensureDefaultTeam();
 try {
   if (env.AUTH_ENABLED) {
     await ensureDefaultAdmin();
+    if (env.ALLOW_GUEST_ACCESS) {
+      await ensureAnonymousUser();
+    }
   } else {
     await ensureAnonymousUser();
   }
