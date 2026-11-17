@@ -1054,6 +1054,12 @@ export function useToolProcessor(toolId: string) {
   useEffect(() => {
     reconnectSSERef.current = reconnectSSE;
   }, [reconnectSSE]);
+  // Read by the visibility effect below, which must not re-run (and stop the
+  // live run through its cleanup) just because a callback identity changed.
+  const storeWasResetRef = useRef<() => boolean>(() => false);
+  useEffect(() => {
+    storeWasResetRef.current = storeWasReset;
+  }, [storeWasReset]);
 
   // The cleanup of the effect below aborts the request and closes the stream,
   // which ends the run. It has to settle it too: left alone the store sits at
@@ -1162,11 +1168,11 @@ export function useToolProcessor(toolId: string) {
     const handleVisibilityChange = () => {
       if (document.visibilityState !== "visible") return;
       if (!activeJobIdRef.current) return;
-      if (storeWasReset()) return;
+      if (storeWasResetRef.current()) return;
       if (eventSourceRef.current && eventSourceRef.current.readyState === EventSource.OPEN) {
         return;
       }
-      setTimeout(() => reconnectSSE(), 500);
+      setTimeout(() => reconnectSSERef.current(), 500);
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
@@ -1201,7 +1207,7 @@ export function useToolProcessor(toolId: string) {
         }
       }
     };
-  }, [reconnectSSE, storeWasReset]);
+  }, [toolId]);
 
   const processFiles = useCallback(
     (files: File[], settings: Record<string, unknown>, opts?: { skipLibrarySave?: boolean }) => {
