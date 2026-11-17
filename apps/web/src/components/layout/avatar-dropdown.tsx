@@ -1,8 +1,7 @@
-import { ExternalLink, LogOut, Settings } from "lucide-react";
+import { LogOut, Settings } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useAuth } from "@/hooks/use-auth";
-import { appUrl } from "@/lib/app-url";
 import { logout } from "@/lib/logout";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +20,7 @@ function readStoredUsername(): string {
 
 export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDropdownProps) {
   const { t } = useTranslation();
-  const { authEnabled, loading, username: sessionUsername } = useAuth();
+  const { authEnabled, loading, username: sessionUsername, email } = useAuth();
   const [open, setOpen] = useState(false);
   const [logoutFailed, setLogoutFailed] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -86,7 +85,7 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
               variant === "dark" ? "text-[#e0e0e0]" : "text-foreground",
             )}
           >
-            {username}
+            {email || username}
           </div>
 
           <div className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")} />
@@ -109,38 +108,6 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
             <Settings className="h-4 w-4" />
             {t.common.settings}
           </button>
-
-          {/* Docs */}
-          <a
-            href="https://docs.snapotter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
-              variant === "dark"
-                ? "hover:bg-[#333] text-[#e0e0e0]"
-                : "hover:bg-muted text-foreground",
-            )}
-          >
-            <ExternalLink className="h-4 w-4" />
-            {t.settings.about.docsLink}
-          </a>
-
-          {/* API Reference */}
-          <a
-            href={appUrl("/api/docs")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
-              variant === "dark"
-                ? "hover:bg-[#333] text-[#e0e0e0]"
-                : "hover:bg-muted text-foreground",
-            )}
-          >
-            <ExternalLink className="h-4 w-4" />
-            {t.settings.about.apiRefLink}
-          </a>
 
           {authEnabled && (
             <>

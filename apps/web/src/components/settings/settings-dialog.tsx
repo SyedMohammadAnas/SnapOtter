@@ -368,6 +368,7 @@ export function SettingsDialog({ open, onClose }: SettingsDialogProps) {
 interface SessionUser {
   id: number;
   username: string;
+  email?: string | null;
   role: string;
 }
 
@@ -505,6 +506,7 @@ export function GeneralSection() {
   }, [defaultToolView, prefsLoadFailed, t, later]);
 
   const username = user?.username || "admin";
+  const displayName = user?.email || username;
   const role = user?.role || t.settings.general.roleUnknown;
 
   return (
@@ -521,11 +523,13 @@ export function GeneralSection() {
             {loading ? (
               <Loader2 className="h-4 w-4 animate-spin" />
             ) : (
-              username.charAt(0).toUpperCase()
+              displayName.charAt(0).toUpperCase()
             )}
           </div>
           <div>
-            <p className="font-medium text-foreground">{loading ? t.common.loading : username}</p>
+            <p className="font-medium text-foreground">
+              {loading ? t.common.loading : displayName}
+            </p>
             <p className="text-xs text-muted-foreground capitalize">{role}</p>
           </div>
         </div>
@@ -4413,36 +4417,6 @@ function AboutSection() {
         <div>
           <span className="font-mono text-foreground">AGPLv3</span>
           <p className="text-xs text-muted-foreground">{t.settings.about.licenseDescription}</p>
-        </div>
-      </div>
-
-      <div className="space-y-2">
-        <h4 className="text-sm font-medium text-foreground">{t.settings.about.linksHeading}</h4>
-        <div className="flex flex-col gap-1.5">
-          <a
-            href="https://github.com/snapotter-hq/snapotter"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-primary-ink hover:underline"
-          >
-            {t.settings.about.githubLink}
-          </a>
-          <a
-            href="https://docs.snapotter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-primary-ink hover:underline"
-          >
-            {t.settings.about.docsLink}
-          </a>
-          <a
-            href={appUrl("/api/docs")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-primary-ink hover:underline"
-          >
-            {t.settings.about.apiRefLink}
-          </a>
         </div>
       </div>
     </div>

@@ -2674,7 +2674,7 @@ export const en = {
       modeHtml: "HTML File",
       htmlFile: "HTML File",
       url: "URL",
-      urlPlaceholder: "https://snapotter.com",
+      urlPlaceholder: "https://example.com",
       format: "Output Format",
       quality: "Quality",
       devicePreset: "Device",

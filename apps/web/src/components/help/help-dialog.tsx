@@ -1,10 +1,9 @@
 import { APP_VERSION } from "@snapotter/shared";
-import { BookOpen, ExternalLink, Github, Keyboard, X } from "lucide-react";
+import { BookOpen, Keyboard, X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useFocusTrap } from "@/hooks/use-focus-trap";
 import { formatShortcut } from "@/hooks/use-keyboard-shortcuts";
-import { appUrl } from "@/lib/app-url";
 import { format } from "@/lib/format.js";
 
 interface HelpDialogProps {
@@ -110,52 +109,6 @@ export function HelpDialog({ open, onClose }: HelpDialogProps) {
                   <Kbd keys={s.keys} />
                 </div>
               ))}
-            </div>
-          </section>
-
-          {/* Links */}
-          <section className="space-y-2">
-            <div className="flex items-center gap-2 text-foreground">
-              <Github className="h-4 w-4" />
-              <h3 className="text-sm font-semibold">{t.help.resources.heading}</h3>
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <a
-                href="https://github.com/snapotter-hq/snapotter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-primary-ink hover:underline"
-              >
-                {t.help.resources.githubLink}
-                <ExternalLink className="h-3 w-3" />
-              </a>
-              <a
-                href="https://github.com/snapotter-hq/snapotter/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-primary-ink hover:underline"
-              >
-                {t.help.resources.reportIssueLink}
-                <ExternalLink className="h-3 w-3" />
-              </a>
-              <a
-                href="https://docs.snapotter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-primary-ink hover:underline"
-              >
-                {t.help.resources.docsLink}
-                <ExternalLink className="h-3 w-3" />
-              </a>
-              <a
-                href={appUrl("/api/docs")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-primary-ink hover:underline"
-              >
-                {t.help.resources.apiRefLink}
-                <ExternalLink className="h-3 w-3" />
-              </a>
             </div>
           </section>
 
