@@ -39,6 +39,7 @@ interface TabDef {
 }
 
 const COLLAPSE_STORAGE_KEY = "snapotter-collapsed-sections";
+const CATEGORY_COLLAPSE_KEY_PREFIX = "konvertt-collapsed-cats-";
 
 function getCollapsedSections(): Set<string> {
   try {
@@ -52,6 +53,26 @@ function getCollapsedSections(): Set<string> {
 function saveCollapsedSections(collapsed: Set<string>) {
   try {
     localStorage.setItem(COLLAPSE_STORAGE_KEY, JSON.stringify([...collapsed]));
+  } catch {
+    // Storage blocked or full
+  }
+}
+
+function getCollapsedCategories(sectionId: string): Set<string> {
+  try {
+    const raw = localStorage.getItem(`${CATEGORY_COLLAPSE_KEY_PREFIX}${sectionId}`);
+    return new Set(parseStringArray(raw ?? undefined));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveCollapsedCategories(sectionId: string, collapsed: Set<string>) {
+  try {
+    localStorage.setItem(
+      `${CATEGORY_COLLAPSE_KEY_PREFIX}${sectionId}`,
+      JSON.stringify([...collapsed]),
+    );
   } catch {
     // Storage blocked or full
   }
@@ -216,7 +237,7 @@ export function HomePage() {
               visibleTools={visibleTools}
             />
           ) : (
-            <CategoryGrid groupedTools={groupedTools} />
+            <CategoryGrid groupedTools={groupedTools} sectionId={activeTab} />
           )}
 
           <FeedbackDialog
@@ -613,9 +634,30 @@ function AllTabContent({
 }
 
 // ── Category Grid (used by modality tabs) ────────────────────────
+// Each category is a collapsible accordion, matching the All-tab style.
 
-function CategoryGrid({ groupedTools }: { groupedTools: Map<string, Tool[]> }) {
+function CategoryGrid({
+  groupedTools,
+  sectionId,
+}: {
+  groupedTools: Map<string, Tool[]>;
+  sectionId: string;
+}) {
   const { t } = useTranslation();
+  const [collapsed, setCollapsed] = useState<Set<string>>(() => getCollapsedCategories(sectionId));
+
+  const toggleCategory = useCallback(
+    (catId: string) => {
+      setCollapsed((prev) => {
+        const next = new Set(prev);
+        if (next.has(catId)) next.delete(catId);
+        else next.add(catId);
+        saveCollapsedCategories(sectionId, next);
+        return next;
+      });
+    },
+    [sectionId],
+  );
 
   if (groupedTools.size === 0) {
     return (
@@ -624,19 +666,55 @@ function CategoryGrid({ groupedTools }: { groupedTools: Map<string, Tool[]> }) {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-3">
       {CATEGORIES.filter((cat) => groupedTools.has(cat.id)).map((category) => {
         const tools = groupedTools.get(category.id) ?? [];
+        const isCollapsed = collapsed.has(category.id);
+        const CatIcon = ICON_MAP[category.icon] as
+          | React.ComponentType<{ className?: string }>
+          | undefined;
+
         return (
           <section key={category.id}>
-            <h2 className="text-[11px] font-semibold uppercase text-muted-foreground tracking-widest mb-2 pb-1.5 border-b border-border/40">
-              {getCategoryName(t, category.id, category.name)}
+            <h2>
+              <button
+                type="button"
+                onClick={() => toggleCategory(category.id)}
+                className="w-full flex items-center gap-2 py-2 mb-2 border-b border-border/40 group cursor-pointer"
+                aria-expanded={!isCollapsed}
+              >
+                {CatIcon && (
+                  <span
+                    className="p-1 rounded"
+                    style={{
+                      backgroundColor: `${category.color}15`,
+                      color: category.color,
+                    }}
+                  >
+                    <CatIcon className="h-4 w-4" />
+                  </span>
+                )}
+                <span className="text-sm font-semibold text-foreground">
+                  {getCategoryName(t, category.id, category.name)}
+                </span>
+                <span className="text-xs text-muted-foreground">{tools.length}</span>
+                <span className="flex-1" />
+                <ChevronDown
+                  className={cn(
+                    "h-4 w-4 text-muted-foreground transition-transform duration-200",
+                    isCollapsed && "-rotate-90",
+                  )}
+                />
+              </button>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {tools.map((tool) => (
-                <ToolCard key={tool.id} tool={tool} variant="descriptive" showPin />
-              ))}
-            </div>
+
+            {!isCollapsed && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 pb-2">
+                {tools.map((tool) => (
+                  <ToolCard key={tool.id} tool={tool} variant="descriptive" showPin />
+                ))}
+              </div>
+            )}
           </section>
         );
       })}
