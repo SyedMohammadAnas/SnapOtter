@@ -15,6 +15,7 @@ import { appUrl, resolveServerUrls, serverUrl } from "@/lib/app-url";
 import { parseFileResultsHeader, unpackBatchZip } from "@/lib/batch-zip";
 import { featureIncompatibleMessage, featureNotInstalledMessage } from "@/lib/bundle-i18n";
 import { CancelRefusedError, failedCancelRequest, readCancelAnswer } from "@/lib/cancel-refusal";
+import { uploadFileChunked } from "@/lib/chunked-upload";
 import { format } from "@/lib/format";
 import {
   checkToolResult,
@@ -74,6 +75,8 @@ const AI_PYTHON_TOOLS = new Set<string>(PYTHON_SIDECAR_TOOLS);
 const LONG_RUNNING_TOOLS = new Set<string>(["content-aware-resize", "ai-canvas-expand"]);
 
 const UPLOAD_WEIGHT = 15;
+// Files above this go through the chunked upload gateway (see lib/chunked-upload.ts).
+const CHUNKED_UPLOAD_THRESHOLD_BYTES = 90 * 1024 * 1024;
 const UPLOAD_STALL_TIMEOUT_MS = 120_000;
 const SYNC_RESPONSE_TIMEOUT_MS = 120_000;
 const LONG_RESPONSE_TIMEOUT_MS = 600_000;
@@ -1720,12 +1723,53 @@ export function useToolProcessor(toolId: string) {
           if (teardownError) throw teardownError.cause;
         };
 
-        xhr.open("POST", appUrl(apiToolPath(toolId)));
-        formatHeaders().forEach((value, key) => {
-          xhr.setRequestHeader(key, value);
-        });
-        armUploadStallTimer();
-        xhr.send(formData);
+        // Large single files go through the chunked upload gateway (/u/*), which
+        // stays under the Cloudflare body cap. Everything else keeps the tested
+        // direct multipart path below.
+        const chunkFile =
+          MULTI_FILE_TOOLS.has(toolId) && files.length > 1
+            ? null
+            : (files[capturedIndex] ?? files[0]);
+        const useChunkedUpload =
+          !!chunkFile && chunkFile.size > CHUNKED_UPLOAD_THRESHOLD_BYTES && !bgImageFile;
+
+        if (!useChunkedUpload) {
+          xhr.open("POST", appUrl(apiToolPath(toolId)));
+          formatHeaders().forEach((value, key) => {
+            xhr.setRequestHeader(key, value);
+          });
+          armUploadStallTimer();
+          xhr.send(formData);
+        } else {
+          const toolPath = apiToolPath(toolId).replace(/^\/api\/v1\/tools\//, "");
+          void (async () => {
+            try {
+              const up = await uploadFileChunked(chunkFile as File, {
+                onProgress: (p) => {
+                  if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
+                  setProgress((prev) =>
+                    prev.phase === "uploading"
+                      ? { ...prev, percent: (p.percent / 100) * UPLOAD_WEIGHT }
+                      : prev,
+                  );
+                },
+              });
+              if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
+              if (storeWasReset()) return;
+              xhr.open("POST", appUrl(`/u/${up.id}/run/${toolPath}`));
+              xhr.setRequestHeader("content-type", "application/json");
+              xhr.send(JSON.stringify({ settings: cleanSettings, clientJobId }));
+            } catch (err) {
+              if (xhrRef.current !== xhr || activeJobIdRef.current !== clientJobId) return;
+              if (storeWasReset()) return;
+              clearRequestTimer();
+              const message =
+                err instanceof Error && err.message ? err.message : t.errors.processingInterrupted;
+              const teardownError = endSyncRun({ message, category: "upload_error" });
+              if (teardownError) throw teardownError.cause;
+            }
+          })();
+        }
       } catch (cause) {
         if (claimed) endRunAtStart(runEntryIds, runEntryFiles);
         else endStartBeforeClaim(runEntryIds, runEntryFiles);

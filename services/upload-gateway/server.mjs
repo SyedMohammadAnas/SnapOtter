@@ -8,7 +8,7 @@
 // No dependencies. Node >= 20.
 
 import { createServer } from "node:http";
-import { createReadStream, createWriteStream } from "node:fs";
+import { createReadStream, createWriteStream, openAsBlob } from "node:fs";
 import { mkdir, readdir, rm, stat, writeFile, readFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { join } from "node:path";
@@ -187,7 +187,7 @@ async function handleRun(req, res, id, section, toolId) {
   const settings = body.settings ?? {};
 
   const form = new FormData();
-  form.append("file", new Blob([await readFile(file)]), meta.name);
+  form.append("file", await openAsBlob(file), meta.name);
   form.append("settings", JSON.stringify(settings));
   // The engine tracks live progress (SSE) under this id; keep it intact.
   if (typeof body.clientJobId === "string" && body.clientJobId.length <= 100) {
