@@ -1357,6 +1357,7 @@ interface BeautifyResponse {
   previewUrl?: string | null;
   originalSize?: number | null;
   processedSize?: number | null;
+  savedFileId?: string | null;
 }
 
 function isOptionalUrl(value: unknown): value is string | null | undefined {
@@ -1497,10 +1498,15 @@ export function BeautifySettings({
       controller.signal.addEventListener("abort", unsubscribe, { once: true });
 
       try {
+        const saveMode = useFileStore.getState().librarySaveMode;
         const formData = new FormData();
         formData.append("file", capturedEntry.file);
         formData.append("backgroundImage", bgImageFile);
         formData.append("settings", JSON.stringify(settings));
+        if (capturedEntry.serverFileId) {
+          formData.append("fileId", capturedEntry.serverFileId);
+          formData.append("saveMode", saveMode);
+        }
 
         const res = await uploadFetch(appUrl("/api/v1/tools/image/beautify"), {
           method: "POST",
@@ -1540,6 +1546,9 @@ export function BeautifySettings({
         if (typeof result.jobId === "string" && result.jobId) {
           setJobId(result.jobId);
         }
+        if (result.savedFileId) {
+          useFileStore.getState().setLastSavedLibraryFileId(result.savedFileId);
+        }
         useFileStore.getState().updateEntryById(entryId, {
           processedUrl: result.downloadUrl,
           processedPreviewUrl: result.previewUrl ?? null,
@@ -1547,7 +1556,11 @@ export function BeautifySettings({
           status: "completed",
           ...(result.originalSize != null ? { originalSize: result.originalSize } : {}),
           processedSize: result.processedSize ?? null,
+          ...(result.savedFileId && saveMode === "overwrite"
+            ? { serverFileId: result.savedFileId }
+            : {}),
         });
+        if (result.savedFileId) useFileStore.getState().markClaimedById(entryId);
         setManualDownloadByEntry((prev) => ({
           ...prev,
           [entryId]: result.downloadUrl,

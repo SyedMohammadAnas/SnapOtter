@@ -24,6 +24,7 @@ const SAVE_MODE_ROUTES = [
   "ai-canvas-expand",
   "auto-subtitles",
   "background-replace",
+  "beautify",
   "blur-background",
   "blur-faces",
   "colorize",
@@ -145,6 +146,11 @@ describe("custom-client tools participate in the saveMode feature (#565)", () =>
     "remove-background",
     "background-replace",
     "blur-background",
+    "beautify",
+    "gif-tools",
+    "image-enhancement",
+    "optimize-for-web",
+    "strip-metadata",
   ]) {
     it(`${toolId} is not in LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS`, () => {
       expect(LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS.has(toolId)).toBe(false);

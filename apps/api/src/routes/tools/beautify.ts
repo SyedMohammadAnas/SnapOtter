@@ -3,6 +3,8 @@ import { extname } from "node:path";
 import { hasServerErrorStatus, isToolInputError } from "@snapotter/shared";
 import type { FastifyBaseLogger, FastifyInstance } from "fastify";
 import sharp from "sharp";
+import { autoSaveToLibrary } from "../../jobs/postprocess.js";
+import { INVALID_SAVE_MODE_ERROR, parseSaveModeField } from "../../jobs/types.js";
 import { autoOrient } from "../../lib/auto-orient.js";
 import {
   type BackgroundOpts,
@@ -38,6 +40,7 @@ import { multipartFailure } from "../../lib/multipart-parts.js";
 import { normalizeOperationalWriteError, putObject } from "../../lib/object-storage.js";
 import { decompressSvgz, isSvgClientError, sanitizeSvg } from "../../lib/svg-sanitize.js";
 import { InputValidationError } from "../../modality/contract.js";
+import { getAuthUser } from "../../plugins/auth.js";
 import { registerToolProcessFn } from "../tool-factory.js";
 
 const ALPHA_FORMATS = new Set(["png", "webp", "avif"]);
@@ -361,6 +364,8 @@ export function registerBeautify(app: FastifyInstance) {
     let filename = "image";
     let bgFilename = "background";
     let settingsRaw: string | null = null;
+    let fileId: string | null = null;
+    let saveModeRaw: string | null = null;
 
     try {
       const parts = request.parts();
@@ -380,11 +385,20 @@ export function registerBeautify(app: FastifyInstance) {
           }
         } else if (part.fieldname === "settings") {
           settingsRaw = part.value as string;
+        } else if (part.fieldname === "fileId") {
+          fileId = part.value as string;
+        } else if (part.fieldname === "saveMode") {
+          saveModeRaw = part.value as string;
         }
       }
     } catch (err) {
       const failure = multipartFailure(err);
       return reply.status(failure.status).send(failure.body);
+    }
+
+    const saveMode = parseSaveModeField(saveModeRaw);
+    if (saveMode === null) {
+      return reply.status(400).send({ error: INVALID_SAVE_MODE_ERROR });
     }
 
     if (!mainBuffer || mainBuffer.length === 0) {
@@ -446,11 +460,30 @@ export function registerBeautify(app: FastifyInstance) {
       const jobId = randomUUID();
       await putObject(`outputs/${jobId}/${outFilename}`, outputBuf);
 
+      const contentType =
+        settings.outputFormat === "jpeg"
+          ? "image/jpeg"
+          : settings.outputFormat === "webp"
+            ? "image/webp"
+            : "image/png";
+      const autoSaveResult = await autoSaveToLibrary({
+        fileId: fileId ?? undefined,
+        saveMode,
+        userId: getAuthUser(request)?.id ?? null,
+        buffer: outputBuf,
+        outName: outFilename,
+        contentType,
+        toolId: "beautify",
+        jobId,
+      });
+
       return reply.send({
         jobId,
         downloadUrl: `/api/v1/download/${jobId}/${encodeURIComponent(outFilename)}`,
         originalSize,
         processedSize: outputBuf.length,
+        savedFileId: autoSaveResult.fileId,
+        autoSaveError: autoSaveResult.error,
       });
     } catch (rawErr) {
       const err = normalizeOperationalWriteError(asDecoderOutOfMemory(rawErr));

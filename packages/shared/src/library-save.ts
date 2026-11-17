@@ -18,7 +18,6 @@ export const LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS: ReadonlySet<string> = new Set(
   // Custom routes without fileId/saveMode handling
   "barcode-generate",
   "barcode-read",
-  "beautify",
   "bulk-rename",
   "collage",
   "color-palette",
@@ -28,22 +27,21 @@ export const LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS: ReadonlySet<string> = new Set(
   "edit-metadata",
   "favicon",
   "find-duplicates",
-  "gif-tools",
   "html-to-image",
-  "image-enhancement",
   "image-to-base64",
   "image-to-pdf",
   "info",
   "meme-generator",
-  "optimize-for-web",
   "passport-photo",
   "pdf-to-image",
   "qr-generate",
   "split",
   "stitch",
-  "strip-metadata",
   "vectorize",
   "watermark-image",
+  // Factory-backed (createToolRoute + useToolProcessor) tools that already
+  // honor fileId/saveMode are intentionally absent: beautify (wired below),
+  // gif-tools, image-enhancement, optimize-for-web, strip-metadata.
   // Conversion presets served by the custom image-to-pdf / pdf-to-image /
   // svg-to-raster routes (the registry group rides the factory and works)
   ...CONVERSION_PRESETS.filter((p) => BASE_CONFIG[p.base]?.group !== "registry").map((p) => p.id),
