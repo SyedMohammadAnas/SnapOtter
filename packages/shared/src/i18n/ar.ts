@@ -5228,9 +5228,6 @@ export const ar: TranslationKeys = {
         "مجموعة أدوات معالجة ملفات ذاتية الاستضافة تركز على الخصوصية مع 200+ أداة. تحويل وضغط وتحرير ونسخ صوتي وتعرّف ضوئي وأتمتة سير عمل الصور والفيديو والصوت وPDF والملفات دون إرسال البيانات إلى السحابة.",
       versionLabel: "الإصدار:",
       linksHeading: "روابط",
-      githubLink: "مستودع GitHub",
-      docsLink: "التوثيق",
-      apiRefLink: "مرجع API (Swagger)",
     },
   },
   auth: {
@@ -5574,10 +5571,7 @@ export const ar: TranslationKeys = {
     },
     resources: {
       heading: "الموارد",
-      githubLink: "مستودع GitHub",
       reportIssueLink: "الإبلاغ عن مشكلة",
-      docsLink: "التوثيق",
-      apiRefLink: "مرجع API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

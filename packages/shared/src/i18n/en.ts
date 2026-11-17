@@ -5200,9 +5200,6 @@ export const en = {
         "200+ file tools. Convert, compress, edit, transcribe, OCR, and automate image, video, audio, PDF, and document workflows.",
       versionLabel: "Version:",
       linksHeading: "Links",
-      githubLink: "GitHub Repository",
-      docsLink: "Documentation",
-      apiRefLink: "API Reference (Swagger)",
     },
   },
   auth: {
@@ -5541,10 +5538,7 @@ export const en = {
     },
     resources: {
       heading: "Resources",
-      githubLink: "GitHub Repository",
       reportIssueLink: "Report an Issue",
-      docsLink: "Documentation",
-      apiRefLink: "API Reference (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

@@ -5292,9 +5292,6 @@ export const it: TranslationKeys = {
         "Una suite di elaborazione file self-hosted e orientata alla privacy, con 200+ strumenti. Converti, comprimi, modifica, trascrivi, OCR e automatizza flussi di lavoro per immagini, video, audio, PDF e file senza inviare dati al cloud.",
       versionLabel: "Versione:",
       linksHeading: "Link",
-      githubLink: "Repository GitHub",
-      docsLink: "Documentazione",
-      apiRefLink: "Riferimento API (Swagger)",
     },
   },
   auth: {
@@ -5644,10 +5641,7 @@ export const it: TranslationKeys = {
     },
     resources: {
       heading: "Risorse",
-      githubLink: "Repository GitHub",
       reportIssueLink: "Segnala un problema",
-      docsLink: "Documentazione",
-      apiRefLink: "Riferimento API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

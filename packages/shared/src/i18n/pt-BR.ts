@@ -5288,9 +5288,6 @@ export const ptBR: TranslationKeys = {
         "Uma suite de processamento de arquivos auto-hospedada e focada em privacidade, com 200+ ferramentas. Converta, comprima, edite, transcreva, OCR, e automatize fluxos de trabalho de imagem, vídeo, áudio, PDF e arquivos sem enviar dados para a nuvem.",
       versionLabel: "Versão:",
       linksHeading: "Links",
-      githubLink: "Repositório no GitHub",
-      docsLink: "Documentação",
-      apiRefLink: "Referência da API (Swagger)",
     },
   },
   auth: {
@@ -5642,10 +5639,7 @@ export const ptBR: TranslationKeys = {
     },
     resources: {
       heading: "Recursos",
-      githubLink: "Repositório no GitHub",
       reportIssueLink: "Relatar um problema",
-      docsLink: "Documentação",
-      apiRefLink: "Referência da API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

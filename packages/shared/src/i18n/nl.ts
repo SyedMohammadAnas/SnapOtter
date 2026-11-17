@@ -5295,9 +5295,6 @@ export const nl: TranslationKeys = {
         "Een zelf-gehoste, privacy-first bestandsverwerkingssuite met 200+ tools. Converteren, comprimeren, bewerken, transcriberen, OCR en automatiseer je beeld-, video-, audio-, PDF- en bestandsworkflows zonder data naar de cloud te sturen.",
       versionLabel: "Versie:",
       linksHeading: "Koppelingen",
-      githubLink: "GitHub-repository",
-      docsLink: "Documentatie",
-      apiRefLink: "API-referentie (Swagger)",
     },
   },
   auth: {
@@ -5649,10 +5646,7 @@ export const nl: TranslationKeys = {
     },
     resources: {
       heading: "Bronnen",
-      githubLink: "GitHub-repository",
       reportIssueLink: "Probleem melden",
-      docsLink: "Documentatie",
-      apiRefLink: "API-referentie (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

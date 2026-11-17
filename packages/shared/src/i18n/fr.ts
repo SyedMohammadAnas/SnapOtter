@@ -5304,9 +5304,6 @@ export const fr: TranslationKeys = {
         "Une suite de traitement de fichiers auto-hébergée, axée sur la confidentialité, avec 200+ outils. Convertissez, compressez, éditez, transcrivez, OCR et automatisez vos flux de travail image, vidéo, audio, PDF et fichiers sans envoyer de données vers le cloud.",
       versionLabel: "Version :",
       linksHeading: "Liens",
-      githubLink: "Dépôt GitHub",
-      docsLink: "Documentation",
-      apiRefLink: "Référence API (Swagger)",
     },
   },
   auth: {
@@ -5663,10 +5660,7 @@ export const fr: TranslationKeys = {
     },
     resources: {
       heading: "Ressources",
-      githubLink: "Dépôt GitHub",
       reportIssueLink: "Signaler un problème",
-      docsLink: "Documentation",
-      apiRefLink: "Référence API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

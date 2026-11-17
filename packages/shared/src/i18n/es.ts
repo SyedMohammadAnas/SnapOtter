@@ -5281,9 +5281,6 @@ export const es: TranslationKeys = {
         "Una suite de procesamiento de archivos autoalojada y con privacidad como prioridad, con 200+ herramientas. Convierte, comprime, edita, transcribe, OCR y automatiza flujos de trabajo de imágenes, video, audio, PDF y archivos sin enviar datos a la nube.",
       versionLabel: "Versión:",
       linksHeading: "Enlaces",
-      githubLink: "Repositorio en GitHub",
-      docsLink: "Documentación",
-      apiRefLink: "Referencia API (Swagger)",
     },
   },
   auth: {
@@ -5638,10 +5635,7 @@ export const es: TranslationKeys = {
     },
     resources: {
       heading: "Recursos",
-      githubLink: "Repositorio en GitHub",
       reportIssueLink: "Reportar un problema",
-      docsLink: "Documentación",
-      apiRefLink: "Referencia API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

@@ -5259,9 +5259,6 @@ export const vi: TranslationKeys = {
         "Bộ công cụ xử lý tệp tự lưu trữ, ưu tiên quyền riêng tư với 200+ công cụ. Chuyển đổi, nén, chỉnh sửa, phiên âm, OCR và tự động hóa quy trình xử lý ảnh, video, âm thanh, PDF và tệp mà không cần gửi dữ liệu lên đám mây.",
       versionLabel: "Phiên bản:",
       linksHeading: "Liên kết",
-      githubLink: "Kho mã nguồn GitHub",
-      docsLink: "Tài liệu",
-      apiRefLink: "Tham chiếu API (Swagger)",
     },
   },
   auth: {
@@ -5608,10 +5605,7 @@ export const vi: TranslationKeys = {
     },
     resources: {
       heading: "Tài nguyên",
-      githubLink: "Kho mã nguồn GitHub",
       reportIssueLink: "Báo cáo lỗi",
-      docsLink: "Tài liệu",
-      apiRefLink: "Tham chiếu API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

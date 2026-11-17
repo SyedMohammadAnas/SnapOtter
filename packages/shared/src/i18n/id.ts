@@ -5273,9 +5273,6 @@ export const id: TranslationKeys = {
         "Suite pemrosesan file self-hosted yang mengutamakan privasi dengan 200+ alat. Konversi, kompres, edit, transkrip, OCR, dan otomasi alur kerja gambar, video, audio, PDF, dan file tanpa mengirim data ke cloud.",
       versionLabel: "Versi:",
       linksHeading: "Tautan",
-      githubLink: "Repositori GitHub",
-      docsLink: "Dokumentasi",
-      apiRefLink: "Referensi API (Swagger)",
     },
   },
   auth: {
@@ -5626,10 +5623,7 @@ export const id: TranslationKeys = {
     },
     resources: {
       heading: "Sumber Daya",
-      githubLink: "Repositori GitHub",
       reportIssueLink: "Laporkan Masalah",
-      docsLink: "Dokumentasi",
-      apiRefLink: "Referensi API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

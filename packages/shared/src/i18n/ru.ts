@@ -5285,9 +5285,6 @@ export const ru: TranslationKeys = {
         "Самостоятельно размещаемый набор инструментов для обработки файлов с приоритетом конфиденциальности. 200+ инструментов. Конвертация, сжатие, редактирование, транскрипция, OCR и автоматизация рабочих процессов с изображениями, видео, аудио, PDF и файлами без отправки данных в облако.",
       versionLabel: "Версия:",
       linksHeading: "Ссылки",
-      githubLink: "Репозиторий GitHub",
-      docsLink: "Документация",
-      apiRefLink: "Справочник API (Swagger)",
     },
   },
   auth: {
@@ -5637,10 +5634,7 @@ export const ru: TranslationKeys = {
     },
     resources: {
       heading: "Ресурсы",
-      githubLink: "Репозиторий GitHub",
       reportIssueLink: "Сообщить о проблеме",
-      docsLink: "Документация",
-      apiRefLink: "Справочник API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

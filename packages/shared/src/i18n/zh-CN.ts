@@ -4970,9 +4970,6 @@ export const zhCN: TranslationKeys = {
         "自托管、隐私优先的文件处理套件，包含 200+ 种工具。转换、压缩、编辑、转录、OCR，自动化图片、视频、音频、PDF 和文件工作流，无需将数据发送到云端。",
       versionLabel: "版本：",
       linksHeading: "链接",
-      githubLink: "GitHub 仓库",
-      docsLink: "文档",
-      apiRefLink: "API 参考（Swagger）",
     },
   },
   auth: {
@@ -5309,10 +5306,7 @@ export const zhCN: TranslationKeys = {
     },
     resources: {
       heading: "资源",
-      githubLink: "GitHub 仓库",
       reportIssueLink: "报告问题",
-      docsLink: "文档",
-      apiRefLink: "API 参考（Swagger）",
     },
     versionLabel: "Konvertt v{version}",
   },

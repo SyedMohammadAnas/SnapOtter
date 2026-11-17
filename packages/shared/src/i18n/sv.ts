@@ -5271,9 +5271,6 @@ export const sv: TranslationKeys = {
         "En självhostad, integritetsfokuserad filbehandlingssvit med 200+ verktyg. Konvertera, komprimera, redigera, transkribera, OCR, och automatisera bild-, video-, ljud-, PDF- och filarbetsflöden utan att skicka data till molnet.",
       versionLabel: "Version:",
       linksHeading: "Länkar",
-      githubLink: "GitHub-arkiv",
-      docsLink: "Dokumentation",
-      apiRefLink: "API-referens (Swagger)",
     },
   },
   auth: {
@@ -5621,10 +5618,7 @@ export const sv: TranslationKeys = {
     },
     resources: {
       heading: "Resurser",
-      githubLink: "GitHub-arkiv",
       reportIssueLink: "Rapportera ett problem",
-      docsLink: "Dokumentation",
-      apiRefLink: "API-referens (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

@@ -5291,9 +5291,6 @@ export const pl: TranslationKeys = {
         "Samoobsługowy pakiet narzędzi do przetwarzania plików z priorytetem prywatności. 200+ narzędzi. Konwersja, kompresja, edycja, transkrypcja, OCR i automatyzacja procesów obrazów, wideo, audio, PDF i plików bez wysyłania danych do chmury.",
       versionLabel: "Wersja:",
       linksHeading: "Odnośniki",
-      githubLink: "Repozytorium GitHub",
-      docsLink: "Dokumentacja",
-      apiRefLink: "Dokumentacja API (Swagger)",
     },
   },
   auth: {
@@ -5646,10 +5643,7 @@ export const pl: TranslationKeys = {
     },
     resources: {
       heading: "Zasoby",
-      githubLink: "Repozytorium GitHub",
       reportIssueLink: "Zgłoś problem",
-      docsLink: "Dokumentacja",
-      apiRefLink: "Dokumentacja API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

@@ -5316,9 +5316,6 @@ export const de: TranslationKeys = {
         "Eine selbst gehostete, datenschutzorientierte Dateiverarbeitungssuite mit 200+ Werkzeugen. Konvertieren, komprimieren, bearbeiten, transkribieren, OCR und Bild-, Video-, Audio-, PDF- und Dateiabläufe automatisieren, ohne Daten in die Cloud zu senden.",
       versionLabel: "Version:",
       linksHeading: "Links",
-      githubLink: "GitHub-Repository",
-      docsLink: "Dokumentation",
-      apiRefLink: "API-Referenz (Swagger)",
     },
   },
   auth: {
@@ -5676,10 +5673,7 @@ export const de: TranslationKeys = {
     },
     resources: {
       heading: "Ressourcen",
-      githubLink: "GitHub-Repository",
       reportIssueLink: "Problem melden",
-      docsLink: "Dokumentation",
-      apiRefLink: "API-Referenz (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

@@ -5192,9 +5192,6 @@ export const th: TranslationKeys = {
         "ชุดเครื่องมือประมวลผลไฟล์แบบโฮสต์เองที่เน้นความเป็นส่วนตัวพร้อม 200+ เครื่องมือ แปลง บีบอัด แก้ไข ถอดเสียง OCR และทำงานอัตโนมัติกับภาพ วิดีโอ เสียง PDF และไฟล์โดยไม่ต้องส่งข้อมูลไปคลาวด์",
       versionLabel: "เวอร์ชัน:",
       linksHeading: "ลิงก์",
-      githubLink: "คลังเก็บโค้ด GitHub",
-      docsLink: "เอกสารประกอบ",
-      apiRefLink: "อ้างอิง API (Swagger)",
     },
   },
   auth: {
@@ -5532,10 +5529,7 @@ export const th: TranslationKeys = {
     },
     resources: {
       heading: "แหล่งข้อมูล",
-      githubLink: "คลังเก็บโค้ด GitHub",
       reportIssueLink: "รายงานปัญหา",
-      docsLink: "เอกสารประกอบ",
-      apiRefLink: "อ้างอิง API (Swagger)",
     },
     versionLabel: "Konvertt เวอร์ชัน {version}",
   },

@@ -5283,9 +5283,6 @@ export const uk: TranslationKeys = {
         "Самостійно розміщуваний набір інструментів для обробки файлів з пріоритетом конфіденційності, 200+ інструментів. Конвертація, стиснення, редагування, транскрипція, OCR та автоматизація робочих процесів із зображеннями, відео, аудіо, PDF та файлами без надсилання даних у хмару.",
       versionLabel: "Версія:",
       linksHeading: "Посилання",
-      githubLink: "Репозиторій GitHub",
-      docsLink: "Документація",
-      apiRefLink: "Довідник API (Swagger)",
     },
   },
   auth: {
@@ -5636,10 +5633,7 @@ export const uk: TranslationKeys = {
     },
     resources: {
       heading: "Ресурси",
-      githubLink: "Репозиторій GitHub",
       reportIssueLink: "Повідомити про проблему",
-      docsLink: "Документація",
-      apiRefLink: "Довідник API (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },

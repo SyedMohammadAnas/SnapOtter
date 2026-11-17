@@ -5280,9 +5280,6 @@ export const tr: TranslationKeys = {
         "200+ araçla gizlilik odaklı, kendi sunucunuzda barındırılan bir dosya işleme paketi. Buluta veri göndermeden dönüştürme, sıkıştırma, düzenleme, transkripsiyon, OCR ve görüntü, video, ses, PDF ve dosya iş akışlarınızı otomatikleştirme.",
       versionLabel: "Sürüm:",
       linksHeading: "Bağlantılar",
-      githubLink: "GitHub Deposu",
-      docsLink: "Dokümantasyon",
-      apiRefLink: "API Referansı (Swagger)",
     },
   },
   auth: {
@@ -5633,10 +5630,7 @@ export const tr: TranslationKeys = {
     },
     resources: {
       heading: "Kaynaklar",
-      githubLink: "GitHub Deposu",
       reportIssueLink: "Sorun Bildir",
-      docsLink: "Dokümantasyon",
-      apiRefLink: "API Referansı (Swagger)",
     },
     versionLabel: "Konvertt v{version}",
   },
