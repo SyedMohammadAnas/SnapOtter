@@ -149,7 +149,7 @@ export const en = {
       online_tools: "Online tools",
       desktop_apps: "Desktop apps (Photoshop, GIMP)",
       command_line: "Command line (ffmpeg, ImageMagick)",
-      self_hosted: "Another self-hosted tool",
+      self_hosted: "Another file tool",
       nothing: "Nothing, this is new",
     },
     selfHostMotivations: {
@@ -170,7 +170,7 @@ export const en = {
   onboarding: {
     usageSurveyTitle: "How are you using Konvertt?",
     priorToolLabel: "What were you using before?",
-    selfHostMotivationLabel: "Why self-host it?",
+    selfHostMotivationLabel: "Why use it?",
     discoverySourceLabel: "How did you hear about us?",
     optionalHint: "(optional)",
     continueLabel: "Continue",
@@ -5924,7 +5924,7 @@ export const en = {
     lastUpdated: "Last updated: June 24, 2026",
     overview: {
       heading: "Overview",
-      body: "Konvertt is a self-hosted, open-source file processing application. Your instance is operated and controlled entirely by whoever deployed it. This policy describes how the software itself handles your data.",
+      body: "Konvertt is an open-source file processing application. Each Konvertt instance is operated and controlled entirely by whoever runs it. This policy describes how the software itself handles your data.",
     },
     localProcessing: {
       heading: "Local Processing",
@@ -5950,7 +5950,7 @@ export const en = {
     },
     yourControl: {
       heading: "Your Control",
-      body: "Because Konvertt is self-hosted, the instance operator has full control over all data. You can delete your data at any time by removing files from the server or deleting the database. No data exists outside of your infrastructure.",
+      body: "Because each instance is run by its operator, the operator has full control over all data. You can delete your data at any time by removing files from the server or deleting the database. No data exists outside of your infrastructure.",
     },
   },
 } as const;
