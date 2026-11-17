@@ -86,22 +86,22 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
       {open && (
         <div
           className={cn(
-            "absolute top-full mt-1 end-0 w-56 rounded-lg border shadow-lg z-50",
+            "absolute top-full mt-2 end-0 w-60 rounded-xl border shadow-lg z-50 p-1.5 ring-1 ring-foreground/5",
             variant === "dark"
-              ? "bg-[#2a2a2a] border-[#444] text-[#e0e0e0]"
-              : "bg-card border-border text-foreground",
+              ? "bg-[#242424] border-[#383838] text-[#e0e0e0]"
+              : "bg-popover border-border text-popover-foreground",
           )}
         >
-          <div
-            className={cn(
-              "px-3 py-2.5 text-sm font-medium truncate",
-              variant === "dark" ? "text-[#e0e0e0]" : "text-foreground",
-            )}
-          >
+          <div className={cn("px-2.5 py-2 text-xs font-semibold truncate text-muted-foreground")}>
             {email || username}
           </div>
 
-          <div className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")} />
+          <div
+            className={cn(
+              "my-1 border-t",
+              variant === "dark" ? "border-[#383838]" : "border-border/60",
+            )}
+          />
 
           <button
             type="button"
@@ -111,36 +111,36 @@ export function AvatarDropdown({ onSettingsClick, variant = "light" }: AvatarDro
               onSettingsClick();
             }}
             className={cn(
-              "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
+              "w-full text-start px-2.5 py-2 text-sm rounded-lg flex items-center gap-2.5 transition-colors font-medium",
               variant === "dark"
                 ? "hover:bg-[#333] text-[#e0e0e0]"
-                : "hover:bg-muted text-foreground",
+                : "hover:bg-accent hover:text-accent-foreground text-foreground",
             )}
           >
-            <Settings className="h-4 w-4" />
+            <Settings className="h-4 w-4 text-muted-foreground" />
             {t.common.settings}
           </button>
 
           {authEnabled && (
             <>
               <div
-                className={cn("border-t", variant === "dark" ? "border-[#444]" : "border-border")}
+                className={cn(
+                  "my-1 border-t",
+                  variant === "dark" ? "border-[#383838]" : "border-border/60",
+                )}
               />
               <button
                 type="button"
                 onClick={handleLogout}
                 className={cn(
-                  "w-full text-start px-3 py-2 text-sm flex items-center gap-2 transition-colors",
-                  variant === "dark"
-                    ? "hover:bg-[#333] text-[#e0e0e0]"
-                    : "hover:bg-muted text-foreground",
+                  "w-full text-start px-2.5 py-2 text-sm rounded-lg flex items-center gap-2.5 transition-colors text-destructive hover:bg-destructive/10 font-medium",
                 )}
               >
-                <LogOut className="h-4 w-4" />
+                <LogOut className="h-4 w-4 text-destructive" />
                 {t.auth.logout}
               </button>
               {logoutFailed && (
-                <p role="alert" className="px-3 pb-2 text-xs text-destructive">
+                <p role="alert" className="px-2.5 pb-1 text-xs text-destructive">
                   {t.auth.logoutFailed}
                 </p>
               )}

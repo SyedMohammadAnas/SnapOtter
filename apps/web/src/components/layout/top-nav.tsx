@@ -350,8 +350,10 @@ function LanguageSelector({ isDark }: { isDark: boolean }) {
       {open && (
         <div
           className={cn(
-            "absolute top-full mt-1 end-0 w-48 max-h-72 overflow-y-auto rounded-lg border shadow-lg z-50",
-            isDark ? "bg-[#2a2a2a] border-[#444]" : "bg-card border-border",
+            "absolute top-full mt-2 end-0 w-52 max-h-72 overflow-y-auto rounded-xl border shadow-lg z-50 p-1.5 ring-1 ring-foreground/5",
+            isDark
+              ? "bg-[#242424] border-[#383838]"
+              : "bg-popover border-border text-popover-foreground",
           )}
         >
           {supportedLocales.map((l) => (
@@ -363,11 +365,15 @@ function LanguageSelector({ isDark }: { isDark: boolean }) {
                 setOpen(false);
               }}
               className={cn(
-                "w-full text-start px-3 py-1.5 text-sm transition-colors flex items-center justify-between",
-                isDark ? "hover:bg-[#333] text-[#e0e0e0]" : "hover:bg-muted text-foreground",
+                "w-full text-start px-2.5 py-1.5 text-xs rounded-lg transition-colors flex items-center justify-between font-medium",
+                isDark
+                  ? "hover:bg-[#333] text-[#e0e0e0]"
+                  : "hover:bg-accent hover:text-accent-foreground text-foreground",
               )}
             >
-              <span className={l.code === locale ? "font-medium" : ""}>{l.nativeName}</span>
+              <span className={l.code === locale ? "font-semibold text-primary-ink" : ""}>
+                {l.nativeName}
+              </span>
               {l.code === locale && (
                 <svg
                   aria-hidden="true"
@@ -375,7 +381,7 @@ function LanguageSelector({ isDark }: { isDark: boolean }) {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>

@@ -136,33 +136,34 @@ export function ToolCard({
         to={tool.route}
         onClick={onNavigate}
         className={cn(
-          "flex items-start gap-3 p-3 rounded-lg border border-border/60 bg-card transition-all",
-          "hover:border-border hover:shadow-sm",
+          "flex items-start gap-3 p-3.5 rounded-xl border border-border/70 bg-card transition-all",
+          "hover:border-foreground/20 hover:shadow-sm hover:bg-card/90",
+          "ring-1 ring-foreground/5",
           showPin && "pe-10",
           tool.disabled && "opacity-50 pointer-events-none",
         )}
       >
         <div
-          className="p-2 rounded-lg shrink-0 mt-0.5"
-          style={{ backgroundColor: `${sectionColor}12`, color: sectionColor }}
+          className="p-2.5 rounded-lg shrink-0 mt-0.5 flex items-center justify-center transition-transform group-hover:scale-105"
+          style={{ backgroundColor: `${sectionColor}15`, color: sectionColor }}
         >
           <IconComponent className="h-5 w-5" />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-foreground">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-sm font-semibold text-foreground tracking-tight">
               {getToolName(t, tool.id, tool.name)}
             </span>
             {sectionBadge}
             {tool.experimental && (
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-primary-subtle text-primary-ink font-medium">
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary-subtle text-primary-ink font-medium">
                 {t.common.experimental}
               </span>
             )}
             {betaBadge}
             {aiStatusIcon}
           </div>
-          <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
+          <p className="text-xs text-muted-foreground mt-1 line-clamp-1 leading-relaxed">
             {getToolDescription(t, tool.id, tool.description)}
           </p>
         </div>

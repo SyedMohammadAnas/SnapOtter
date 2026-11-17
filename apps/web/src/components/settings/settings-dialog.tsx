@@ -306,12 +306,15 @@ export function SettingsDialog({ open, onClose }: SettingsDialogProps) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="settings-dialog-title"
-        className="relative bg-background border border-border rounded-xl shadow-2xl w-full max-w-3xl h-[85dvh] flex overflow-hidden"
+        className="relative bg-background border border-border rounded-2xl shadow-2xl w-full max-w-3xl h-[85dvh] flex overflow-hidden ring-1 ring-foreground/10"
       >
         {/* Sidebar nav */}
-        <div className="w-48 border-r border-border bg-muted/30 p-3 space-y-1 shrink-0">
-          <div className="flex items-center justify-between mb-4 px-2">
-            <h2 id="settings-dialog-title" className="text-sm font-semibold text-foreground">
+        <div className="w-52 border-r border-border/80 bg-muted/40 p-3 space-y-1 shrink-0">
+          <div className="flex items-center justify-between mb-4 px-2 pt-1">
+            <h2
+              id="settings-dialog-title"
+              className="text-sm font-semibold tracking-tight text-foreground"
+            >
               {t.settings.heading}
             </h2>
           </div>
@@ -321,13 +324,13 @@ export function SettingsDialog({ open, onClose }: SettingsDialogProps) {
               type="button"
               onClick={() => setSection(item.id)}
               className={cn(
-                "flex items-center gap-2 w-full px-3 py-2 rounded-lg text-sm transition-colors",
+                "flex items-center gap-2.5 w-full px-3 py-2 rounded-xl text-xs font-medium transition-colors",
                 activeSection === item.id
-                  ? "bg-primary text-primary-foreground"
+                  ? "bg-primary text-primary-foreground font-semibold shadow-xs"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >
-              <item.icon className="h-4 w-4" />
+              <item.icon className="h-4 w-4 shrink-0" />
               {item.label}
             </button>
           ))}
