@@ -4831,6 +4831,9 @@ export const es: TranslationKeys = {
     },
     general: {
       heading: "General",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Preferencias del usuario y configuración de pantalla.",
       loading: "Cargando...",
       logOut: "Cerrar sesión",
@@ -5764,6 +5767,7 @@ export const es: TranslationKeys = {
     connectionError: "Error de conexión",
     fileTooLarge:
       "Este archivo es demasiado grande para subirlo. Prueba con un archivo más pequeño o pide al administrador del servidor que aumente el límite de subida.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} necesita la función "{feature}". Actívala en Configuración → Funciones de AI.',
     featureNotInstalled:

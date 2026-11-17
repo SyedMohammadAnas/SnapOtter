@@ -39,3 +39,31 @@ export async function reserveDailyCredit(userId: string, bytes: number): Promise
   `);
   return { allowed: rows.rows.length > 0, limit };
 }
+
+export interface DailyUsage {
+  files: number;
+  bytes: number;
+  limit: { files: number; bytes: number };
+  resetsAt: string;
+}
+
+/** Today's usage for an account (UTC day), without reserving anything. */
+export async function readDailyUsage(userId: string): Promise<DailyUsage> {
+  const limit = { files: FILE_LIMIT, bytes: BYTE_LIMIT };
+  const tomorrow = new Date();
+  tomorrow.setUTCHours(24, 0, 0, 0);
+  const resetsAt = tomorrow.toISOString();
+  if (!userId || userId === ANONYMOUS_USER_ID) return { files: 0, bytes: 0, limit, resetsAt };
+
+  const rows = await db.execute(sql`
+    SELECT files, bytes FROM daily_usage
+    WHERE user_id = ${userId} AND day = (now() at time zone 'utc')::date
+  `);
+  const row = rows.rows[0] as { files?: number; bytes?: string | number } | undefined;
+  return {
+    files: Number(row?.files ?? 0),
+    bytes: Number(row?.bytes ?? 0),
+    limit,
+    resetsAt,
+  };
+}

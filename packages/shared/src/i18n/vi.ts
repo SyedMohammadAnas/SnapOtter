@@ -4824,6 +4824,9 @@ export const vi: TranslationKeys = {
     },
     general: {
       heading: "Chung",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Tùy chọn người dùng và cài đặt hiển thị.",
       loading: "Đang tải...",
       logOut: "Đăng xuất",
@@ -5722,6 +5725,7 @@ export const vi: TranslationKeys = {
     connectionError: "Lỗi kết nối",
     fileTooLarge:
       "Tệp này quá lớn để tải lên. Hãy thử tệp nhỏ hơn hoặc nhờ quản trị viên máy chủ tăng giới hạn tải lên.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} cần tính năng "{feature}". Hãy bật trong Cài đặt → Tính năng AI.',
     featureNotInstalled:

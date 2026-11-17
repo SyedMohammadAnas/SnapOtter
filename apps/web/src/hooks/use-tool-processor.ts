@@ -1644,6 +1644,8 @@ export function useToolProcessor(toolId: string) {
             } catch {
               message = format(t.errors.processingFailedWithStatus, { status: xhr.status });
             }
+            // Daily allowance spent (engine 429 DAILY_LIMIT_REACHED): say so plainly.
+            if (code === "DAILY_LIMIT_REACHED") message = t.errors.dailyLimitReached;
             // Our API's 413 and a reverse proxy's (an HTML body-size page) mean
             // the same thing to the user, in their language (#1341).
             if (xhr.status === 413) message = t.errors.fileTooLarge;

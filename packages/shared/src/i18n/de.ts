@@ -4863,6 +4863,9 @@ export const de: TranslationKeys = {
     },
     general: {
       heading: "Allgemein",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Benutzereinstellungen und Anzeigeoptionen.",
       loading: "Wird geladen...",
       logOut: "Abmelden",
@@ -5807,6 +5810,7 @@ export const de: TranslationKeys = {
     connectionError: "Verbindungsfehler",
     fileTooLarge:
       "Diese Datei ist zu groß zum Hochladen. Versuchen Sie es mit einer kleineren Datei oder bitten Sie Ihren Server-Administrator, das Upload-Limit zu erhöhen.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       "{tool} benötigt die Funktion „{feature}“. Aktivieren Sie sie unter Einstellungen → AI-Funktionen.",
     featureNotInstalled:

@@ -4843,6 +4843,9 @@ export const it: TranslationKeys = {
     },
     general: {
       heading: "Generali",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Preferenze utente e impostazioni di visualizzazione.",
       loading: "Caricamento...",
       logOut: "Esci",
@@ -5765,6 +5768,7 @@ export const it: TranslationKeys = {
     connectionError: "Errore di connessione",
     fileTooLarge:
       "Questo file è troppo grande per essere caricato. Prova con un file più piccolo o chiedi all'amministratore del server di aumentare il limite di caricamento.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} richiede la funzionalità "{feature}". Attivala in Impostazioni → Funzionalità AI.',
     featureNotInstalled:

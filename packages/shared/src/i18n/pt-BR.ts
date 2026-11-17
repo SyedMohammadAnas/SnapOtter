@@ -4841,6 +4841,9 @@ export const ptBR: TranslationKeys = {
     },
     general: {
       heading: "Geral",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Preferências do usuário e configurações de exibição.",
       loading: "Carregando...",
       logOut: "Sair",
@@ -5765,6 +5768,7 @@ export const ptBR: TranslationKeys = {
     connectionError: "Erro de conexão",
     fileTooLarge:
       "Este arquivo é grande demais para ser enviado. Tente um arquivo menor ou peça ao administrador do servidor para aumentar o limite de envio.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} requer o recurso "{feature}". Ative-o em Configurações → Recursos de AI.',
     featureNotInstalled:

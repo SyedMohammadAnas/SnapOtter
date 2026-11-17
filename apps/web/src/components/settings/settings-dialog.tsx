@@ -507,6 +507,17 @@ export function GeneralSection() {
 
   const username = user?.username || "admin";
   const displayName = user?.email || username;
+
+  const [credits, setCredits] = useState<{
+    files: number;
+    bytes: number;
+    limit: { files: number; bytes: number };
+  } | null>(null);
+  useEffect(() => {
+    apiGet<{ files: number; bytes: number; limit: { files: number; bytes: number } }>("/v1/credits")
+      .then((data) => setCredits(data))
+      .catch(() => setCredits(null));
+  }, []);
   const role = user?.role || t.settings.general.roleUnknown;
 
   return (
@@ -551,6 +562,20 @@ export function GeneralSection() {
           </div>
         )}
       </div>
+
+      {credits && (
+        <div className="p-4 rounded-lg border border-border bg-muted/20 space-y-1">
+          <p className="text-sm font-medium text-foreground">{t.settings.general.creditsTitle}</p>
+          <p className="text-xs text-muted-foreground">
+            {format(t.settings.general.creditsSummary, {
+              files: String(credits.files),
+              fileLimit: String(credits.limit.files),
+              used: formatGiB(credits.bytes),
+              byteLimit: formatGiB(credits.limit.bytes),
+            })}
+          </p>
+        </div>
+      )}
 
       {/* Default view */}
       <SettingRow
@@ -4416,6 +4441,13 @@ function AboutSection() {
 }
 
 /* ────────────────────── Shared ────────────────────── */
+
+function formatGiB(bytes: number): string {
+  const gib = bytes / 1024 ** 3;
+  return gib >= 1
+    ? `${gib.toFixed(gib % 1 === 0 ? 0 : 2)} GB`
+    : `${Math.round(bytes / 1024 ** 2)} MB`;
+}
 
 /**
  * Stands in for a list or form whose data failed to load, so an empty list

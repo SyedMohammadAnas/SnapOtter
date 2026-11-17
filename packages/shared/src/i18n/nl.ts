@@ -4851,6 +4851,9 @@ export const nl: TranslationKeys = {
     },
     general: {
       heading: "Algemeen",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "Gebruikersvoorkeuren en weergave-instellingen.",
       loading: "Laden...",
       logOut: "Uitloggen",
@@ -5769,6 +5772,7 @@ export const nl: TranslationKeys = {
     connectionError: "Verbindingsfout",
     fileTooLarge:
       "Dit bestand is te groot om te uploaden. Probeer een kleiner bestand of vraag de serverbeheerder om de uploadlimiet te verhogen.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} heeft de functie "{feature}" nodig. Schakel deze in via Instellingen → AI-functies.',
     featureNotInstalled:

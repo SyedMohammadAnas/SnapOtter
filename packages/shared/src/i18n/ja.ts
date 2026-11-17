@@ -4786,6 +4786,9 @@ export const ja: TranslationKeys = {
     },
     general: {
       heading: "一般",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "ユーザー設定と表示設定。",
       loading: "読み込み中...",
       logOut: "ログアウト",
@@ -5698,6 +5701,7 @@ export const ja: TranslationKeys = {
     connectionError: "接続エラー",
     fileTooLarge:
       "このファイルは大きすぎるためアップロードできません。より小さいファイルを試すか、サーバー管理者にアップロード上限の引き上げを依頼してください。",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       "{tool}には「{feature}」機能が必要です。設定 → AI機能で有効にしてください。",
     featureNotInstalled:

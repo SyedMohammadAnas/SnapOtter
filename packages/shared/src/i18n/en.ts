@@ -4767,6 +4767,9 @@ export const en = {
     },
     general: {
       heading: "General",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "User preferences and display settings.",
       loading: "Loading...",
       logOut: "Log out",
@@ -5652,6 +5655,7 @@ export const en = {
     connectionError: "Connection error",
     fileTooLarge:
       "This file is too large to upload. Try a smaller file, or ask your server admin to raise the upload limit.",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} requires the "{feature}" feature. Enable it in Settings → AI Features.',
     featureNotInstalled:

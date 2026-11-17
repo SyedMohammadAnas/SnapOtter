@@ -84,6 +84,7 @@ import { apiKeyRoutes } from "./routes/api-keys.js";
 import { auditLogRoutes } from "./routes/audit-log.js";
 import { registerBatchRoutes } from "./routes/batch.js";
 import { configRoutes } from "./routes/config.js";
+import { creditsRoutes } from "./routes/credits.js";
 import { docsRoutes } from "./routes/docs.js";
 import { registerEnterpriseRoutes } from "./routes/enterprise/index.js";
 import { registerFeatureRoutes } from "./routes/features.js";
@@ -471,6 +472,7 @@ await configRoutes(app);
 
 // Per-user preferences (any authenticated user)
 await preferencesRoutes(app);
+await creditsRoutes(app);
 
 // Auth middleware (must be registered before routes it protects)
 await authMiddleware(app);

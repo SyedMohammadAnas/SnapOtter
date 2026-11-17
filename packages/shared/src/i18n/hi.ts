@@ -4628,6 +4628,9 @@ export const hi: TranslationKeys = {
     },
     general: {
       heading: "सामान्य",
+      creditsTitle: "Daily allowance",
+      creditsSummary:
+        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
       description: "उपयोगकर्ता प्राथमिकताएं और प्रदर्शन सेटिंग्स।",
       loading: "लोड हो रहा है...",
       logOut: "लॉग आउट",
@@ -5512,6 +5515,7 @@ export const hi: TranslationKeys = {
     connectionError: "कनेक्शन त्रुटि",
     fileTooLarge:
       "यह फ़ाइल अपलोड करने के लिए बहुत बड़ी है। छोटी फ़ाइल आज़माएँ या अपने सर्वर एडमिन से अपलोड सीमा बढ़ाने के लिए कहें।",
+    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
     featureNotInstalledForTool:
       '{tool} के लिए "{feature}" फीचर ज़रूरी है। इसे सेटिंग्स → AI फीचर्स में सक्रिय करें।',
     featureNotInstalled: '"{feature}" फीचर इंस्टॉल नहीं है। इसे सेटिंग्स → AI फीचर्स में सक्रिय करें।',
