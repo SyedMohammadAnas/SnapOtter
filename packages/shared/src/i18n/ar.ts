@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const ar: TranslationKeys = {
   migrationBanner: {
-    successTitle: "تم استيراد بيانات SnapOtter 1.x.",
+    successTitle: "تم استيراد بيانات Konvertt 1.x.",
     successBody: "تم نقل {users} مستخدمين و {files} ملفات محفوظة من إصدارك السابق.",
     warningTitle: "تم العثور على قاعدة بيانات 1.x ولكن لم يتم استيرادها.",
     warningBody:
@@ -59,11 +59,11 @@ export const ar: TranslationKeys = {
     adminDialogTitle: "كيف كان الإعداد؟",
     closeLabel: "إغلاق نافذة الملاحظات",
     privacyNote:
-      "لا تُرسَل الملاحظات إلا عندما ترسلها بنفسك. ولا يُرسِل SnapOtter ملفاتك أو محتوياتها أو أسماءها أو مخرجاتك الخاصة.",
+      "لا تُرسَل الملاحظات إلا عندما ترسلها بنفسك. ولا يُرسِل Konvertt ملفاتك أو محتوياتها أو أسماءها أو مخرجاتك الخاصة.",
     typeLabel: "نوع الملاحظة",
     sentimentLabel: "تقييم سريع",
     messageLabel: "ملاحظات",
-    messagePlaceholder: "أخبرنا بما نجح وما تعطّل وما الذي قد يجعل SnapOtter أفضل.",
+    messagePlaceholder: "أخبرنا بما نجح وما تعطّل وما الذي قد يجعل Konvertt أفضل.",
     improveFirstLabel: "ما الذي ينبغي أن نحسّنه أولًا؟",
     improveFirstPlaceholder: "أخبرنا بما جعل الإعداد أصعب مما ينبغي.",
     contactOkLabel: "يمكنكم التواصل معي بخصوص هذه الملاحظة.",
@@ -77,16 +77,16 @@ export const ar: TranslationKeys = {
     searchMissContext: "لقد بحثت عن: {query}",
     searchMissDiscussionsFallback: "تعذّر تسجيل ذلك. افتح طلبًا في Discussions.",
     offlineDescription:
-      "التحليلات معطّلة في هذا المثيل، لذلك لا تُسجَّل الملاحظات هنا. لا يزال بإمكانك التواصل مباشرةً مع فريق SnapOtter.",
+      "التحليلات معطّلة في هذا المثيل، لذلك لا تُسجَّل الملاحظات هنا. لا يزال بإمكانك التواصل مباشرةً مع فريق Konvertt.",
     offlinePublicNote: "مشكلات GitHub علنية.",
     offlineGithubButton: "افتح مشكلة على GitHub",
     offlineEmailButton: "راسلنا",
     thanksTitle: "شكرًا على ملاحظاتك.",
-    thanksDescription: "تساعدنا ملاحظاتك على تحسين SnapOtter دون جمع الملفات أو المحتوى الخاص.",
+    thanksDescription: "تساعدنا ملاحظاتك على تحسين Konvertt دون جمع الملفات أو المحتوى الخاص.",
     quickThanks: "شكرًا على ملاحظتك.",
     reportIssue: "الإبلاغ عن مشكلة",
     toolPromptTitle: "كيف كان أداء هذه الأداة؟",
-    toolPromptDescription: "ملاحظة سريعة واحدة تساعدنا على تحسين SnapOtter.",
+    toolPromptDescription: "ملاحظة سريعة واحدة تساعدنا على تحسين Konvertt.",
     dismissPrompt: "تجاهل طلب الملاحظات",
     workedWell: "عملت بشكل جيد",
     dontAskAgain: "عدم السؤال مرة أخرى",
@@ -170,7 +170,7 @@ export const ar: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "كيف تستخدم SnapOtter؟",
+    usageSurveyTitle: "كيف تستخدم Konvertt؟",
     priorToolLabel: "ماذا كنت تستخدم من قبل؟",
     selfHostMotivationLabel: "لماذا الاستضافة الذاتية؟",
     discoverySourceLabel: "كيف سمعت عنا؟",
@@ -2774,7 +2774,7 @@ export const ar: TranslationKeys = {
       mosaic: "فسيفساء",
       uploadingImages: "جاري رفع الصور...",
       processingCollage: "جاري معالجة الصورة المجمّعة...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "الخلفية",
       format: "الصيغة",
       uploadImagesForCollage: "رفع صور للصورة المجمّعة",
@@ -4161,7 +4161,7 @@ export const ar: TranslationKeys = {
     pdf: "PDF",
     files: "الملفات",
     toolCount: "{count} أداة",
-    heading: "أدوات SnapOtter",
+    heading: "أدوات Konvertt",
   },
   fullscreenGrid: {
     searchPlaceholder: "البحث في الأدوات...",
@@ -4295,7 +4295,7 @@ export const ar: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "العودة إلى SnapOtter",
+      backTitle: "العودة إلى Konvertt",
     },
     welcome: {
       ariaLabel: "منطقة إسقاط الصور",
@@ -4718,7 +4718,7 @@ export const ar: TranslationKeys = {
         tooLarge: "هذا التصدير أكبر من أن يعرضه المتصفح. جرّب أبعادًا أصغر.",
         saveProject: "حفظ المشروع",
         loadProject: "تحميل المشروع",
-        invalidProject: "هذا الملف ليس مشروع SnapOtter صالحًا.",
+        invalidProject: "هذا الملف ليس مشروع Konvertt صالحًا.",
       },
       autosaveRecovery: {
         message: "تم استرجاع عمل غير محفوظ من {time}.",
@@ -4807,7 +4807,7 @@ export const ar: TranslationKeys = {
       sidebarOption: "الشريط الجانبي",
       fullscreenGridOption: "شبكة ملء الشاشة",
       appVersionLabel: "إصدار التطبيق",
-      appVersionDescription: "الإصدار الحالي من SnapOtter",
+      appVersionDescription: "الإصدار الحالي من Konvertt",
       saveButton: "حفظ الإعدادات",
       saveSuccess: "تم حفظ الإعدادات.",
       saveFailed: "فشل حفظ الإعدادات.",
@@ -4862,7 +4862,7 @@ export const ar: TranslationKeys = {
     privacy: {
       title: "الخصوصية",
       description:
-        "تساعد تحليلات المنتج المجهولة في تحسين SnapOtter. وهي مفعّلة افتراضيًا ويضبطها المسؤول لكامل النسخة.",
+        "تساعد تحليلات المنتج المجهولة في تحسين Konvertt. وهي مفعّلة افتراضيًا ويضبطها المسؤول لكامل النسخة.",
       analyticsLabel: "تحليلات المنتج المجهولة",
       analyticsDescription:
         "شارك بيانات استخدام مجهولة (الأدوات التي تعمل، ومدد التشغيل، ورموز الأخطاء) وتقارير الأعطال. بلا عنوان IP وبلا هوية حساب. لا نجمع أبدًا أسماء ملفاتك أو محتوى الملفات أو مخرجات OCR أو البيانات الوصفية للصور أو نص المستندات. أوقف هذا الخيار لإيقاف كل ذلك.",
@@ -5129,7 +5129,7 @@ export const ar: TranslationKeys = {
     },
     apiKeys: {
       heading: "مفاتيح API",
-      description: "إدارة مفاتيح API للوصول البرمجي إلى SnapOtter.",
+      description: "إدارة مفاتيح API للوصول البرمجي إلى Konvertt.",
       keyNamePlaceholder: "اسم المفتاح (اختياري)",
       generateButton: "إنشاء مفتاح API",
       removeScopingLabel: "إزالة تحديد الصلاحيات",
@@ -5223,7 +5223,7 @@ export const ar: TranslationKeys = {
     },
     about: {
       heading: "حول",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "مجموعة أدوات معالجة ملفات ذاتية الاستضافة تركز على الخصوصية مع 200+ أداة. تحويل وضغط وتحرير ونسخ صوتي وتعرّف ضوئي وأتمتة سير عمل الصور والفيديو والصوت وPDF والملفات دون إرسال البيانات إلى السحابة.",
       versionLabel: "الإصدار:",
@@ -5241,7 +5241,7 @@ export const ar: TranslationKeys = {
     logout: "تسجيل الخروج",
     logoutFailed: "تعذّر تسجيل خروجك. حاول مرة أخرى.",
     idpLogoutFailed:
-      "تم تسجيل خروجك من SnapOtter، لكن قد تظل جلستك لدى مزود SSO مفتوحة. سجّل الخروج من هناك أيضًا.",
+      "تم تسجيل خروجك من Konvertt، لكن قد تظل جلستك لدى مزود SSO مفتوحة. سجّل الخروج من هناك أيضًا.",
     username: "اسم المستخدم",
     password: "كلمة المرور",
     loginButton: "تسجيل الدخول",
@@ -5347,8 +5347,8 @@ export const ar: TranslationKeys = {
   },
   automate: {
     title: "أتمتة",
-    invalidPipelineFile: "ليس ملف Pipeline صالحًا لـ SnapOtter",
-    newerVersion: "تم إنشاء هذا الـ Pipeline بإصدار أحدث من SnapOtter",
+    invalidPipelineFile: "ليس ملف Pipeline صالحًا لـ Konvertt",
+    newerVersion: "تم إنشاء هذا الـ Pipeline بإصدار أحدث من Konvertt",
     missingName: "ملف Pipeline يفتقد للاسم",
     noSteps: "ملف Pipeline لا يحتوي على خطوات",
     importFailed: "فشل الاستيراد",
@@ -5582,7 +5582,7 @@ export const ar: TranslationKeys = {
       docsLink: "التوثيق",
       apiRefLink: "مرجع API (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "خطأ في الشبكة",
@@ -5774,14 +5774,14 @@ export const ar: TranslationKeys = {
       bundlesQueued: "{count} في الانتظار",
     },
     updateNotice: {
-      available: "يتوفر SnapOtter {version}. أنت تستخدم الإصدار {current}.",
+      available: "يتوفر Konvertt {version}. أنت تستخدم الإصدار {current}.",
       whatsNew: "ما الجديد",
       dismiss: "إغلاق إشعار التحديث",
     },
   },
   a11y: {
     comparisonScroller: "عارض المقارنة",
-    sponsorLink: "ادعم SnapOtter على GitHub Sponsors",
+    sponsorLink: "ادعم Konvertt على GitHub Sponsors",
     skipToContent: "تخطي إلى المحتوى الرئيسي",
     openSidebar: "فتح الشريط الجانبي",
     closeSidebar: "إغلاق الشريط الجانبي",
@@ -5845,7 +5845,7 @@ export const ar: TranslationKeys = {
     settingsDialog: "الإعدادات",
     helpDialog: "المساعدة",
     navigationMenu: "التنقل",
-    homeLink: "الصفحة الرئيسية لـ SnapOtter",
+    homeLink: "الصفحة الرئيسية لـ Konvertt",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5956,17 +5956,17 @@ export const ar: TranslationKeys = {
     lastUpdated: "آخر تحديث: 24 يونيو 2026",
     overview: {
       heading: "نظرة عامة",
-      body: "SnapOtter تطبيق مفتوح المصدر لمعالجة الملفات يعمل بالاستضافة الذاتية. المثيل الخاص بك يشغّله ويتحكم فيه بالكامل من نشره. وتوضّح هذه السياسة كيف يتعامل البرنامج نفسه مع بياناتك.",
+      body: "Konvertt تطبيق مفتوح المصدر لمعالجة الملفات يعمل بالاستضافة الذاتية. المثيل الخاص بك يشغّله ويتحكم فيه بالكامل من نشره. وتوضّح هذه السياسة كيف يتعامل البرنامج نفسه مع بياناتك.",
     },
     localProcessing: {
       heading: "المعالجة المحلية",
-      body: "تجري معالجة الملفات بالكامل على الخادم الذي نُشر عليه SnapOtter. ولا تُرسَل ملفاتك أبدًا إلى خدمات خارجية أو واجهات برمجة تابعة لجهات أخرى. وعندما ترفع ملفًا للمعالجة، يُعالَج في الذاكرة أو في تخزين مؤقت على الجهاز المضيف، ولا يُحتفظ به بعد انتهاء العملية.",
+      body: "تجري معالجة الملفات بالكامل على الخادم الذي نُشر عليه Konvertt. ولا تُرسَل ملفاتك أبدًا إلى خدمات خارجية أو واجهات برمجة تابعة لجهات أخرى. وعندما ترفع ملفًا للمعالجة، يُعالَج في الذاكرة أو في تخزين مؤقت على الجهاز المضيف، ولا يُحتفظ به بعد انتهاء العملية.",
     },
     analytics: {
       heading: "التحليلات",
-      body: "يتضمن SnapOtter تحليلات أساسية (استخدام الأدوات وتقارير الأخطاء) للمساعدة في تحسين البرنامج. ولا تشمل هذه التحليلات ملفاتك ولا أسماء ملفاتك ولا بياناتك الشخصية. التحليلات مفعّلة افتراضيًا ويمكن تعطيلها أثناء التشغيل. يستطيع المسؤول إيقاف تحليلات المنتج المجهولة من الإعدادات > النظام > {privacy}، دون الحاجة إلى إعادة تشغيل أو إعادة بناء. وللإيقاف التام عند البناء، ابنِ باستخدام {code}، فيُزال من الحزمة كليًا. ويعمل كل شيء بشكل طبيعي بدونه.",
+      body: "يتضمن Konvertt تحليلات أساسية (استخدام الأدوات وتقارير الأخطاء) للمساعدة في تحسين البرنامج. ولا تشمل هذه التحليلات ملفاتك ولا أسماء ملفاتك ولا بياناتك الشخصية. التحليلات مفعّلة افتراضيًا ويمكن تعطيلها أثناء التشغيل. يستطيع المسؤول إيقاف تحليلات المنتج المجهولة من الإعدادات > النظام > {privacy}، دون الحاجة إلى إعادة تشغيل أو إعادة بناء. وللإيقاف التام عند البناء، ابنِ باستخدام {code}، فيُزال من الحزمة كليًا. ويعمل كل شيء بشكل طبيعي بدونه.",
       feedbackBody:
-        "يتضمن SnapOtter أيضًا طلبات ملاحظات اختيارية. لا تُرسَل الملاحظات إلا عندما ترسلها بنفسك، وفقط عندما تكون التحليلات مفعّلة. وتذهب أحداث الملاحظات إلى PostHog باسم {code}. ولا يُرسَل اسم جهة الاتصال والبريد الإلكتروني والشركة إلا إذا فعّلت خانة الإذن بالتواصل. ولا يُرفق SnapOtter بالملاحظات أي ملفات أو أسماء ملفات أو مسارات رفع أو مخرجات OCR والنسخ الصوتي أو نصوص مستندات خاصة أو سجلات أخطاء خام.",
+        "يتضمن Konvertt أيضًا طلبات ملاحظات اختيارية. لا تُرسَل الملاحظات إلا عندما ترسلها بنفسك، وفقط عندما تكون التحليلات مفعّلة. وتذهب أحداث الملاحظات إلى PostHog باسم {code}. ولا يُرسَل اسم جهة الاتصال والبريد الإلكتروني والشركة إلا إذا فعّلت خانة الإذن بالتواصل. ولا يُرفق Konvertt بالملاحظات أي ملفات أو أسماء ملفات أو مسارات رفع أو مخرجات OCR والنسخ الصوتي أو نصوص مستندات خاصة أو سجلات أخطاء خام.",
     },
     dataStorage: {
       heading: "تخزين البيانات",
@@ -5978,11 +5978,11 @@ export const ar: TranslationKeys = {
     },
     openSource: {
       heading: "مفتوح المصدر",
-      body: "SnapOtter مفتوح المصدر بالكامل. يمكنك تدقيق الشيفرة المصدرية للتحقق من هذا في أي وقت. الشفافية مبدأ أساسي في هذا المشروع.",
+      body: "Konvertt مفتوح المصدر بالكامل. يمكنك تدقيق الشيفرة المصدرية للتحقق من هذا في أي وقت. الشفافية مبدأ أساسي في هذا المشروع.",
     },
     yourControl: {
       heading: "تحكّمك",
-      body: "لأن SnapOtter يعمل بالاستضافة الذاتية، يملك مشغّل المثيل تحكمًا كاملًا في جميع البيانات. يمكنك حذف بياناتك في أي وقت بإزالة الملفات من الخادم أو بحذف قاعدة البيانات. ولا توجد أي بيانات خارج بنيتك التحتية.",
+      body: "لأن Konvertt يعمل بالاستضافة الذاتية، يملك مشغّل المثيل تحكمًا كاملًا في جميع البيانات. يمكنك حذف بياناتك في أي وقت بإزالة الملفات من الخادم أو بحذف قاعدة البيانات. ولا توجد أي بيانات خارج بنيتك التحتية.",
     },
   },
 } as const;

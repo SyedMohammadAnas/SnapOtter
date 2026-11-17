@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const de: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x-Daten importiert.",
+    successTitle: "Konvertt 1.x-Daten importiert.",
     successBody:
       "{users} Benutzer und {files} gespeicherte Dateien aus deiner vorherigen Version übernommen.",
     warningTitle: "1.x-Datenbank gefunden, aber nicht importiert.",
@@ -60,12 +60,12 @@ export const de: TranslationKeys = {
     adminDialogTitle: "Wie lief die Einrichtung?",
     closeLabel: "Feedback-Dialog schließen",
     privacyNote:
-      "Feedback wird nur gesendet, wenn du es absendest. SnapOtter überträgt dabei keine Dateien, Dateiinhalte, Dateinamen oder privaten Ergebnisse.",
+      "Feedback wird nur gesendet, wenn du es absendest. Konvertt überträgt dabei keine Dateien, Dateiinhalte, Dateinamen oder privaten Ergebnisse.",
     typeLabel: "Art des Feedbacks",
     sentimentLabel: "Schnellbewertung",
     messageLabel: "Feedback",
     messagePlaceholder:
-      "Sag uns, was gut lief, was nicht funktioniert hat oder was SnapOtter besser machen würde.",
+      "Sag uns, was gut lief, was nicht funktioniert hat oder was Konvertt besser machen würde.",
     improveFirstLabel: "Was sollten wir zuerst verbessern?",
     improveFirstPlaceholder: "Sag uns, was die Einrichtung schwieriger gemacht hat als nötig.",
     contactOkLabel: "Ihr dürft mich zu diesem Feedback kontaktieren.",
@@ -80,17 +80,17 @@ export const de: TranslationKeys = {
     searchMissDiscussionsFallback:
       "Das konnten wir nicht speichern. Stelle eine Anfrage in Discussions.",
     offlineDescription:
-      "Für diese Instanz ist die Analyse deaktiviert, daher wird Feedback hier nicht erfasst. Du kannst das SnapOtter-Team weiterhin direkt erreichen.",
+      "Für diese Instanz ist die Analyse deaktiviert, daher wird Feedback hier nicht erfasst. Du kannst das Konvertt-Team weiterhin direkt erreichen.",
     offlinePublicNote: "GitHub-Issues sind öffentlich.",
     offlineGithubButton: "Ein GitHub-Issue öffnen",
     offlineEmailButton: "Schreib uns",
     thanksTitle: "Danke für dein Feedback.",
     thanksDescription:
-      "Es hilft uns, SnapOtter zu verbessern, ohne Dateien oder private Inhalte zu erfassen.",
+      "Es hilft uns, Konvertt zu verbessern, ohne Dateien oder private Inhalte zu erfassen.",
     quickThanks: "Danke für die Rückmeldung.",
     reportIssue: "Problem melden",
     toolPromptTitle: "Wie hat dieses Tool funktioniert?",
-    toolPromptDescription: "Eine kurze Rückmeldung hilft uns, SnapOtter zu verbessern.",
+    toolPromptDescription: "Eine kurze Rückmeldung hilft uns, Konvertt zu verbessern.",
     dismissPrompt: "Feedback-Hinweis ausblenden",
     workedWell: "Hat gut funktioniert",
     dontAskAgain: "Nicht mehr fragen",
@@ -174,7 +174,7 @@ export const de: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Wie nutzt du SnapOtter?",
+    usageSurveyTitle: "Wie nutzt du Konvertt?",
     priorToolLabel: "Was hast du vorher verwendet?",
     selfHostMotivationLabel: "Warum selbst hosten?",
     discoverySourceLabel: "Wie hast du von uns erfahren?",
@@ -2820,7 +2820,7 @@ export const de: TranslationKeys = {
       mosaic: "Mosaik",
       uploadingImages: "Bilder werden hochgeladen...",
       processingCollage: "Collage wird verarbeitet...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Hintergrund",
       format: "Format",
       uploadImagesForCollage: "Bilder für die Collage hochladen",
@@ -4220,7 +4220,7 @@ export const de: TranslationKeys = {
     pdf: "PDF",
     files: "Dateien",
     toolCount: "{count} Werkzeuge",
-    heading: "SnapOtter Werkzeuge",
+    heading: "Konvertt Werkzeuge",
   },
   fullscreenGrid: {
     searchPlaceholder: "Werkzeuge suchen...",
@@ -4354,7 +4354,7 @@ export const de: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Zurück zu SnapOtter",
+      backTitle: "Zurück zu Konvertt",
     },
     welcome: {
       ariaLabel: "Bild-Ablagezone",
@@ -4781,7 +4781,7 @@ export const de: TranslationKeys = {
           "Dieser Export ist zu groß, als dass der Browser ihn darstellen könnte. Kleinere Abmessungen könnten helfen.",
         saveProject: "Projekt speichern",
         loadProject: "Projekt laden",
-        invalidProject: "Diese Datei ist kein gültiges SnapOtter-Projekt.",
+        invalidProject: "Diese Datei ist kein gültiges Konvertt-Projekt.",
       },
       autosaveRecovery: {
         message: "Nicht gespeicherte Arbeit von {time} wiederhergestellt.",
@@ -4871,7 +4871,7 @@ export const de: TranslationKeys = {
       sidebarOption: "Seitenleiste",
       fullscreenGridOption: "Vollbild-Raster",
       appVersionLabel: "App-Version",
-      appVersionDescription: "Aktuelle Version von SnapOtter",
+      appVersionDescription: "Aktuelle Version von Konvertt",
       saveButton: "Einstellungen speichern",
       saveSuccess: "Einstellungen gespeichert.",
       saveFailed: "Einstellungen konnten nicht gespeichert werden.",
@@ -4927,7 +4927,7 @@ export const de: TranslationKeys = {
     privacy: {
       title: "Datenschutz",
       description:
-        "Anonyme Produktanalysen helfen, SnapOtter zu verbessern. Sie sind standardmäßig aktiviert und werden von einem Administrator für die gesamte Instanz festgelegt.",
+        "Anonyme Produktanalysen helfen, Konvertt zu verbessern. Sie sind standardmäßig aktiviert und werden von einem Administrator für die gesamte Instanz festgelegt.",
       analyticsLabel: "Anonyme Produktanalysen",
       analyticsDescription:
         "Teilen Sie anonyme Nutzungsdaten (welche Tools ausgeführt werden, Dauer, Fehlercodes) und Absturzberichte. Keine IP-Adresse, keine Kontoidentität. Wir erfassen niemals Ihre Dateinamen, Dateiinhalte, OCR-Ausgaben, Bildmetadaten oder Dokumenttexte. Schalten Sie dies aus, um alles davon zu beenden.",
@@ -5208,7 +5208,7 @@ export const de: TranslationKeys = {
     },
     apiKeys: {
       heading: "API-Schlüssel",
-      description: "API-Schlüssel für programmatischen Zugriff auf SnapOtter verwalten.",
+      description: "API-Schlüssel für programmatischen Zugriff auf Konvertt verwalten.",
       keyNamePlaceholder: "Schlüsselname (optional)",
       generateButton: "API-Schlüssel generieren",
       removeScopingLabel: "Berechtigungsbeschränkung entfernen",
@@ -5311,7 +5311,7 @@ export const de: TranslationKeys = {
     },
     about: {
       heading: "Info",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Eine selbst gehostete, datenschutzorientierte Dateiverarbeitungssuite mit 200+ Werkzeugen. Konvertieren, komprimieren, bearbeiten, transkribieren, OCR und Bild-, Video-, Audio-, PDF- und Dateiabläufe automatisieren, ohne Daten in die Cloud zu senden.",
       versionLabel: "Version:",
@@ -5329,7 +5329,7 @@ export const de: TranslationKeys = {
     logout: "Abmelden",
     logoutFailed: "Abmeldung fehlgeschlagen. Bitte erneut versuchen.",
     idpLogoutFailed:
-      "Sie wurden bei SnapOtter abgemeldet, Ihre Sitzung beim SSO-Anbieter ist aber möglicherweise noch aktiv. Melden Sie sich auch dort ab.",
+      "Sie wurden bei Konvertt abgemeldet, Ihre Sitzung beim SSO-Anbieter ist aber möglicherweise noch aktiv. Melden Sie sich auch dort ab.",
     username: "Benutzername",
     password: "Passwort",
     loginButton: "Anmelden",
@@ -5444,8 +5444,8 @@ export const de: TranslationKeys = {
   },
   automate: {
     title: "Automatisieren",
-    invalidPipelineFile: "Keine gültige SnapOtter-Pipeline-Datei",
-    newerVersion: "Diese Pipeline wurde mit einer neueren Version von SnapOtter erstellt",
+    invalidPipelineFile: "Keine gültige Konvertt-Pipeline-Datei",
+    newerVersion: "Diese Pipeline wurde mit einer neueren Version von Konvertt erstellt",
     missingName: "Pipeline-Datei hat keinen Namen",
     noSteps: "Pipeline-Datei hat keine Schritte",
     importFailed: "Import fehlgeschlagen",
@@ -5684,7 +5684,7 @@ export const de: TranslationKeys = {
       docsLink: "Dokumentation",
       apiRefLink: "API-Referenz (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Netzwerkfehler",
@@ -5907,14 +5907,14 @@ export const de: TranslationKeys = {
       bundlesQueued: "{count} in Warteschlange",
     },
     updateNotice: {
-      available: "SnapOtter {version} ist verfügbar. Du nutzt {current}.",
+      available: "Konvertt {version} ist verfügbar. Du nutzt {current}.",
       whatsNew: "Neuerungen ansehen",
       dismiss: "Update-Hinweis schließen",
     },
   },
   a11y: {
     comparisonScroller: "Vergleichsansicht",
-    sponsorLink: "SnapOtter auf GitHub Sponsors unterstützen",
+    sponsorLink: "Konvertt auf GitHub Sponsors unterstützen",
     skipToContent: "Zum Hauptinhalt springen",
     openSidebar: "Seitenleiste öffnen",
     closeSidebar: "Seitenleiste schließen",
@@ -5978,7 +5978,7 @@ export const de: TranslationKeys = {
     settingsDialog: "Einstellungen",
     helpDialog: "Hilfe",
     navigationMenu: "Navigation",
-    homeLink: "SnapOtter Startseite",
+    homeLink: "Konvertt Startseite",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6093,17 +6093,17 @@ export const de: TranslationKeys = {
     lastUpdated: "Zuletzt aktualisiert: 24. Juni 2026",
     overview: {
       heading: "Überblick",
-      body: "SnapOtter ist eine selbst gehostete Open-Source-Anwendung zur Dateiverarbeitung. Ihre Instanz wird vollständig von der Person betrieben und kontrolliert, die sie bereitgestellt hat. Diese Erklärung beschreibt, wie die Software selbst mit Ihren Daten umgeht.",
+      body: "Konvertt ist eine selbst gehostete Open-Source-Anwendung zur Dateiverarbeitung. Ihre Instanz wird vollständig von der Person betrieben und kontrolliert, die sie bereitgestellt hat. Diese Erklärung beschreibt, wie die Software selbst mit Ihren Daten umgeht.",
     },
     localProcessing: {
       heading: "Lokale Verarbeitung",
-      body: "Die gesamte Dateiverarbeitung findet ausschließlich auf dem Server statt, auf dem SnapOtter läuft. Ihre Dateien werden nie an externe Dienste oder Schnittstellen Dritter gesendet. Wenn Sie eine Datei zur Verarbeitung hochladen, wird sie im Arbeitsspeicher oder in einem temporären Speicher auf dem Host verarbeitet und nach Abschluss des Vorgangs nicht aufbewahrt.",
+      body: "Die gesamte Dateiverarbeitung findet ausschließlich auf dem Server statt, auf dem Konvertt läuft. Ihre Dateien werden nie an externe Dienste oder Schnittstellen Dritter gesendet. Wenn Sie eine Datei zur Verarbeitung hochladen, wird sie im Arbeitsspeicher oder in einem temporären Speicher auf dem Host verarbeitet und nach Abschluss des Vorgangs nicht aufbewahrt.",
     },
     analytics: {
       heading: "Analyse",
-      body: "SnapOtter enthält eine einfache Analyse (Werkzeugnutzung, Fehlerberichte), um die Software zu verbessern. Ihre Dateien, Dateinamen und persönlichen Daten sind davon nie betroffen. Die Analyse ist standardmäßig aktiviert und lässt sich zur Laufzeit abschalten. Ein Administrator kann anonyme Produktanalysen unter Einstellungen > System > {privacy} deaktivieren, ohne Neustart und ohne neuen Build. Wer sie schon beim Bauen hart abschalten will, baut mit {code}; damit fällt sie komplett aus dem Bundle. Alles andere funktioniert auch ohne sie ganz normal.",
+      body: "Konvertt enthält eine einfache Analyse (Werkzeugnutzung, Fehlerberichte), um die Software zu verbessern. Ihre Dateien, Dateinamen und persönlichen Daten sind davon nie betroffen. Die Analyse ist standardmäßig aktiviert und lässt sich zur Laufzeit abschalten. Ein Administrator kann anonyme Produktanalysen unter Einstellungen > System > {privacy} deaktivieren, ohne Neustart und ohne neuen Build. Wer sie schon beim Bauen hart abschalten will, baut mit {code}; damit fällt sie komplett aus dem Bundle. Alles andere funktioniert auch ohne sie ganz normal.",
       feedbackBody:
-        "SnapOtter blendet außerdem optionale Feedback-Hinweise ein. Feedback wird nur gesendet, wenn Sie es absenden, und nur solange die Analyse aktiviert ist. Feedback-Ereignisse gehen als {code} an PostHog. Name, E-Mail und Firma werden nur übertragen, wenn Sie das Kontakt-Häkchen setzen. SnapOtter hängt keine Dateien, Dateinamen, Upload-Pfade, OCR- und Transkriptionsergebnisse, privaten Dokumenttexte oder rohen Fehlerprotokolle an Feedback an.",
+        "Konvertt blendet außerdem optionale Feedback-Hinweise ein. Feedback wird nur gesendet, wenn Sie es absenden, und nur solange die Analyse aktiviert ist. Feedback-Ereignisse gehen als {code} an PostHog. Name, E-Mail und Firma werden nur übertragen, wenn Sie das Kontakt-Häkchen setzen. Konvertt hängt keine Dateien, Dateinamen, Upload-Pfade, OCR- und Transkriptionsergebnisse, privaten Dokumenttexte oder rohen Fehlerprotokolle an Feedback an.",
     },
     dataStorage: {
       heading: "Datenspeicherung",
@@ -6115,11 +6115,11 @@ export const de: TranslationKeys = {
     },
     openSource: {
       heading: "Open Source",
-      body: "SnapOtter ist vollständig Open Source. Sie können den Quellcode jederzeit prüfen und diese Aussagen selbst nachvollziehen. Transparenz ist ein Grundprinzip dieses Projekts.",
+      body: "Konvertt ist vollständig Open Source. Sie können den Quellcode jederzeit prüfen und diese Aussagen selbst nachvollziehen. Transparenz ist ein Grundprinzip dieses Projekts.",
     },
     yourControl: {
       heading: "Ihre Kontrolle",
-      body: "Da SnapOtter selbst gehostet wird, hat der Instanzbetreiber die volle Kontrolle über alle Daten. Sie können Ihre Daten jederzeit löschen, indem Sie Dateien vom Server entfernen oder die Datenbank löschen. Außerhalb Ihrer eigenen Infrastruktur existieren keine Daten.",
+      body: "Da Konvertt selbst gehostet wird, hat der Instanzbetreiber die volle Kontrolle über alle Daten. Sie können Ihre Daten jederzeit löschen, indem Sie Dateien vom Server entfernen oder die Datenbank löschen. Außerhalb Ihrer eigenen Infrastruktur existieren keine Daten.",
     },
   },
 } as const;

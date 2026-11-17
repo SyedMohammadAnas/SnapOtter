@@ -14,7 +14,6 @@ import { isIgnoredError } from "@/lib/sentry-scrub";
 import { cn } from "@/lib/utils";
 import { useFileStore } from "@/stores/file-store";
 import { type SaveFailure, useSaveToFilesStore } from "@/stores/save-to-files-store";
-import { ToolFeedbackPrompt } from "../feedback/tool-feedback-prompt";
 
 /** Tools whose primary output is text/data, not a downloadable file. */
 const DATA_OUTPUT_TOOLS = new Set([
@@ -341,16 +340,6 @@ export function ReviewPanel({
           </button>
         </div>
       )}
-
-      <ToolFeedbackPrompt
-        toolId={currentToolId}
-        jobStatus={hasBatchStats && failedCount > 0 ? "failed" : "completed"}
-        errorCategory={
-          hasBatchStats && failedCount > 0
-            ? classifyFeedbackError(t.toolPage.batchPartialSuccess)
-            : undefined
-        }
-      />
 
       {/* Edit settings / New file -- side by side */}
       <div className="grid grid-cols-2 gap-2">

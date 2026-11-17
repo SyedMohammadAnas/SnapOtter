@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const ja: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x のデータをインポートしました。",
+    successTitle: "Konvertt 1.x のデータをインポートしました。",
     successBody:
       "以前のバージョンから {users} 人のユーザーと {files} 件の保存済みファイルを移行しました。",
     warningTitle: "1.x データベースが見つかりましたが、インポートされていません。",
@@ -60,12 +60,12 @@ export const ja: TranslationKeys = {
     adminDialogTitle: "セットアップはいかがでしたか?",
     closeLabel: "フィードバックダイアログを閉じる",
     privacyNote:
-      "フィードバックは、送信した場合にのみ送られます。SnapOtterがファイル、ファイルの内容、ファイル名、非公開の出力を含めることは一切ありません。",
+      "フィードバックは、送信した場合にのみ送られます。Konverttがファイル、ファイルの内容、ファイル名、非公開の出力を含めることは一切ありません。",
     typeLabel: "フィードバックの種類",
     sentimentLabel: "簡単な評価",
     messageLabel: "フィードバック",
     messagePlaceholder:
-      "うまくいったこと、うまくいかなかったこと、SnapOtterをより良くするためのご意見をお聞かせください。",
+      "うまくいったこと、うまくいかなかったこと、Konverttをより良くするためのご意見をお聞かせください。",
     improveFirstLabel: "最初に改善すべき点は何ですか?",
     improveFirstPlaceholder: "セットアップで手間取った点をお聞かせください。",
     contactOkLabel: "このフィードバックについて連絡を受け取ってもよい。",
@@ -80,17 +80,17 @@ export const ja: TranslationKeys = {
     searchMissDiscussionsFallback:
       "記録できませんでした。Discussions でリクエストを開いてください。",
     offlineDescription:
-      "このインスタンスは分析が無効になっているため、フィードバックはここには記録されません。SnapOtter チームに直接連絡することもできます。",
+      "このインスタンスは分析が無効になっているため、フィードバックはここには記録されません。Konvertt チームに直接連絡することもできます。",
     offlinePublicNote: "GitHub の Issue は公開されます。",
     offlineGithubButton: "GitHub で Issue を作成",
     offlineEmailButton: "メールで連絡",
     thanksTitle: "フィードバックありがとうございます。",
     thanksDescription:
-      "ファイルや非公開のコンテンツを収集することなく、SnapOtterの改善に役立ちます。",
+      "ファイルや非公開のコンテンツを収集することなく、Konverttの改善に役立ちます。",
     quickThanks: "お知らせありがとうございます。",
     reportIssue: "問題を報告",
     toolPromptTitle: "このツールの使い心地はいかがでしたか?",
-    toolPromptDescription: "ひとことのご意見がSnapOtterの改善に役立ちます。",
+    toolPromptDescription: "ひとことのご意見がKonverttの改善に役立ちます。",
     dismissPrompt: "フィードバックの案内を閉じる",
     workedWell: "うまくいった",
     dontAskAgain: "今後は表示しない",
@@ -174,10 +174,10 @@ export const ja: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "SnapOtterをどのように使っていますか?",
+    usageSurveyTitle: "Konverttをどのように使っていますか?",
     priorToolLabel: "以前は何を使っていましたか?",
     selfHostMotivationLabel: "セルフホストする理由は?",
-    discoverySourceLabel: "SnapOtterをどこで知りましたか?",
+    discoverySourceLabel: "Konverttをどこで知りましたか?",
     optionalHint: "(任意)",
     continueLabel: "続ける",
   },
@@ -2754,7 +2754,7 @@ export const ja: TranslationKeys = {
       mosaic: "モザイク",
       uploadingImages: "画像をアップロード中...",
       processingCollage: "コラージュを処理中...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "背景",
       format: "フォーマット",
       uploadImagesForCollage: "コラージュ用の画像をアップロード",
@@ -4144,7 +4144,7 @@ export const ja: TranslationKeys = {
     pdf: "PDF",
     files: "ファイル",
     toolCount: "{count} 個のツール",
-    heading: "SnapOtter ツール",
+    heading: "Konvertt ツール",
   },
   fullscreenGrid: {
     searchPlaceholder: "ツールを検索...",
@@ -4278,7 +4278,7 @@ export const ja: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "SnapOtterに戻る",
+      backTitle: "Konverttに戻る",
     },
     welcome: {
       ariaLabel: "画像ドロップゾーン",
@@ -4704,7 +4704,7 @@ export const ja: TranslationKeys = {
           "この書き出しは大きすぎて、ブラウザで処理できません。サイズを小さくしてみてください。",
         saveProject: "プロジェクトを保存",
         loadProject: "プロジェクトを読み込み",
-        invalidProject: "このファイルは有効なSnapOtterプロジェクトではありません。",
+        invalidProject: "このファイルは有効なKonverttプロジェクトではありません。",
       },
       autosaveRecovery: {
         message: "{time} の未保存の作業を復元しました。",
@@ -4782,7 +4782,7 @@ export const ja: TranslationKeys = {
       apiKeys: "APIキー",
       aiFeatures: "AI機能",
       tools: "ツール",
-      about: "SnapOtterについて",
+      about: "Konverttについて",
     },
     general: {
       heading: "一般",
@@ -4794,7 +4794,7 @@ export const ja: TranslationKeys = {
       sidebarOption: "サイドバー",
       fullscreenGridOption: "フルスクリーングリッド",
       appVersionLabel: "アプリバージョン",
-      appVersionDescription: "SnapOtterの現在のバージョン",
+      appVersionDescription: "Konverttの現在のバージョン",
       saveButton: "設定を保存",
       saveSuccess: "設定を保存しました。",
       saveFailed: "設定の保存に失敗しました。",
@@ -4848,7 +4848,7 @@ export const ja: TranslationKeys = {
     privacy: {
       title: "プライバシー",
       description:
-        "匿名のプロダクト分析は SnapOtter の改善に役立ちます。既定で有効になっており、インスタンス全体に対して管理者が設定します。",
+        "匿名のプロダクト分析は Konvertt の改善に役立ちます。既定で有効になっており、インスタンス全体に対して管理者が設定します。",
       analyticsLabel: "匿名のプロダクト分析",
       analyticsDescription:
         "匿名の使用状況データ（実行されたツール、処理時間、エラーコード）とクラッシュレポートを共有します。IP アドレスやアカウント情報は含まれません。ファイル名、ファイルの内容、OCR の出力、画像のメタデータ、ドキュメントのテキストを収集することは一切ありません。これをオフにすると、すべて停止します。",
@@ -5119,7 +5119,7 @@ export const ja: TranslationKeys = {
     },
     apiKeys: {
       heading: "APIキー",
-      description: "SnapOtterへのプログラムアクセス用APIキーを管理。",
+      description: "Konverttへのプログラムアクセス用APIキーを管理。",
       keyNamePlaceholder: "キー名（任意）",
       generateButton: "APIキーを生成",
       removeScopingLabel: "権限スコープを解除",
@@ -5215,8 +5215,8 @@ export const ja: TranslationKeys = {
         "サーバーのディスク容量が不足しているため、このバンドルをインポートできません。",
     },
     about: {
-      heading: "SnapOtterについて",
-      appName: "SnapOtter",
+      heading: "Konverttについて",
+      appName: "Konvertt",
       appDescription:
         "セルフホスト型、プライバシー第一のファイル処理スイート。200+のツールを搭載。変換、圧縮、編集、文字起こし、OCRなど、画像・動画・音声・PDF・ファイルのワークフローをクラウドにデータを送ることなく自動化できます。",
       versionLabel: "バージョン：",
@@ -5234,7 +5234,7 @@ export const ja: TranslationKeys = {
     logout: "ログアウト",
     logoutFailed: "ログアウトできませんでした。もう一度お試しください。",
     idpLogoutFailed:
-      "SnapOtterからはログアウトしましたが、SSOプロバイダーのセッションが開いたままの可能性があります。そちらからもログアウトしてください。",
+      "Konverttからはログアウトしましたが、SSOプロバイダーのセッションが開いたままの可能性があります。そちらからもログアウトしてください。",
     username: "ユーザー名",
     password: "パスワード",
     loginButton: "ログイン",
@@ -5345,8 +5345,8 @@ export const ja: TranslationKeys = {
   },
   automate: {
     title: "自動化",
-    invalidPipelineFile: "有効なSnapOtter Pipelineファイルではありません",
-    newerVersion: "このPipelineは新しいバージョンのSnapOtterで作成されました",
+    invalidPipelineFile: "有効なKonvertt Pipelineファイルではありません",
+    newerVersion: "このPipelineは新しいバージョンのKonverttで作成されました",
     missingName: "Pipelineファイルに名前がありません",
     noSteps: "Pipelineファイルにステップがありません",
     importFailed: "インポートに失敗しました",
@@ -5582,7 +5582,7 @@ export const ja: TranslationKeys = {
       docsLink: "ドキュメント",
       apiRefLink: "APIリファレンス（Swagger）",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "ネットワークエラー",
@@ -5791,14 +5791,14 @@ export const ja: TranslationKeys = {
       bundlesQueued: "{count} 件待機中",
     },
     updateNotice: {
-      available: "SnapOtter {version} が公開されました。現在のバージョンは {current} です。",
+      available: "Konvertt {version} が公開されました。現在のバージョンは {current} です。",
       whatsNew: "新機能を見る",
       dismiss: "更新のお知らせを閉じる",
     },
   },
   a11y: {
     comparisonScroller: "比較スクロール領域",
-    sponsorLink: "GitHub Sponsors で SnapOtter を支援する",
+    sponsorLink: "GitHub Sponsors で Konvertt を支援する",
     skipToContent: "メインコンテンツへスキップ",
     openSidebar: "サイドバーを開く",
     closeSidebar: "サイドバーを閉じる",
@@ -5862,7 +5862,7 @@ export const ja: TranslationKeys = {
     settingsDialog: "設定",
     helpDialog: "ヘルプ",
     navigationMenu: "ナビゲーション",
-    homeLink: "SnapOtter ホーム",
+    homeLink: "Konvertt ホーム",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5974,17 +5974,17 @@ export const ja: TranslationKeys = {
     lastUpdated: "最終更新：2026年6月24日",
     overview: {
       heading: "概要",
-      body: "SnapOtter は、セルフホスト型でオープンソースのファイル処理アプリケーションです。あなたのインスタンスは、それを配置した人が全面的に運用・管理します。このポリシーでは、ソフトウェア自体がデータをどのように扱うかを説明します。",
+      body: "Konvertt は、セルフホスト型でオープンソースのファイル処理アプリケーションです。あなたのインスタンスは、それを配置した人が全面的に運用・管理します。このポリシーでは、ソフトウェア自体がデータをどのように扱うかを説明します。",
     },
     localProcessing: {
       heading: "ローカルでの処理",
-      body: "ファイルの処理は、SnapOtter を配置したサーバー上ですべて完結します。ファイルが外部サービスやサードパーティの API に送信されることはありません。処理のためにアップロードしたファイルは、ホストマシンのメモリまたは一時ストレージで扱われ、処理が終わった後は保持されません。",
+      body: "ファイルの処理は、Konvertt を配置したサーバー上ですべて完結します。ファイルが外部サービスやサードパーティの API に送信されることはありません。処理のためにアップロードしたファイルは、ホストマシンのメモリまたは一時ストレージで扱われ、処理が終わった後は保持されません。",
     },
     analytics: {
       heading: "分析",
-      body: "SnapOtter には、ソフトウェアの改善に役立てるための基本的な分析（ツールの利用状況、エラーレポート）が含まれています。ファイル、ファイル名、個人データがその対象になることはありません。分析は既定で有効になっており、実行中に無効化できます。管理者は「設定 > システム > {privacy}」で匿名のプロダクト分析をオフにできます。再起動も再ビルドも必要ありません。ビルド時に完全に無効化したい場合は {code} を指定してビルドしてください。バンドルから丸ごと取り除かれます。分析がなくても、すべて通常どおり動作します。",
+      body: "Konvertt には、ソフトウェアの改善に役立てるための基本的な分析（ツールの利用状況、エラーレポート）が含まれています。ファイル、ファイル名、個人データがその対象になることはありません。分析は既定で有効になっており、実行中に無効化できます。管理者は「設定 > システム > {privacy}」で匿名のプロダクト分析をオフにできます。再起動も再ビルドも必要ありません。ビルド時に完全に無効化したい場合は {code} を指定してビルドしてください。バンドルから丸ごと取り除かれます。分析がなくても、すべて通常どおり動作します。",
       feedbackBody:
-        "SnapOtter には、任意で使えるフィードバックの入力欄もあります。フィードバックは、あなたが送信したときにのみ、しかも分析が有効な場合にのみ送られます。フィードバックのイベントは {code} として PostHog に送信されます。連絡先の名前、メールアドレス、会社名は、連絡の許可のチェックボックスをオンにした場合にのみ送られます。SnapOtter がフィードバックにファイル、ファイル名、アップロード先のパス、OCR や文字起こしの出力、非公開のドキュメントのテキスト、生のエラーログを添付することは一切ありません。",
+        "Konvertt には、任意で使えるフィードバックの入力欄もあります。フィードバックは、あなたが送信したときにのみ、しかも分析が有効な場合にのみ送られます。フィードバックのイベントは {code} として PostHog に送信されます。連絡先の名前、メールアドレス、会社名は、連絡の許可のチェックボックスをオンにした場合にのみ送られます。Konvertt がフィードバックにファイル、ファイル名、アップロード先のパス、OCR や文字起こしの出力、非公開のドキュメントのテキスト、生のエラーログを添付することは一切ありません。",
     },
     dataStorage: {
       heading: "データの保存",
@@ -5996,11 +5996,11 @@ export const ja: TranslationKeys = {
     },
     openSource: {
       heading: "オープンソース",
-      body: "SnapOtter は完全なオープンソースです。ここに書かれていることは、いつでもソースコードを確認して検証できます。透明性はこのプロジェクトの根幹となる原則です。",
+      body: "Konvertt は完全なオープンソースです。ここに書かれていることは、いつでもソースコードを確認して検証できます。透明性はこのプロジェクトの根幹となる原則です。",
     },
     yourControl: {
       heading: "データの管理",
-      body: "SnapOtter はセルフホスト型のため、インスタンスの運用者がすべてのデータを完全に管理できます。サーバーからファイルを削除するか、データベースを削除すれば、いつでもデータを消去できます。あなたのインフラの外にデータが存在することはありません。",
+      body: "Konvertt はセルフホスト型のため、インスタンスの運用者がすべてのデータを完全に管理できます。サーバーからファイルを削除するか、データベースを削除すれば、いつでもデータを消去できます。あなたのインフラの外にデータが存在することはありません。",
     },
   },
 } as const;

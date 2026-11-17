@@ -112,6 +112,12 @@ export function ToolCard({
     </span>
   ) : null;
 
+  const betaBadge = isAiTool ? (
+    <span className="text-[10px] px-1.5 py-0.5 rounded-full font-semibold uppercase tracking-wide bg-primary/10 text-primary-ink shrink-0">
+      Beta
+    </span>
+  ) : null;
+
   const aiStatusIcon =
     aiStatus === "not_installed" ? (
       <Download className="h-3.5 w-3.5 text-muted-foreground shrink-0" aria-hidden="true" />
@@ -153,6 +159,7 @@ export function ToolCard({
                 {t.common.experimental}
               </span>
             )}
+            {betaBadge}
             {aiStatusIcon}
           </div>
           <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
@@ -192,6 +199,7 @@ export function ToolCard({
           {t.common.experimental}
         </span>
       )}
+      {betaBadge}
       {aiStatusIcon}
     </Link>
   );

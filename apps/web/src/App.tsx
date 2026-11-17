@@ -18,7 +18,6 @@ import { KeyboardShortcutProvider } from "./components/common/keyboard-shortcut-
 import { MigrationBanner } from "./components/common/migration-banner";
 import { NavigationGuard } from "./components/common/navigation-guard";
 import { RouteAnnouncer } from "./components/common/route-announcer";
-import { UsageSurveyOverlay } from "./components/onboarding/usage-survey-overlay";
 import { I18nProvider } from "./contexts/i18n-context";
 import { useAuth } from "./hooks/use-auth";
 import { useMobile } from "./hooks/use-mobile";
@@ -175,7 +174,6 @@ function RootLayout() {
         <AuthGuard>
           <NavigationGuard />
           <MigrationBanner />
-          <UsageSurveyOverlay />
           <Suspense fallback={<PageLoader />}>
             <Outlet />
           </Suspense>

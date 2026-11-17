@@ -622,9 +622,7 @@ export function LoginPage() {
             <h1 className="text-3xl font-bold text-foreground">
               <span className="text-primary-ink">Konvertt</span>
             </h1>
-            <p className="mt-2 text-sm text-muted-foreground">
-              File tools on your own hardware. Powered by SnapOtter.
-            </p>
+            <p className="mt-2 text-sm text-muted-foreground">File tools on your own hardware.</p>
             <h2 className="text-2xl font-bold mt-4 text-foreground">{t.auth.login}</h2>
           </div>
           {notice === "idp_logout_failed" && (

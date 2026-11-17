@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const pl: TranslationKeys = {
   migrationBanner: {
-    successTitle: "Zaimportowano dane SnapOtter 1.x.",
+    successTitle: "Zaimportowano dane Konvertt 1.x.",
     successBody:
       "Przeniesiono {users} użytkowników i {files} zapisanych plików z poprzedniej wersji.",
     warningTitle: "Znaleziono bazę danych 1.x, ale jej nie zaimportowano.",
@@ -60,11 +60,11 @@ export const pl: TranslationKeys = {
     adminDialogTitle: "Jak przebiegła konfiguracja?",
     closeLabel: "Zamknij okno opinii",
     privacyNote:
-      "Opinia jest wysyłana dopiero po jej przesłaniu. SnapOtter nie dołącza Twoich plików, ich zawartości, nazw plików ani prywatnych wyników.",
+      "Opinia jest wysyłana dopiero po jej przesłaniu. Konvertt nie dołącza Twoich plików, ich zawartości, nazw plików ani prywatnych wyników.",
     typeLabel: "Rodzaj opinii",
     sentimentLabel: "Szybka ocena",
     messageLabel: "Opinia",
-    messagePlaceholder: "Napisz, co działało dobrze, co się zepsuło lub co poprawiłoby SnapOtter.",
+    messagePlaceholder: "Napisz, co działało dobrze, co się zepsuło lub co poprawiłoby Konvertt.",
     improveFirstLabel: "Co powinniśmy poprawić w pierwszej kolejności?",
     improveFirstPlaceholder: "Napisz, co utrudniło konfigurację bardziej, niż powinno.",
     contactOkLabel: "Możecie się ze mną kontaktować w sprawie tej opinii.",
@@ -78,16 +78,16 @@ export const pl: TranslationKeys = {
     searchMissContext: "Szukano: {query}",
     searchMissDiscussionsFallback: "Nie udało się tego zapisać. Otwórz prośbę w Discussions.",
     offlineDescription:
-      "Ta instancja ma wyłączoną analitykę, więc opinie nie są tu zapisywane. Nadal możesz skontaktować się bezpośrednio z zespołem SnapOtter.",
+      "Ta instancja ma wyłączoną analitykę, więc opinie nie są tu zapisywane. Nadal możesz skontaktować się bezpośrednio z zespołem Konvertt.",
     offlinePublicNote: "Zgłoszenia w GitHub są publiczne.",
     offlineGithubButton: "Otwórz zgłoszenie w GitHub",
     offlineEmailButton: "Napisz do nas",
     thanksTitle: "Dziękujemy za opinię.",
-    thanksDescription: "Pomaga nam ulepszać SnapOtter bez zbierania plików ani prywatnych treści.",
+    thanksDescription: "Pomaga nam ulepszać Konvertt bez zbierania plików ani prywatnych treści.",
     quickThanks: "Dziękujemy za sygnał.",
     reportIssue: "Zgłoś problem",
     toolPromptTitle: "Jak zadziałało to narzędzie?",
-    toolPromptDescription: "Jeden szybki sygnał pomaga nam ulepszać SnapOtter.",
+    toolPromptDescription: "Jeden szybki sygnał pomaga nam ulepszać Konvertt.",
     dismissPrompt: "Zamknij prośbę o opinię",
     workedWell: "Zadziałało dobrze",
     dontAskAgain: "Nie pytaj ponownie",
@@ -171,7 +171,7 @@ export const pl: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Jak korzystasz ze SnapOtter?",
+    usageSurveyTitle: "Jak korzystasz ze Konvertt?",
     priorToolLabel: "Czego używałeś wcześniej?",
     selfHostMotivationLabel: "Dlaczego hostujesz samodzielnie?",
     discoverySourceLabel: "Skąd o nas wiesz?",
@@ -2806,7 +2806,7 @@ export const pl: TranslationKeys = {
       mosaic: "Mozaika",
       uploadingImages: "Przesyłanie obrazów...",
       processingCollage: "Przetwarzanie kolażu...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Tło",
       format: "Format",
       uploadImagesForCollage: "Prześlij obrazy do kolażu",
@@ -4200,7 +4200,7 @@ export const pl: TranslationKeys = {
     pdf: "PDF",
     files: "Pliki",
     toolCount: "{count} narzędzi",
-    heading: "Narzędzia SnapOtter",
+    heading: "Narzędzia Konvertt",
   },
   fullscreenGrid: {
     searchPlaceholder: "Szukaj narzędzi...",
@@ -4334,7 +4334,7 @@ export const pl: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Powrót do SnapOtter",
+      backTitle: "Powrót do Konvertt",
     },
     welcome: {
       ariaLabel: "Strefa upuszczania obrazów",
@@ -4760,7 +4760,7 @@ export const pl: TranslationKeys = {
           "Ten eksport jest zbyt duży, aby przeglądarka mogła go wygenerować. Spróbuj użyć mniejszych wymiarów.",
         saveProject: "Zapisz projekt",
         loadProject: "Wczytaj projekt",
-        invalidProject: "Ten plik nie jest prawidłowym projektem SnapOtter.",
+        invalidProject: "Ten plik nie jest prawidłowym projektem Konvertt.",
       },
       autosaveRecovery: {
         message: "Odzyskano niezapisaną pracę z {time}.",
@@ -4850,7 +4850,7 @@ export const pl: TranslationKeys = {
       sidebarOption: "Pasek boczny",
       fullscreenGridOption: "Siatka pełnoekranowa",
       appVersionLabel: "Wersja aplikacji",
-      appVersionDescription: "Bieżąca wersja SnapOtter",
+      appVersionDescription: "Bieżąca wersja Konvertt",
       saveButton: "Zapisz ustawienia",
       saveSuccess: "Ustawienia zapisane.",
       saveFailed: "Nie udało się zapisać ustawień.",
@@ -4906,7 +4906,7 @@ export const pl: TranslationKeys = {
     privacy: {
       title: "Prywatność",
       description:
-        "Anonimowe analizy produktu pomagają ulepszać SnapOtter. Są domyślnie włączone i ustawiane dla całej instancji przez administratora.",
+        "Anonimowe analizy produktu pomagają ulepszać Konvertt. Są domyślnie włączone i ustawiane dla całej instancji przez administratora.",
       analyticsLabel: "Anonimowe analizy produktu",
       analyticsDescription:
         "Udostępniaj anonimowe dane o użyciu (które narzędzia są uruchamiane, czasy trwania, kody błędów) oraz raporty o awariach. Bez adresu IP, bez tożsamości konta. Nigdy nie zbieramy nazw plików, ich zawartości, wyników OCR, metadanych obrazów ani tekstu dokumentów. Wyłącz tę opcję, aby wszystko zatrzymać.",
@@ -5186,7 +5186,7 @@ export const pl: TranslationKeys = {
     },
     apiKeys: {
       heading: "Klucze API",
-      description: "Zarządzanie kluczami API do programowego dostępu do SnapOtter.",
+      description: "Zarządzanie kluczami API do programowego dostępu do Konvertt.",
       keyNamePlaceholder: "Nazwa klucza (opcjonalnie)",
       generateButton: "Wygeneruj klucz API",
       removeScopingLabel: "Usuń ograniczenie uprawnień",
@@ -5286,7 +5286,7 @@ export const pl: TranslationKeys = {
     },
     about: {
       heading: "Informacje",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Samoobsługowy pakiet narzędzi do przetwarzania plików z priorytetem prywatności. 200+ narzędzi. Konwersja, kompresja, edycja, transkrypcja, OCR i automatyzacja procesów obrazów, wideo, audio, PDF i plików bez wysyłania danych do chmury.",
       versionLabel: "Wersja:",
@@ -5304,7 +5304,7 @@ export const pl: TranslationKeys = {
     logout: "Wyloguj",
     logoutFailed: "Nie udało się wylogować. Spróbuj ponownie.",
     idpLogoutFailed:
-      "Wylogowano z SnapOtter, ale sesja u dostawcy SSO może nadal być otwarta. Wyloguj się również tam.",
+      "Wylogowano z Konvertt, ale sesja u dostawcy SSO może nadal być otwarta. Wyloguj się również tam.",
     username: "Nazwa użytkownika",
     password: "Hasło",
     loginButton: "Zaloguj",
@@ -5416,8 +5416,8 @@ export const pl: TranslationKeys = {
   },
   automate: {
     title: "Automatyzacja",
-    invalidPipelineFile: "Nieprawidłowy plik Pipeline SnapOtter",
-    newerVersion: "Ten Pipeline został utworzony w nowszej wersji SnapOtter",
+    invalidPipelineFile: "Nieprawidłowy plik Pipeline Konvertt",
+    newerVersion: "Ten Pipeline został utworzony w nowszej wersji Konvertt",
     missingName: "W pliku Pipeline brakuje nazwy",
     noSteps: "Plik Pipeline nie zawiera kroków",
     importFailed: "Import nie powiódł się",
@@ -5654,7 +5654,7 @@ export const pl: TranslationKeys = {
       docsLink: "Dokumentacja",
       apiRefLink: "Dokumentacja API (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Błąd sieci",
@@ -5862,14 +5862,14 @@ export const pl: TranslationKeys = {
       bundlesQueued: "{count} w kolejce",
     },
     updateNotice: {
-      available: "SnapOtter {version} jest już dostępny. Używana wersja: {current}.",
+      available: "Konvertt {version} jest już dostępny. Używana wersja: {current}.",
       whatsNew: "Co nowego",
       dismiss: "Zamknij powiadomienie o aktualizacji",
     },
   },
   a11y: {
     comparisonScroller: "Obszar porównania",
-    sponsorLink: "Wesprzyj SnapOtter na GitHub Sponsors",
+    sponsorLink: "Wesprzyj Konvertt na GitHub Sponsors",
     skipToContent: "Przejdź do treści",
     openSidebar: "Otwórz panel boczny",
     closeSidebar: "Zamknij panel boczny",
@@ -5933,7 +5933,7 @@ export const pl: TranslationKeys = {
     settingsDialog: "Ustawienia",
     helpDialog: "Pomoc",
     navigationMenu: "Nawigacja",
-    homeLink: "Strona główna SnapOtter",
+    homeLink: "Strona główna Konvertt",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6048,17 +6048,17 @@ export const pl: TranslationKeys = {
     lastUpdated: "Ostatnia aktualizacja: 24 czerwca 2026",
     overview: {
       heading: "Przegląd",
-      body: "SnapOtter to samodzielnie hostowana aplikacja open source do przetwarzania plików. Twoją instancją zarządza i w pełni ją kontroluje ten, kto ją wdrożył. Ta polityka opisuje, jak samo oprogramowanie obchodzi się z Twoimi danymi.",
+      body: "Konvertt to samodzielnie hostowana aplikacja open source do przetwarzania plików. Twoją instancją zarządza i w pełni ją kontroluje ten, kto ją wdrożył. Ta polityka opisuje, jak samo oprogramowanie obchodzi się z Twoimi danymi.",
     },
     localProcessing: {
       heading: "Przetwarzanie lokalne",
-      body: "Całe przetwarzanie plików odbywa się na serwerze, na którym wdrożono SnapOtter. Twoje pliki nigdy nie trafiają do usług zewnętrznych ani do API innych firm. Plik przesłany do przetworzenia jest obsługiwany w pamięci lub w magazynie tymczasowym na maszynie hosta i nie jest zachowywany po zakończeniu operacji.",
+      body: "Całe przetwarzanie plików odbywa się na serwerze, na którym wdrożono Konvertt. Twoje pliki nigdy nie trafiają do usług zewnętrznych ani do API innych firm. Plik przesłany do przetworzenia jest obsługiwany w pamięci lub w magazynie tymczasowym na maszynie hosta i nie jest zachowywany po zakończeniu operacji.",
     },
     analytics: {
       heading: "Analityka",
-      body: "SnapOtter zawiera podstawową analitykę (użycie narzędzi, raporty o błędach), która pomaga ulepszać oprogramowanie. Twoje pliki, ich nazwy i dane osobowe nigdy do niej nie trafiają. Analityka jest domyślnie włączona i można ją wyłączyć w trakcie działania. Administrator wyłącza anonimowe analizy produktu w Ustawienia > System > {privacy}, bez ponownego uruchamiania czy przebudowy. Aby wyłączyć ją na stałe już przy kompilacji, zbuduj aplikację z {code}, co całkowicie usunie ją z pakietu. Bez niej wszystko działa normalnie.",
+      body: "Konvertt zawiera podstawową analitykę (użycie narzędzi, raporty o błędach), która pomaga ulepszać oprogramowanie. Twoje pliki, ich nazwy i dane osobowe nigdy do niej nie trafiają. Analityka jest domyślnie włączona i można ją wyłączyć w trakcie działania. Administrator wyłącza anonimowe analizy produktu w Ustawienia > System > {privacy}, bez ponownego uruchamiania czy przebudowy. Aby wyłączyć ją na stałe już przy kompilacji, zbuduj aplikację z {code}, co całkowicie usunie ją z pakietu. Bez niej wszystko działa normalnie.",
       feedbackBody:
-        "SnapOtter zawiera też opcjonalne prośby o opinię. Opinia jest wysyłana wyłącznie wtedy, gdy ją prześlesz, i tylko przy włączonej analityce. Zdarzenia opinii trafiają do PostHog jako {code}. Imię, adres e-mail i firma są wysyłane tylko wtedy, gdy zaznaczysz zgodę na kontakt. SnapOtter nie dołącza do opinii plików, ich nazw, ścieżek przesyłania, wyników OCR ani transkrypcji, treści prywatnych dokumentów ani surowych logów błędów.",
+        "Konvertt zawiera też opcjonalne prośby o opinię. Opinia jest wysyłana wyłącznie wtedy, gdy ją prześlesz, i tylko przy włączonej analityce. Zdarzenia opinii trafiają do PostHog jako {code}. Imię, adres e-mail i firma są wysyłane tylko wtedy, gdy zaznaczysz zgodę na kontakt. Konvertt nie dołącza do opinii plików, ich nazw, ścieżek przesyłania, wyników OCR ani transkrypcji, treści prywatnych dokumentów ani surowych logów błędów.",
     },
     dataStorage: {
       heading: "Przechowywanie danych",
@@ -6070,11 +6070,11 @@ export const pl: TranslationKeys = {
     },
     openSource: {
       heading: "Open source",
-      body: "SnapOtter jest w pełni otwartoźródłowy. W każdej chwili możesz przejrzeć kod źródłowy i sprawdzić te zapewnienia. Przejrzystość to podstawowa zasada tego projektu.",
+      body: "Konvertt jest w pełni otwartoźródłowy. W każdej chwili możesz przejrzeć kod źródłowy i sprawdzić te zapewnienia. Przejrzystość to podstawowa zasada tego projektu.",
     },
     yourControl: {
       heading: "Twoja kontrola",
-      body: "Ponieważ SnapOtter jest hostowany samodzielnie, operator instancji ma pełną kontrolę nad wszystkimi danymi. Możesz w dowolnej chwili usunąć swoje dane, kasując pliki z serwera lub usuwając bazę danych. Żadne dane nie istnieją poza Twoją infrastrukturą.",
+      body: "Ponieważ Konvertt jest hostowany samodzielnie, operator instancji ma pełną kontrolę nad wszystkimi danymi. Możesz w dowolnej chwili usunąć swoje dane, kasując pliki z serwera lub usuwając bazę danych. Żadne dane nie istnieją poza Twoją infrastrukturą.",
     },
   },
 } as const;

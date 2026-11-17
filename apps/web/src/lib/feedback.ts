@@ -310,7 +310,7 @@ export function buildFeedbackGithubUrl(message: string): string {
 
 /** Prefilled mailto to the project address, for users who prefer a private channel. */
 export function buildFeedbackMailtoUrl(message: string): string {
-  const subject = encodeURIComponent("SnapOtter feedback");
+  const subject = encodeURIComponent("Konvertt feedback");
   const body = encodeURIComponent(sanitizeFeedbackMessage(message));
   return `mailto:${SNAPOTTER_FEEDBACK_EMAIL}?subject=${subject}&body=${body}`;
 }

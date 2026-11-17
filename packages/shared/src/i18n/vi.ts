@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const vi: TranslationKeys = {
   migrationBanner: {
-    successTitle: "Đã nhập dữ liệu SnapOtter 1.x.",
+    successTitle: "Đã nhập dữ liệu Konvertt 1.x.",
     successBody: "Đã chuyển {users} người dùng và {files} tệp đã lưu từ phiên bản trước của bạn.",
     warningTitle: "Đã tìm thấy cơ sở dữ liệu 1.x nhưng chưa nhập.",
     warningBody:
@@ -59,12 +59,12 @@ export const vi: TranslationKeys = {
     adminDialogTitle: "Quá trình cài đặt thế nào?",
     closeLabel: "Đóng hộp thoại phản hồi",
     privacyNote:
-      "Phản hồi chỉ được gửi khi bạn gửi đi. SnapOtter không đính kèm tệp, nội dung tệp, tên tệp hay kết quả riêng tư của bạn.",
+      "Phản hồi chỉ được gửi khi bạn gửi đi. Konvertt không đính kèm tệp, nội dung tệp, tên tệp hay kết quả riêng tư của bạn.",
     typeLabel: "Loại phản hồi",
     sentimentLabel: "Đánh giá nhanh",
     messageLabel: "Phản hồi",
     messagePlaceholder:
-      "Cho chúng tôi biết điều gì hiệu quả, điều gì gặp lỗi, hoặc điều gì sẽ giúp SnapOtter tốt hơn.",
+      "Cho chúng tôi biết điều gì hiệu quả, điều gì gặp lỗi, hoặc điều gì sẽ giúp Konvertt tốt hơn.",
     improveFirstLabel: "Chúng tôi nên cải thiện điều gì trước?",
     improveFirstPlaceholder:
       "Cho chúng tôi biết điều gì khiến việc cài đặt khó khăn hơn mức cần thiết.",
@@ -80,17 +80,17 @@ export const vi: TranslationKeys = {
     searchMissDiscussionsFallback:
       "Chúng tôi không ghi lại được. Mở một yêu cầu trong Discussions.",
     offlineDescription:
-      "Bản cài đặt này đã tắt phân tích, nên phản hồi không được ghi lại ở đây. Bạn vẫn có thể liên hệ trực tiếp với nhóm SnapOtter.",
+      "Bản cài đặt này đã tắt phân tích, nên phản hồi không được ghi lại ở đây. Bạn vẫn có thể liên hệ trực tiếp với nhóm Konvertt.",
     offlinePublicNote: "Issue trên GitHub là công khai.",
     offlineGithubButton: "Mở một issue trên GitHub",
     offlineEmailButton: "Gửi email cho chúng tôi",
     thanksTitle: "Cảm ơn phản hồi của bạn.",
     thanksDescription:
-      "Điều này giúp chúng tôi cải thiện SnapOtter mà không thu thập tệp hay nội dung riêng tư.",
+      "Điều này giúp chúng tôi cải thiện Konvertt mà không thu thập tệp hay nội dung riêng tư.",
     quickThanks: "Cảm ơn đã cho chúng tôi biết.",
     reportIssue: "Báo cáo sự cố",
     toolPromptTitle: "Công cụ này hoạt động thế nào?",
-    toolPromptDescription: "Một phản hồi nhanh giúp chúng tôi cải thiện SnapOtter.",
+    toolPromptDescription: "Một phản hồi nhanh giúp chúng tôi cải thiện Konvertt.",
     dismissPrompt: "Bỏ qua lời nhắc phản hồi",
     workedWell: "Hoạt động tốt",
     dontAskAgain: "Đừng hỏi lại",
@@ -174,7 +174,7 @@ export const vi: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Bạn đang sử dụng SnapOtter như thế nào?",
+    usageSurveyTitle: "Bạn đang sử dụng Konvertt như thế nào?",
     priorToolLabel: "Trước đây bạn đã dùng gì?",
     selfHostMotivationLabel: "Tại sao tự lưu trữ?",
     discoverySourceLabel: "Bạn biết đến chúng tôi bằng cách nào?",
@@ -2794,7 +2794,7 @@ export const vi: TranslationKeys = {
       mosaic: "Khảm",
       uploadingImages: "Đang tải lên hình ảnh...",
       processingCollage: "Đang xử lý ảnh ghép...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Nền",
       format: "Định dạng",
       uploadImagesForCollage: "Tải lên hình ảnh để tạo ảnh ghép",
@@ -4184,7 +4184,7 @@ export const vi: TranslationKeys = {
     pdf: "PDF",
     files: "Tệp",
     toolCount: "{count} công cụ",
-    heading: "Công cụ SnapOtter",
+    heading: "Công cụ Konvertt",
   },
   fullscreenGrid: {
     searchPlaceholder: "Tìm kiếm công cụ...",
@@ -4318,7 +4318,7 @@ export const vi: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Quay lại SnapOtter",
+      backTitle: "Quay lại Konvertt",
     },
     welcome: {
       ariaLabel: "Vùng thả hình ảnh",
@@ -4742,7 +4742,7 @@ export const vi: TranslationKeys = {
         tooLarge: "Bản xuất này quá lớn để trình duyệt tạo ra. Hãy thử kích thước nhỏ hơn.",
         saveProject: "Lưu dự án",
         loadProject: "Mở dự án",
-        invalidProject: "Tệp này không phải là dự án SnapOtter hợp lệ.",
+        invalidProject: "Tệp này không phải là dự án Konvertt hợp lệ.",
       },
       autosaveRecovery: {
         message: "Đã khôi phục phần việc chưa lưu từ {time}.",
@@ -4832,7 +4832,7 @@ export const vi: TranslationKeys = {
       sidebarOption: "Thanh bên",
       fullscreenGridOption: "Lưới toàn màn hình",
       appVersionLabel: "Phiên bản ứng dụng",
-      appVersionDescription: "Phiên bản hiện tại của SnapOtter",
+      appVersionDescription: "Phiên bản hiện tại của Konvertt",
       saveButton: "Lưu cài đặt",
       saveSuccess: "Đã lưu cài đặt.",
       saveFailed: "Lưu cài đặt thất bại.",
@@ -4886,7 +4886,7 @@ export const vi: TranslationKeys = {
     privacy: {
       title: "Quyền riêng tư",
       description:
-        "Phân tích sản phẩm ẩn danh giúp cải thiện SnapOtter. Tính năng này được bật theo mặc định và do quản trị viên thiết lập cho toàn bộ phiên bản.",
+        "Phân tích sản phẩm ẩn danh giúp cải thiện Konvertt. Tính năng này được bật theo mặc định và do quản trị viên thiết lập cho toàn bộ phiên bản.",
       analyticsLabel: "Phân tích sản phẩm ẩn danh",
       analyticsDescription:
         "Chia sẻ dữ liệu sử dụng ẩn danh (công cụ nào chạy, thời lượng, mã lỗi) và báo cáo sự cố. Không có địa chỉ IP, không có danh tính tài khoản. Chúng tôi không bao giờ thu thập tên tệp, nội dung tệp, kết quả OCR, siêu dữ liệu hình ảnh hay văn bản tài liệu của bạn. Tắt tùy chọn này để dừng tất cả.",
@@ -5160,7 +5160,7 @@ export const vi: TranslationKeys = {
     },
     apiKeys: {
       heading: "Khóa API",
-      description: "Quản lý khóa API để truy cập SnapOtter theo chương trình.",
+      description: "Quản lý khóa API để truy cập Konvertt theo chương trình.",
       keyNamePlaceholder: "Tên khóa (tùy chọn)",
       generateButton: "Tạo khóa API",
       removeScopingLabel: "Bỏ giới hạn quyền",
@@ -5254,7 +5254,7 @@ export const vi: TranslationKeys = {
     },
     about: {
       heading: "Giới thiệu",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Bộ công cụ xử lý tệp tự lưu trữ, ưu tiên quyền riêng tư với 200+ công cụ. Chuyển đổi, nén, chỉnh sửa, phiên âm, OCR và tự động hóa quy trình xử lý ảnh, video, âm thanh, PDF và tệp mà không cần gửi dữ liệu lên đám mây.",
       versionLabel: "Phiên bản:",
@@ -5272,7 +5272,7 @@ export const vi: TranslationKeys = {
     logout: "Đăng xuất",
     logoutFailed: "Không thể đăng xuất. Vui lòng thử lại.",
     idpLogoutFailed:
-      "Bạn đã đăng xuất khỏi SnapOtter, nhưng phiên tại nhà cung cấp SSO có thể vẫn đang mở. Hãy đăng xuất ở đó nữa.",
+      "Bạn đã đăng xuất khỏi Konvertt, nhưng phiên tại nhà cung cấp SSO có thể vẫn đang mở. Hãy đăng xuất ở đó nữa.",
     username: "Tên đăng nhập",
     password: "Mật khẩu",
     loginButton: "Đăng nhập",
@@ -5380,8 +5380,8 @@ export const vi: TranslationKeys = {
   },
   automate: {
     title: "Tự động hóa",
-    invalidPipelineFile: "Không phải tệp Pipeline SnapOtter hợp lệ",
-    newerVersion: "Pipeline này được tạo với phiên bản SnapOtter mới hơn",
+    invalidPipelineFile: "Không phải tệp Pipeline Konvertt hợp lệ",
+    newerVersion: "Pipeline này được tạo với phiên bản Konvertt mới hơn",
     missingName: "Tệp Pipeline thiếu tên",
     noSteps: "Tệp Pipeline không có bước nào",
     importFailed: "Nhập thất bại",
@@ -5616,7 +5616,7 @@ export const vi: TranslationKeys = {
       docsLink: "Tài liệu",
       apiRefLink: "Tham chiếu API (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Lỗi mạng",
@@ -5814,14 +5814,14 @@ export const vi: TranslationKeys = {
       bundlesQueued: "{count} đang chờ",
     },
     updateNotice: {
-      available: "Đã có SnapOtter {version}. Bạn đang dùng {current}.",
+      available: "Đã có Konvertt {version}. Bạn đang dùng {current}.",
       whatsNew: "Có gì mới",
       dismiss: "Đóng thông báo cập nhật",
     },
   },
   a11y: {
     comparisonScroller: "Vùng so sánh",
-    sponsorLink: "Ủng hộ SnapOtter trên GitHub Sponsors",
+    sponsorLink: "Ủng hộ Konvertt trên GitHub Sponsors",
     skipToContent: "Chuyển đến nội dung chính",
     openSidebar: "Mở thanh bên",
     closeSidebar: "Đóng thanh bên",
@@ -5885,7 +5885,7 @@ export const vi: TranslationKeys = {
     settingsDialog: "Cài đặt",
     helpDialog: "Trợ giúp",
     navigationMenu: "Điều hướng",
-    homeLink: "Trang chủ SnapOtter",
+    homeLink: "Trang chủ Konvertt",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5997,17 +5997,17 @@ export const vi: TranslationKeys = {
     lastUpdated: "Cập nhật lần cuối: ngày 24 tháng 6 năm 2026",
     overview: {
       heading: "Tổng quan",
-      body: "SnapOtter là ứng dụng xử lý tệp mã nguồn mở, tự lưu trữ. Phiên bản của bạn hoàn toàn do người triển khai nó vận hành và kiểm soát. Chính sách này mô tả cách bản thân phần mềm xử lý dữ liệu của bạn.",
+      body: "Konvertt là ứng dụng xử lý tệp mã nguồn mở, tự lưu trữ. Phiên bản của bạn hoàn toàn do người triển khai nó vận hành và kiểm soát. Chính sách này mô tả cách bản thân phần mềm xử lý dữ liệu của bạn.",
     },
     localProcessing: {
       heading: "Xử lý cục bộ",
-      body: "Toàn bộ việc xử lý tệp diễn ra ngay trên máy chủ nơi SnapOtter được triển khai. Tệp của bạn không bao giờ được gửi tới dịch vụ bên ngoài hay API của bên thứ ba. Khi bạn tải một tệp lên để xử lý, tệp được xử lý trong bộ nhớ hoặc trong bộ nhớ tạm trên máy chủ và không được giữ lại sau khi thao tác hoàn tất.",
+      body: "Toàn bộ việc xử lý tệp diễn ra ngay trên máy chủ nơi Konvertt được triển khai. Tệp của bạn không bao giờ được gửi tới dịch vụ bên ngoài hay API của bên thứ ba. Khi bạn tải một tệp lên để xử lý, tệp được xử lý trong bộ nhớ hoặc trong bộ nhớ tạm trên máy chủ và không được giữ lại sau khi thao tác hoàn tất.",
     },
     analytics: {
       heading: "Phân tích",
-      body: "SnapOtter có tính năng phân tích cơ bản (mức sử dụng công cụ, báo cáo lỗi) để giúp cải thiện phần mềm. Tệp, tên tệp và dữ liệu cá nhân của bạn không bao giờ nằm trong đó. Phân tích được bật theo mặc định và có thể tắt ngay khi ứng dụng đang chạy. Quản trị viên có thể tắt phân tích sản phẩm ẩn danh trong Cài đặt > Hệ thống > {privacy} mà không cần khởi động lại hay dựng lại. Nếu muốn tắt hẳn ngay từ lúc biên dịch, hãy dựng bản build với {code}, tùy chọn này loại bỏ hoàn toàn phần đó khỏi gói. Mọi thứ vẫn chạy bình thường khi không có nó.",
+      body: "Konvertt có tính năng phân tích cơ bản (mức sử dụng công cụ, báo cáo lỗi) để giúp cải thiện phần mềm. Tệp, tên tệp và dữ liệu cá nhân của bạn không bao giờ nằm trong đó. Phân tích được bật theo mặc định và có thể tắt ngay khi ứng dụng đang chạy. Quản trị viên có thể tắt phân tích sản phẩm ẩn danh trong Cài đặt > Hệ thống > {privacy} mà không cần khởi động lại hay dựng lại. Nếu muốn tắt hẳn ngay từ lúc biên dịch, hãy dựng bản build với {code}, tùy chọn này loại bỏ hoàn toàn phần đó khỏi gói. Mọi thứ vẫn chạy bình thường khi không có nó.",
       feedbackBody:
-        "SnapOtter cũng có các lời mời gửi phản hồi tùy chọn. Phản hồi chỉ được gửi khi bạn bấm gửi, và chỉ khi phân tích đang bật. Sự kiện phản hồi được gửi tới PostHog dưới dạng {code}. Tên liên hệ, email và công ty chỉ được gửi nếu bạn tích vào ô cho phép liên hệ. SnapOtter không đính kèm tệp, tên tệp, đường dẫn tải lên, kết quả OCR/phiên âm, nội dung tài liệu riêng tư hay nhật ký lỗi thô vào phản hồi.",
+        "Konvertt cũng có các lời mời gửi phản hồi tùy chọn. Phản hồi chỉ được gửi khi bạn bấm gửi, và chỉ khi phân tích đang bật. Sự kiện phản hồi được gửi tới PostHog dưới dạng {code}. Tên liên hệ, email và công ty chỉ được gửi nếu bạn tích vào ô cho phép liên hệ. Konvertt không đính kèm tệp, tên tệp, đường dẫn tải lên, kết quả OCR/phiên âm, nội dung tài liệu riêng tư hay nhật ký lỗi thô vào phản hồi.",
     },
     dataStorage: {
       heading: "Lưu trữ dữ liệu",
@@ -6019,11 +6019,11 @@ export const vi: TranslationKeys = {
     },
     openSource: {
       heading: "Mã nguồn mở",
-      body: "SnapOtter hoàn toàn là mã nguồn mở. Bạn có thể kiểm tra mã nguồn bất cứ lúc nào để xác minh những điều nêu trên. Minh bạch là nguyên tắc cốt lõi của dự án này.",
+      body: "Konvertt hoàn toàn là mã nguồn mở. Bạn có thể kiểm tra mã nguồn bất cứ lúc nào để xác minh những điều nêu trên. Minh bạch là nguyên tắc cốt lõi của dự án này.",
     },
     yourControl: {
       heading: "Quyền kiểm soát của bạn",
-      body: "Vì SnapOtter là phần mềm tự lưu trữ nên người vận hành phiên bản có toàn quyền kiểm soát mọi dữ liệu. Bạn có thể xóa dữ liệu của mình bất cứ lúc nào bằng cách xóa tệp khỏi máy chủ hoặc xóa cơ sở dữ liệu. Không có dữ liệu nào tồn tại bên ngoài hạ tầng của bạn.",
+      body: "Vì Konvertt là phần mềm tự lưu trữ nên người vận hành phiên bản có toàn quyền kiểm soát mọi dữ liệu. Bạn có thể xóa dữ liệu của mình bất cứ lúc nào bằng cách xóa tệp khỏi máy chủ hoặc xóa cơ sở dữ liệu. Không có dữ liệu nào tồn tại bên ngoài hạ tầng của bạn.",
     },
   },
 } as const;

@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const nl: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x-gegevens geïmporteerd.",
+    successTitle: "Konvertt 1.x-gegevens geïmporteerd.",
     successBody:
       "{users} gebruikers en {files} opgeslagen bestanden overgezet vanuit je vorige versie.",
     warningTitle: "1.x-database gevonden, maar niet geïmporteerd.",
@@ -60,11 +60,11 @@ export const nl: TranslationKeys = {
     adminDialogTitle: "Hoe verliep de installatie?",
     closeLabel: "Feedbackvenster sluiten",
     privacyNote:
-      "Feedback wordt alleen verzonden als je die indient. SnapOtter voegt je bestanden, bestandsinhoud, bestandsnamen of privé-uitvoer niet toe.",
+      "Feedback wordt alleen verzonden als je die indient. Konvertt voegt je bestanden, bestandsinhoud, bestandsnamen of privé-uitvoer niet toe.",
     typeLabel: "Type feedback",
     sentimentLabel: "Snelle beoordeling",
     messageLabel: "Feedback",
-    messagePlaceholder: "Vertel ons wat werkte, wat misging of wat SnapOtter beter zou maken.",
+    messagePlaceholder: "Vertel ons wat werkte, wat misging of wat Konvertt beter zou maken.",
     improveFirstLabel: "Wat moeten we als eerste verbeteren?",
     improveFirstPlaceholder: "Vertel ons wat de installatie lastiger maakte dan nodig.",
     contactOkLabel: "Je mag contact met me opnemen over deze feedback.",
@@ -79,17 +79,17 @@ export const nl: TranslationKeys = {
     searchMissDiscussionsFallback:
       "We konden dit niet vastleggen. Open een verzoek in Discussions.",
     offlineDescription:
-      "Deze instantie heeft analyse uitgeschakeld, dus feedback wordt hier niet vastgelegd. Je kunt het SnapOtter-team nog steeds rechtstreeks bereiken.",
+      "Deze instantie heeft analyse uitgeschakeld, dus feedback wordt hier niet vastgelegd. Je kunt het Konvertt-team nog steeds rechtstreeks bereiken.",
     offlinePublicNote: "GitHub-issues zijn openbaar.",
     offlineGithubButton: "Een GitHub-issue openen",
     offlineEmailButton: "Mail ons",
     thanksTitle: "Bedankt voor je feedback.",
     thanksDescription:
-      "Het helpt ons SnapOtter te verbeteren zonder bestanden of privé-inhoud te verzamelen.",
+      "Het helpt ons Konvertt te verbeteren zonder bestanden of privé-inhoud te verzamelen.",
     quickThanks: "Bedankt voor het signaal.",
     reportIssue: "Probleem melden",
     toolPromptTitle: "Hoe werkte deze tool?",
-    toolPromptDescription: "Eén snel signaal helpt ons SnapOtter te verbeteren.",
+    toolPromptDescription: "Eén snel signaal helpt ons Konvertt te verbeteren.",
     dismissPrompt: "Feedbackverzoek sluiten",
     workedWell: "Werkte goed",
     dontAskAgain: "Niet meer vragen",
@@ -173,7 +173,7 @@ export const nl: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Hoe gebruik je SnapOtter?",
+    usageSurveyTitle: "Hoe gebruik je Konvertt?",
     priorToolLabel: "Wat gebruikte je hiervoor?",
     selfHostMotivationLabel: "Waarom zelf hosten?",
     discoverySourceLabel: "Hoe heb je ons gevonden?",
@@ -2813,7 +2813,7 @@ export const nl: TranslationKeys = {
       mosaic: "Mozaïek",
       uploadingImages: "Afbeeldingen uploaden...",
       processingCollage: "Collage verwerken...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Achtergrond",
       format: "Formaat",
       uploadImagesForCollage: "Upload afbeeldingen voor de collage",
@@ -4209,7 +4209,7 @@ export const nl: TranslationKeys = {
     pdf: "PDF",
     files: "Bestanden",
     toolCount: "{count} tools",
-    heading: "SnapOtter-tools",
+    heading: "Konvertt-tools",
   },
   fullscreenGrid: {
     searchPlaceholder: "Gereedschap zoeken...",
@@ -4343,7 +4343,7 @@ export const nl: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Terug naar SnapOtter",
+      backTitle: "Terug naar Konvertt",
     },
     welcome: {
       ariaLabel: "Afbeelding-dropzone",
@@ -4769,7 +4769,7 @@ export const nl: TranslationKeys = {
           "Deze export is te groot voor de browser om te verwerken. Probeer kleinere afmetingen.",
         saveProject: "Project opslaan",
         loadProject: "Project laden",
-        invalidProject: "Dit bestand is geen geldig SnapOtter-project.",
+        invalidProject: "Dit bestand is geen geldig Konvertt-project.",
       },
       autosaveRecovery: {
         message: "Niet-opgeslagen werk van {time} hersteld.",
@@ -4859,7 +4859,7 @@ export const nl: TranslationKeys = {
       sidebarOption: "Zijbalk",
       fullscreenGridOption: "Volledig raster",
       appVersionLabel: "App-versie",
-      appVersionDescription: "Huidige versie van SnapOtter",
+      appVersionDescription: "Huidige versie van Konvertt",
       saveButton: "Instellingen opslaan",
       saveSuccess: "Instellingen opgeslagen.",
       saveFailed: "Instellingen opslaan mislukt.",
@@ -4914,7 +4914,7 @@ export const nl: TranslationKeys = {
     privacy: {
       title: "Privacy",
       description:
-        "Anonieme productanalyse helpt SnapOtter te verbeteren. Deze staat standaard aan en wordt voor de hele instantie ingesteld door een beheerder.",
+        "Anonieme productanalyse helpt Konvertt te verbeteren. Deze staat standaard aan en wordt voor de hele instantie ingesteld door een beheerder.",
       analyticsLabel: "Anonieme productanalyse",
       analyticsDescription:
         "Deel anonieme gebruiksgegevens (welke tools worden uitgevoerd, duur, foutcodes) en crashrapporten. Geen IP-adres, geen accountidentiteit. We verzamelen nooit uw bestandsnamen, bestandsinhoud, OCR-uitvoer, afbeeldingsmetadata of documenttekst. Schakel dit uit om alles te stoppen.",
@@ -5190,7 +5190,7 @@ export const nl: TranslationKeys = {
     },
     apiKeys: {
       heading: "API-sleutels",
-      description: "Beheer API-sleutels voor programmatische toegang tot SnapOtter.",
+      description: "Beheer API-sleutels voor programmatische toegang tot Konvertt.",
       keyNamePlaceholder: "Sleutelnaam (optioneel)",
       generateButton: "API-sleutel genereren",
       removeScopingLabel: "Rechtenbegrenzing verwijderen",
@@ -5290,7 +5290,7 @@ export const nl: TranslationKeys = {
     },
     about: {
       heading: "Over",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Een zelf-gehoste, privacy-first bestandsverwerkingssuite met 200+ tools. Converteren, comprimeren, bewerken, transcriberen, OCR en automatiseer je beeld-, video-, audio-, PDF- en bestandsworkflows zonder data naar de cloud te sturen.",
       versionLabel: "Versie:",
@@ -5308,7 +5308,7 @@ export const nl: TranslationKeys = {
     logout: "Uitloggen",
     logoutFailed: "Uitloggen is mislukt. Probeer het opnieuw.",
     idpLogoutFailed:
-      "Je bent uitgelogd bij SnapOtter, maar je sessie bij de SSO-provider staat mogelijk nog open. Log daar ook uit.",
+      "Je bent uitgelogd bij Konvertt, maar je sessie bij de SSO-provider staat mogelijk nog open. Log daar ook uit.",
     username: "Gebruikersnaam",
     password: "Wachtwoord",
     loginButton: "Inloggen",
@@ -5419,8 +5419,8 @@ export const nl: TranslationKeys = {
   },
   automate: {
     title: "Automatiseren",
-    invalidPipelineFile: "Geen geldig SnapOtter-pipelinebestand",
-    newerVersion: "Deze pipeline is gemaakt met een nieuwere versie van SnapOtter",
+    invalidPipelineFile: "Geen geldig Konvertt-pipelinebestand",
+    newerVersion: "Deze pipeline is gemaakt met een nieuwere versie van Konvertt",
     missingName: "Pipelinebestand mist een naam",
     noSteps: "Pipelinebestand heeft geen stappen",
     importFailed: "Importeren mislukt",
@@ -5657,7 +5657,7 @@ export const nl: TranslationKeys = {
       docsLink: "Documentatie",
       apiRefLink: "API-referentie (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Netwerkfout",
@@ -5865,14 +5865,14 @@ export const nl: TranslationKeys = {
       bundlesQueued: "{count} in wachtrij",
     },
     updateNotice: {
-      available: "SnapOtter {version} is beschikbaar. Je gebruikt {current}.",
+      available: "Konvertt {version} is beschikbaar. Je gebruikt {current}.",
       whatsNew: "Wat is er nieuw",
       dismiss: "Updatemelding sluiten",
     },
   },
   a11y: {
     comparisonScroller: "Vergelijkingsgebied",
-    sponsorLink: "Steun SnapOtter op GitHub Sponsors",
+    sponsorLink: "Steun Konvertt op GitHub Sponsors",
     skipToContent: "Ga naar hoofdinhoud",
     openSidebar: "Zijbalk openen",
     closeSidebar: "Zijbalk sluiten",
@@ -5936,7 +5936,7 @@ export const nl: TranslationKeys = {
     settingsDialog: "Instellingen",
     helpDialog: "Help",
     navigationMenu: "Navigatie",
-    homeLink: "SnapOtter startpagina",
+    homeLink: "Konvertt startpagina",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6051,17 +6051,17 @@ export const nl: TranslationKeys = {
     lastUpdated: "Laatst bijgewerkt: 24 juni 2026",
     overview: {
       heading: "Overzicht",
-      body: "SnapOtter is een zelfgehoste, opensource-toepassing voor bestandsverwerking. Je instantie wordt volledig beheerd en bestuurd door degene die deze heeft uitgerold. Dit beleid beschrijft hoe de software zelf met je gegevens omgaat.",
+      body: "Konvertt is een zelfgehoste, opensource-toepassing voor bestandsverwerking. Je instantie wordt volledig beheerd en bestuurd door degene die deze heeft uitgerold. Dit beleid beschrijft hoe de software zelf met je gegevens omgaat.",
     },
     localProcessing: {
       heading: "Lokale verwerking",
-      body: "Alle bestandsverwerking gebeurt volledig op de server waar SnapOtter draait. Je bestanden worden nooit naar externe diensten of API's van derden gestuurd. Wanneer je een bestand uploadt om te verwerken, wordt het in het geheugen of in tijdelijke opslag op de hostmachine afgehandeld en na afloop van de bewerking niet bewaard.",
+      body: "Alle bestandsverwerking gebeurt volledig op de server waar Konvertt draait. Je bestanden worden nooit naar externe diensten of API's van derden gestuurd. Wanneer je een bestand uploadt om te verwerken, wordt het in het geheugen of in tijdelijke opslag op de hostmachine afgehandeld en na afloop van de bewerking niet bewaard.",
     },
     analytics: {
       heading: "Analyse",
-      body: "SnapOtter bevat basisanalyse (gebruik van tools, foutrapporten) om de software te verbeteren. Je bestanden, bestandsnamen en persoonsgegevens maken daar nooit deel van uit. Analyse staat standaard aan en kan tijdens gebruik worden uitgeschakeld. Een beheerder kan anonieme productanalyse uitzetten bij Instellingen > Systeem > {privacy}, zonder herstart of herbouw. Wil je het al bij het compileren hard uitzetten, bouw dan met {code}; dat haalt het volledig uit de bundel. Alles werkt gewoon zonder.",
+      body: "Konvertt bevat basisanalyse (gebruik van tools, foutrapporten) om de software te verbeteren. Je bestanden, bestandsnamen en persoonsgegevens maken daar nooit deel van uit. Analyse staat standaard aan en kan tijdens gebruik worden uitgeschakeld. Een beheerder kan anonieme productanalyse uitzetten bij Instellingen > Systeem > {privacy}, zonder herstart of herbouw. Wil je het al bij het compileren hard uitzetten, bouw dan met {code}; dat haalt het volledig uit de bundel. Alles werkt gewoon zonder.",
       feedbackBody:
-        "SnapOtter bevat ook optionele feedbackverzoeken. Feedback wordt alleen verzonden als je die indient, en alleen als analyse aanstaat. Feedbackgebeurtenissen gaan naar PostHog als {code}. Contactnaam, e-mailadres en bedrijf worden alleen meegestuurd als je het vakje voor contactopname aanvinkt. SnapOtter voegt geen bestanden, bestandsnamen, uploadpaden, OCR- of transcriptie-uitvoer, privé-documenttekst of ruwe foutlogs toe aan feedback.",
+        "Konvertt bevat ook optionele feedbackverzoeken. Feedback wordt alleen verzonden als je die indient, en alleen als analyse aanstaat. Feedbackgebeurtenissen gaan naar PostHog als {code}. Contactnaam, e-mailadres en bedrijf worden alleen meegestuurd als je het vakje voor contactopname aanvinkt. Konvertt voegt geen bestanden, bestandsnamen, uploadpaden, OCR- of transcriptie-uitvoer, privé-documenttekst of ruwe foutlogs toe aan feedback.",
     },
     dataStorage: {
       heading: "Gegevensopslag",
@@ -6073,11 +6073,11 @@ export const nl: TranslationKeys = {
     },
     openSource: {
       heading: "Opensource",
-      body: "SnapOtter is volledig opensource. Je kunt de broncode op elk moment doorlichten om deze beweringen te controleren. Transparantie is een kernprincipe van dit project.",
+      body: "Konvertt is volledig opensource. Je kunt de broncode op elk moment doorlichten om deze beweringen te controleren. Transparantie is een kernprincipe van dit project.",
     },
     yourControl: {
       heading: "Jouw controle",
-      body: "Omdat SnapOtter zelfgehost is, heeft de beheerder van de instantie volledige controle over alle gegevens. Je kunt je gegevens op elk moment verwijderen door bestanden van de server te halen of de database te wissen. Er staan geen gegevens buiten je eigen infrastructuur.",
+      body: "Omdat Konvertt zelfgehost is, heeft de beheerder van de instantie volledige controle over alle gegevens. Je kunt je gegevens op elk moment verwijderen door bestanden van de server te halen of de database te wissen. Er staan geen gegevens buiten je eigen infrastructuur.",
     },
   },
 } as const;

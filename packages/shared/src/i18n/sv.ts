@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const sv: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x-data importerad.",
+    successTitle: "Konvertt 1.x-data importerad.",
     successBody: "Överförde {users} användare och {files} sparade filer från din tidigare version.",
     warningTitle: "1.x-databas hittades men importerades inte.",
     warningBody:
@@ -59,12 +59,12 @@ export const sv: TranslationKeys = {
     adminDialogTitle: "Hur gick installationen?",
     closeLabel: "Stäng feedbackdialogen",
     privacyNote:
-      "Feedback skickas bara när du skickar in den. SnapOtter inkluderar inte dina filer, filinnehåll, filnamn eller privata resultat.",
+      "Feedback skickas bara när du skickar in den. Konvertt inkluderar inte dina filer, filinnehåll, filnamn eller privata resultat.",
     typeLabel: "Typ av feedback",
     sentimentLabel: "Snabbt betyg",
     messageLabel: "Feedback",
     messagePlaceholder:
-      "Berätta vad som fungerade, vad som gick fel eller vad som skulle göra SnapOtter bättre.",
+      "Berätta vad som fungerade, vad som gick fel eller vad som skulle göra Konvertt bättre.",
     improveFirstLabel: "Vad bör vi förbättra först?",
     improveFirstPlaceholder: "Berätta vad som gjorde installationen svårare än den borde vara.",
     contactOkLabel: "Det går bra att kontakta mig om den här feedbacken.",
@@ -79,17 +79,17 @@ export const sv: TranslationKeys = {
     searchMissDiscussionsFallback:
       "Vi kunde inte registrera det. Öppna en förfrågan i Discussions.",
     offlineDescription:
-      "Den här instansen har stängt av analysen, så feedback registreras inte här. Du kan ändå nå SnapOtter-teamet direkt.",
+      "Den här instansen har stängt av analysen, så feedback registreras inte här. Du kan ändå nå Konvertt-teamet direkt.",
     offlinePublicNote: "GitHub-ärenden är offentliga.",
     offlineGithubButton: "Öppna ett GitHub-ärende",
     offlineEmailButton: "Mejla oss",
     thanksTitle: "Tack för din feedback.",
     thanksDescription:
-      "Det hjälper oss att förbättra SnapOtter utan att samla in filer eller privat innehåll.",
+      "Det hjälper oss att förbättra Konvertt utan att samla in filer eller privat innehåll.",
     quickThanks: "Tack för signalen.",
     reportIssue: "Rapportera problem",
     toolPromptTitle: "Hur fungerade det här verktyget?",
-    toolPromptDescription: "En snabb signal hjälper oss att förbättra SnapOtter.",
+    toolPromptDescription: "En snabb signal hjälper oss att förbättra Konvertt.",
     dismissPrompt: "Avfärda feedbackförfrågan",
     workedWell: "Fungerade bra",
     dontAskAgain: "Fråga inte igen",
@@ -173,7 +173,7 @@ export const sv: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Hur använder du SnapOtter?",
+    usageSurveyTitle: "Hur använder du Konvertt?",
     priorToolLabel: "Vad använde du tidigare?",
     selfHostMotivationLabel: "Varför självhosta?",
     discoverySourceLabel: "Hur hörde du talas om oss?",
@@ -2795,7 +2795,7 @@ export const sv: TranslationKeys = {
       mosaic: "Mosaik",
       uploadingImages: "Laddar upp bilder...",
       processingCollage: "Bearbetar collage...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Bakgrund",
       format: "Format",
       uploadImagesForCollage: "Ladda upp bilder för collage",
@@ -4188,7 +4188,7 @@ export const sv: TranslationKeys = {
     pdf: "PDF",
     files: "Filer",
     toolCount: "{count} verktyg",
-    heading: "SnapOtter-verktyg",
+    heading: "Konvertt-verktyg",
   },
   fullscreenGrid: {
     searchPlaceholder: "Sök verktyg...",
@@ -4322,7 +4322,7 @@ export const sv: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Tillbaka till SnapOtter",
+      backTitle: "Tillbaka till Konvertt",
     },
     welcome: {
       ariaLabel: "Bild-släppzon",
@@ -4748,7 +4748,7 @@ export const sv: TranslationKeys = {
           "Den här exporten är för stor för att webbläsaren ska kunna skapa den. Prova mindre mått.",
         saveProject: "Spara projekt",
         loadProject: "Öppna projekt",
-        invalidProject: "Den här filen är inte ett giltigt SnapOtter-projekt.",
+        invalidProject: "Den här filen är inte ett giltigt Konvertt-projekt.",
       },
       autosaveRecovery: {
         message: "Återställde osparat arbete från {time}.",
@@ -4838,7 +4838,7 @@ export const sv: TranslationKeys = {
       sidebarOption: "Sidofält",
       fullscreenGridOption: "Helskärm-rutnät",
       appVersionLabel: "Appversion",
-      appVersionDescription: "Aktuell version av SnapOtter",
+      appVersionDescription: "Aktuell version av Konvertt",
       saveButton: "Spara inställningar",
       saveSuccess: "Inställningar sparade.",
       saveFailed: "Kunde inte spara inställningar.",
@@ -4892,7 +4892,7 @@ export const sv: TranslationKeys = {
     privacy: {
       title: "Integritet",
       description:
-        "Anonym produktanalys hjälper till att förbättra SnapOtter. Den är på som standard och ställs in för hela instansen av en administratör.",
+        "Anonym produktanalys hjälper till att förbättra Konvertt. Den är på som standard och ställs in för hela instansen av en administratör.",
       analyticsLabel: "Anonym produktanalys",
       analyticsDescription:
         "Dela anonyma användningsdata (vilka verktyg som körs, tidsåtgång, felkoder) och kraschrapporter. Ingen IP-adress, ingen kontoidentitet. Vi samlar aldrig in dina filnamn, filinnehåll, OCR-utdata, bildmetadata eller dokumenttext. Stäng av det här för att stoppa allt.",
@@ -5168,7 +5168,7 @@ export const sv: TranslationKeys = {
     },
     apiKeys: {
       heading: "API-nycklar",
-      description: "Hantera API-nycklar för programmatisk åtkomst till SnapOtter.",
+      description: "Hantera API-nycklar för programmatisk åtkomst till Konvertt.",
       keyNamePlaceholder: "Nyckelnamn (valfritt)",
       generateButton: "Generera API-nyckel",
       removeScopingLabel: "Ta bort behörighetsavgränsning",
@@ -5266,7 +5266,7 @@ export const sv: TranslationKeys = {
     },
     about: {
       heading: "Om",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "En självhostad, integritetsfokuserad filbehandlingssvit med 200+ verktyg. Konvertera, komprimera, redigera, transkribera, OCR, och automatisera bild-, video-, ljud-, PDF- och filarbetsflöden utan att skicka data till molnet.",
       versionLabel: "Version:",
@@ -5284,7 +5284,7 @@ export const sv: TranslationKeys = {
     logout: "Logga ut",
     logoutFailed: "Det gick inte att logga ut. Försök igen.",
     idpLogoutFailed:
-      "Du har loggats ut från SnapOtter, men din session hos SSO-leverantören kan fortfarande vara öppen. Logga ut där också.",
+      "Du har loggats ut från Konvertt, men din session hos SSO-leverantören kan fortfarande vara öppen. Logga ut där också.",
     username: "Användarnamn",
     password: "Lösenord",
     loginButton: "Logga in",
@@ -5393,8 +5393,8 @@ export const sv: TranslationKeys = {
   },
   automate: {
     title: "Automatisera",
-    invalidPipelineFile: "Inte en giltig SnapOtter-pipelinefil",
-    newerVersion: "Denna pipeline skapades med en nyare version av SnapOtter",
+    invalidPipelineFile: "Inte en giltig Konvertt-pipelinefil",
+    newerVersion: "Denna pipeline skapades med en nyare version av Konvertt",
     missingName: "Pipelinefil saknar namn",
     noSteps: "Pipelinefil har inga steg",
     importFailed: "Import misslyckades",
@@ -5629,7 +5629,7 @@ export const sv: TranslationKeys = {
       docsLink: "Dokumentation",
       apiRefLink: "API-referens (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Nätverksfel",
@@ -5834,14 +5834,14 @@ export const sv: TranslationKeys = {
       bundlesQueued: "{count} i kö",
     },
     updateNotice: {
-      available: "SnapOtter {version} finns nu. Du kör {current}.",
+      available: "Konvertt {version} finns nu. Du kör {current}.",
       whatsNew: "Nyheter",
       dismiss: "Stäng uppdateringsmeddelandet",
     },
   },
   a11y: {
     comparisonScroller: "Jämförelseområde",
-    sponsorLink: "Stöd SnapOtter på GitHub Sponsors",
+    sponsorLink: "Stöd Konvertt på GitHub Sponsors",
     skipToContent: "Hoppa till huvudinnehåll",
     openSidebar: "Öppna sidopanel",
     closeSidebar: "Stäng sidopanel",
@@ -5905,7 +5905,7 @@ export const sv: TranslationKeys = {
     settingsDialog: "Inställningar",
     helpDialog: "Hjälp",
     navigationMenu: "Navigering",
-    homeLink: "SnapOtter hem",
+    homeLink: "Konvertt hem",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6019,17 +6019,17 @@ export const sv: TranslationKeys = {
     lastUpdated: "Senast uppdaterad: 24 juni 2026",
     overview: {
       heading: "Översikt",
-      body: "SnapOtter är en självhostad filbehandlingsapplikation med öppen källkod. Din instans drivs och kontrolleras helt av den som har installerat den. Den här policyn beskriver hur själva programvaran hanterar dina data.",
+      body: "Konvertt är en självhostad filbehandlingsapplikation med öppen källkod. Din instans drivs och kontrolleras helt av den som har installerat den. Den här policyn beskriver hur själva programvaran hanterar dina data.",
     },
     localProcessing: {
       heading: "Lokal bearbetning",
-      body: "All filbehandling sker helt och hållet på den server där SnapOtter är installerat. Dina filer skickas aldrig till externa tjänster eller tredjeparts-API:er. När du laddar upp en fil för bearbetning hanteras den i minnet eller i tillfällig lagring på värddatorn, och den sparas inte efter att åtgärden är klar.",
+      body: "All filbehandling sker helt och hållet på den server där Konvertt är installerat. Dina filer skickas aldrig till externa tjänster eller tredjeparts-API:er. När du laddar upp en fil för bearbetning hanteras den i minnet eller i tillfällig lagring på värddatorn, och den sparas inte efter att åtgärden är klar.",
     },
     analytics: {
       heading: "Analys",
-      body: "SnapOtter har enkel analys (verktygsanvändning, felrapporter) som hjälper oss att förbättra programvaran. Dina filer, filnamn och personuppgifter ingår aldrig i den. Analysen är på som standard och kan stängas av under drift. En administratör kan stänga av anonym produktanalys under Inställningar > System > {privacy}, utan omstart eller ombyggnad. Vill du stänga av den redan vid kompilering bygger du med {code}, vilket tar bort den helt ur paketet. Allt fungerar normalt utan den.",
+      body: "Konvertt har enkel analys (verktygsanvändning, felrapporter) som hjälper oss att förbättra programvaran. Dina filer, filnamn och personuppgifter ingår aldrig i den. Analysen är på som standard och kan stängas av under drift. En administratör kan stänga av anonym produktanalys under Inställningar > System > {privacy}, utan omstart eller ombyggnad. Vill du stänga av den redan vid kompilering bygger du med {code}, vilket tar bort den helt ur paketet. Allt fungerar normalt utan den.",
       feedbackBody:
-        "SnapOtter har också valfria feedbackfrågor. Feedback skickas bara när du skickar in den, och bara när analysen är aktiverad. Feedbackhändelser går till PostHog som {code}. Namn, e-post och företag skickas bara om du kryssar i rutan för kontakt. SnapOtter bifogar aldrig filer, filnamn, uppladdningssökvägar, OCR- eller transkriptionsresultat, privat dokumenttext eller råa felloggar till feedback.",
+        "Konvertt har också valfria feedbackfrågor. Feedback skickas bara när du skickar in den, och bara när analysen är aktiverad. Feedbackhändelser går till PostHog som {code}. Namn, e-post och företag skickas bara om du kryssar i rutan för kontakt. Konvertt bifogar aldrig filer, filnamn, uppladdningssökvägar, OCR- eller transkriptionsresultat, privat dokumenttext eller råa felloggar till feedback.",
     },
     dataStorage: {
       heading: "Datalagring",
@@ -6041,11 +6041,11 @@ export const sv: TranslationKeys = {
     },
     openSource: {
       heading: "Öppen källkod",
-      body: "SnapOtter har helt öppen källkod. Du kan granska källkoden när som helst för att kontrollera det som står här. Transparens är en grundprincip i det här projektet.",
+      body: "Konvertt har helt öppen källkod. Du kan granska källkoden när som helst för att kontrollera det som står här. Transparens är en grundprincip i det här projektet.",
     },
     yourControl: {
       heading: "Din kontroll",
-      body: "Eftersom SnapOtter är självhostat har den som driver instansen full kontroll över all data. Du kan radera dina data när du vill genom att ta bort filer från servern eller radera databasen. Ingen data finns utanför din egen infrastruktur.",
+      body: "Eftersom Konvertt är självhostat har den som driver instansen full kontroll över all data. Du kan radera dina data när du vill genom att ta bort filer från servern eller radera databasen. Ingen data finns utanför din egen infrastruktur.",
     },
   },
 } as const;

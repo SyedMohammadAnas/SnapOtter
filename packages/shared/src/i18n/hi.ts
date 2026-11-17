@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const hi: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x डेटा आयात किया गया।",
+    successTitle: "Konvertt 1.x डेटा आयात किया गया।",
     successBody: "आपके पिछले संस्करण से {users} उपयोगकर्ता और {files} सहेजी गई फ़ाइलें स्थानांतरित की गईं।",
     warningTitle: "1.x डेटाबेस मिला, लेकिन आयात नहीं किया गया।",
     warningBody:
@@ -59,11 +59,11 @@ export const hi: TranslationKeys = {
     adminDialogTitle: "सेटअप कैसा रहा?",
     closeLabel: "प्रतिक्रिया डायलॉग बंद करें",
     privacyNote:
-      "प्रतिक्रिया केवल तभी भेजी जाती है जब आप इसे सबमिट करते हैं. SnapOtter इसमें आपकी फ़ाइलें, फ़ाइल सामग्री, फ़ाइल नाम या निजी आउटपुट शामिल नहीं करता.",
+      "प्रतिक्रिया केवल तभी भेजी जाती है जब आप इसे सबमिट करते हैं. Konvertt इसमें आपकी फ़ाइलें, फ़ाइल सामग्री, फ़ाइल नाम या निजी आउटपुट शामिल नहीं करता.",
     typeLabel: "प्रतिक्रिया का प्रकार",
     sentimentLabel: "त्वरित रेटिंग",
     messageLabel: "प्रतिक्रिया",
-    messagePlaceholder: "हमें बताएं कि क्या अच्छा चला, क्या टूटा, या SnapOtter को क्या बेहतर बनाएगा.",
+    messagePlaceholder: "हमें बताएं कि क्या अच्छा चला, क्या टूटा, या Konvertt को क्या बेहतर बनाएगा.",
     improveFirstLabel: "हमें सबसे पहले क्या बेहतर करना चाहिए?",
     improveFirstPlaceholder: "हमें बताएं कि सेटअप को ज़रूरत से ज़्यादा कठिन किसने बनाया.",
     contactOkLabel: "आप इस प्रतिक्रिया के बारे में मुझसे संपर्क कर सकते हैं.",
@@ -77,16 +77,16 @@ export const hi: TranslationKeys = {
     searchMissContext: "आपने खोजा: {query}",
     searchMissDiscussionsFallback: "हम इसे रिकॉर्ड नहीं कर सके. Discussions में अनुरोध खोलें.",
     offlineDescription:
-      "इस इंस्टेंस पर एनालिटिक्स बंद है, इसलिए प्रतिक्रिया यहाँ रिकॉर्ड नहीं होती. फिर भी आप SnapOtter टीम से सीधे संपर्क कर सकते हैं.",
+      "इस इंस्टेंस पर एनालिटिक्स बंद है, इसलिए प्रतिक्रिया यहाँ रिकॉर्ड नहीं होती. फिर भी आप Konvertt टीम से सीधे संपर्क कर सकते हैं.",
     offlinePublicNote: "GitHub issue सार्वजनिक होते हैं.",
     offlineGithubButton: "GitHub issue खोलें",
     offlineEmailButton: "हमें ईमेल करें",
     thanksTitle: "प्रतिक्रिया के लिए धन्यवाद.",
-    thanksDescription: "यह हमें फ़ाइलें या निजी सामग्री एकत्र किए बिना SnapOtter बेहतर बनाने में मदद करता है.",
+    thanksDescription: "यह हमें फ़ाइलें या निजी सामग्री एकत्र किए बिना Konvertt बेहतर बनाने में मदद करता है.",
     quickThanks: "संकेत के लिए धन्यवाद.",
     reportIssue: "समस्या रिपोर्ट करें",
     toolPromptTitle: "यह टूल कैसा रहा?",
-    toolPromptDescription: "एक त्वरित संकेत SnapOtter को बेहतर बनाने में हमारी मदद करता है.",
+    toolPromptDescription: "एक त्वरित संकेत Konvertt को बेहतर बनाने में हमारी मदद करता है.",
     dismissPrompt: "प्रतिक्रिया प्रॉम्प्ट खारिज करें",
     workedWell: "अच्छा चला",
     dontAskAgain: "दोबारा न पूछें",
@@ -170,7 +170,7 @@ export const hi: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "आप SnapOtter का उपयोग कैसे कर रहे हैं?",
+    usageSurveyTitle: "आप Konvertt का उपयोग कैसे कर रहे हैं?",
     priorToolLabel: "इससे पहले आप क्या इस्तेमाल कर रहे थे?",
     selfHostMotivationLabel: "इसे सेल्फ-होस्ट क्यों करें?",
     discoverySourceLabel: "आपको हमारे बारे में कैसे पता चला?",
@@ -2602,7 +2602,7 @@ export const hi: TranslationKeys = {
       mosaic: "मोज़ेक",
       uploadingImages: "इमेज अपलोड हो रही हैं...",
       processingCollage: "कोलाज प्रोसेस हो रहा है...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "बैकग्राउंड",
       format: "फॉर्मेट",
       uploadImagesForCollage: "कोलाज के लिए इमेज अपलोड करें",
@@ -3988,7 +3988,7 @@ export const hi: TranslationKeys = {
     pdf: "PDF",
     files: "फ़ाइल्स",
     toolCount: "{count} टूल",
-    heading: "SnapOtter टूल्स",
+    heading: "Konvertt टूल्स",
   },
   fullscreenGrid: {
     searchPlaceholder: "टूल्स खोजें...",
@@ -4122,7 +4122,7 @@ export const hi: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "SnapOtter पर वापस",
+      backTitle: "Konvertt पर वापस",
     },
     welcome: {
       ariaLabel: "इमेज ड्रॉप ज़ोन",
@@ -4546,7 +4546,7 @@ export const hi: TranslationKeys = {
         tooLarge: "यह एक्सपोर्ट इतना बड़ा है कि ब्राउज़र उसे रेंडर नहीं कर सकता। छोटे आयाम आज़माकर देखें।",
         saveProject: "प्रोजेक्ट सहेजें",
         loadProject: "प्रोजेक्ट लोड करें",
-        invalidProject: "यह फ़ाइल एक वैध SnapOtter प्रोजेक्ट नहीं है।",
+        invalidProject: "यह फ़ाइल एक वैध Konvertt प्रोजेक्ट नहीं है।",
       },
       autosaveRecovery: {
         message: "{time} का सहेजा न गया काम पुनर्प्राप्त किया गया।",
@@ -4636,7 +4636,7 @@ export const hi: TranslationKeys = {
       sidebarOption: "साइडबार",
       fullscreenGridOption: "फुलस्क्रीन ग्रिड",
       appVersionLabel: "ऐप वर्शन",
-      appVersionDescription: "SnapOtter का वर्तमान वर्शन",
+      appVersionDescription: "Konvertt का वर्तमान वर्शन",
       saveButton: "सेटिंग्स सहेजें",
       saveSuccess: "सेटिंग्स सहेजी गईं।",
       saveFailed: "सेटिंग्स सहेजने में विफल।",
@@ -4690,7 +4690,7 @@ export const hi: TranslationKeys = {
     privacy: {
       title: "गोपनीयता",
       description:
-        "अनाम उत्पाद एनालिटिक्स SnapOtter को बेहतर बनाने में मदद करता है। यह डिफ़ॉल्ट रूप से चालू रहता है और पूरे इंस्टेंस के लिए इसे एक प्रशासक द्वारा सेट किया जाता है।",
+        "अनाम उत्पाद एनालिटिक्स Konvertt को बेहतर बनाने में मदद करता है। यह डिफ़ॉल्ट रूप से चालू रहता है और पूरे इंस्टेंस के लिए इसे एक प्रशासक द्वारा सेट किया जाता है।",
       analyticsLabel: "अनाम उत्पाद एनालिटिक्स",
       analyticsDescription:
         "अनाम उपयोग डेटा (कौन-से टूल चलते हैं, अवधि, त्रुटि कोड) और क्रैश रिपोर्ट साझा करें। कोई IP पता नहीं, कोई खाता पहचान नहीं। हम आपकी फ़ाइलों के नाम, फ़ाइल सामग्री, OCR आउटपुट, छवि मेटाडेटा या दस्तावेज़ टेक्स्ट कभी एकत्र नहीं करते। यह सब रोकने के लिए इसे बंद कर दें।",
@@ -4958,7 +4958,7 @@ export const hi: TranslationKeys = {
     },
     apiKeys: {
       heading: "API कुंजियां",
-      description: "SnapOtter तक प्रोग्रामेटिक एक्सेस के लिए API कुंजियों का प्रबंधन करें।",
+      description: "Konvertt तक प्रोग्रामेटिक एक्सेस के लिए API कुंजियों का प्रबंधन करें।",
       keyNamePlaceholder: "कुंजी का नाम (वैकल्पिक)",
       generateButton: "API कुंजी जनरेट करें",
       removeScopingLabel: "अनुमति स्कोपिंग हटाएं",
@@ -5050,7 +5050,7 @@ export const hi: TranslationKeys = {
     },
     about: {
       heading: "जानकारी",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "200+ टूल्स के साथ गोपनीयता-पहले, सेल्फ-होस्टेड फ़ाइल प्रोसेसिंग सूट। क्लाउड को डेटा भेजे बिना कन्वर्ट, कंप्रेस, एडिट, ट्रांसक्राइब, OCR और इमेज, वीडियो, ऑडियो, PDF और फ़ाइल वर्कफ्लो ऑटोमेट करें।",
       versionLabel: "वर्शन:",
@@ -5068,7 +5068,7 @@ export const hi: TranslationKeys = {
     logout: "लॉग आउट",
     logoutFailed: "साइन आउट नहीं हो सका। फिर से कोशिश करें।",
     idpLogoutFailed:
-      "आप SnapOtter से साइन आउट हो गए हैं, लेकिन आपका SSO प्रोवाइडर सत्र अभी भी खुला हो सकता है। वहां से भी साइन आउट करें।",
+      "आप Konvertt से साइन आउट हो गए हैं, लेकिन आपका SSO प्रोवाइडर सत्र अभी भी खुला हो सकता है। वहां से भी साइन आउट करें।",
     username: "यूज़रनेम",
     password: "पासवर्ड",
     loginButton: "लॉगिन",
@@ -5174,8 +5174,8 @@ export const hi: TranslationKeys = {
   },
   automate: {
     title: "ऑटोमेट",
-    invalidPipelineFile: "यह एक वैध SnapOtter Pipeline फाइल नहीं है",
-    newerVersion: "यह Pipeline SnapOtter के एक नए वर्शन से बनाया गया था",
+    invalidPipelineFile: "यह एक वैध Konvertt Pipeline फाइल नहीं है",
+    newerVersion: "यह Pipeline Konvertt के एक नए वर्शन से बनाया गया था",
     missingName: "Pipeline फाइल में नाम नहीं है",
     noSteps: "Pipeline फाइल में कोई स्टेप नहीं है",
     importFailed: "इम्पोर्ट विफल",
@@ -5409,7 +5409,7 @@ export const hi: TranslationKeys = {
       docsLink: "डॉक्यूमेंटेशन",
       apiRefLink: "API रेफरेंस (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "नेटवर्क त्रुटि",
@@ -5602,14 +5602,14 @@ export const hi: TranslationKeys = {
       bundlesQueued: "{count} कतार में",
     },
     updateNotice: {
-      available: "SnapOtter {version} उपलब्ध है। आप {current} इस्तेमाल कर रहे हैं।",
+      available: "Konvertt {version} उपलब्ध है। आप {current} इस्तेमाल कर रहे हैं।",
       whatsNew: "नया क्या है",
       dismiss: "अपडेट सूचना बंद करें",
     },
   },
   a11y: {
     comparisonScroller: "तुलना क्षेत्र",
-    sponsorLink: "GitHub Sponsors पर SnapOtter का समर्थन करें",
+    sponsorLink: "GitHub Sponsors पर Konvertt का समर्थन करें",
     skipToContent: "मुख्य सामग्री पर जाएं",
     openSidebar: "साइडबार खोलें",
     closeSidebar: "साइडबार बंद करें",
@@ -5673,7 +5673,7 @@ export const hi: TranslationKeys = {
     settingsDialog: "सेटिंग्स",
     helpDialog: "सहायता",
     navigationMenu: "नेविगेशन",
-    homeLink: "SnapOtter होम",
+    homeLink: "Konvertt होम",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5784,17 +5784,17 @@ export const hi: TranslationKeys = {
     lastUpdated: "अंतिम अपडेट: 24 जून 2026",
     overview: {
       heading: "अवलोकन",
-      body: "SnapOtter एक सेल्फ-होस्टेड, ओपन-सोर्स फ़ाइल प्रोसेसिंग एप्लिकेशन है। आपका इंस्टेंस पूरी तरह उसी के संचालन और नियंत्रण में रहता है जिसने इसे डिप्लॉय किया है। यह नीति बताती है कि सॉफ़्टवेयर खुद आपके डेटा को कैसे संभालता है।",
+      body: "Konvertt एक सेल्फ-होस्टेड, ओपन-सोर्स फ़ाइल प्रोसेसिंग एप्लिकेशन है। आपका इंस्टेंस पूरी तरह उसी के संचालन और नियंत्रण में रहता है जिसने इसे डिप्लॉय किया है। यह नीति बताती है कि सॉफ़्टवेयर खुद आपके डेटा को कैसे संभालता है।",
     },
     localProcessing: {
       heading: "लोकल प्रोसेसिंग",
-      body: "सारी फ़ाइल प्रोसेसिंग पूरी तरह उसी सर्वर पर होती है जहां SnapOtter डिप्लॉय है। आपकी फ़ाइलें कभी बाहरी सेवाओं या तृतीय-पक्ष API को नहीं भेजी जातीं। जब आप प्रोसेसिंग के लिए कोई फ़ाइल अपलोड करते हैं, तो उसे होस्ट मशीन की मेमोरी या अस्थायी स्टोरेज में संभाला जाता है और काम पूरा होने के बाद रखा नहीं जाता।",
+      body: "सारी फ़ाइल प्रोसेसिंग पूरी तरह उसी सर्वर पर होती है जहां Konvertt डिप्लॉय है। आपकी फ़ाइलें कभी बाहरी सेवाओं या तृतीय-पक्ष API को नहीं भेजी जातीं। जब आप प्रोसेसिंग के लिए कोई फ़ाइल अपलोड करते हैं, तो उसे होस्ट मशीन की मेमोरी या अस्थायी स्टोरेज में संभाला जाता है और काम पूरा होने के बाद रखा नहीं जाता।",
     },
     analytics: {
       heading: "एनालिटिक्स",
-      body: "सॉफ़्टवेयर को बेहतर बनाने में मदद के लिए SnapOtter में बुनियादी एनालिटिक्स (टूल उपयोग, त्रुटि रिपोर्ट) शामिल है। आपकी फ़ाइलें, फ़ाइल नाम और निजी डेटा इसका हिस्सा कभी नहीं होते। एनालिटिक्स डिफ़ॉल्ट रूप से चालू रहता है और इसे रनटाइम पर बंद किया जा सकता है। एक प्रशासक अनाम उत्पाद एनालिटिक्स को सेटिंग्स > सिस्टम > {privacy} में बंद कर सकता है, इसके लिए किसी रीस्टार्ट या रीबिल्ड की ज़रूरत नहीं। कंपाइल-टाइम पर पूरी तरह बंद करने के लिए {code} के साथ बिल्ड करें, जो इसे बंडल से पूरी तरह हटा देता है। इसके बिना भी सब कुछ सामान्य रूप से काम करता है।",
+      body: "सॉफ़्टवेयर को बेहतर बनाने में मदद के लिए Konvertt में बुनियादी एनालिटिक्स (टूल उपयोग, त्रुटि रिपोर्ट) शामिल है। आपकी फ़ाइलें, फ़ाइल नाम और निजी डेटा इसका हिस्सा कभी नहीं होते। एनालिटिक्स डिफ़ॉल्ट रूप से चालू रहता है और इसे रनटाइम पर बंद किया जा सकता है। एक प्रशासक अनाम उत्पाद एनालिटिक्स को सेटिंग्स > सिस्टम > {privacy} में बंद कर सकता है, इसके लिए किसी रीस्टार्ट या रीबिल्ड की ज़रूरत नहीं। कंपाइल-टाइम पर पूरी तरह बंद करने के लिए {code} के साथ बिल्ड करें, जो इसे बंडल से पूरी तरह हटा देता है। इसके बिना भी सब कुछ सामान्य रूप से काम करता है।",
       feedbackBody:
-        "SnapOtter में वैकल्पिक प्रतिक्रिया प्रॉम्प्ट भी शामिल हैं। प्रतिक्रिया केवल तभी भेजी जाती है जब आप उसे सबमिट करते हैं, और केवल तभी जब एनालिटिक्स चालू हो। प्रतिक्रिया इवेंट PostHog को {code} के रूप में जाते हैं। संपर्क नाम, ईमेल और कंपनी तभी भेजे जाते हैं जब आप संपर्क अनुमति बॉक्स चेक करते हैं। SnapOtter प्रतिक्रिया के साथ फ़ाइलें, फ़ाइल नाम, अपलोड पाथ, OCR/ट्रांसक्रिप्शन आउटपुट, निजी दस्तावेज़ टेक्स्ट या कच्चे त्रुटि लॉग नहीं जोड़ता।",
+        "Konvertt में वैकल्पिक प्रतिक्रिया प्रॉम्प्ट भी शामिल हैं। प्रतिक्रिया केवल तभी भेजी जाती है जब आप उसे सबमिट करते हैं, और केवल तभी जब एनालिटिक्स चालू हो। प्रतिक्रिया इवेंट PostHog को {code} के रूप में जाते हैं। संपर्क नाम, ईमेल और कंपनी तभी भेजे जाते हैं जब आप संपर्क अनुमति बॉक्स चेक करते हैं। Konvertt प्रतिक्रिया के साथ फ़ाइलें, फ़ाइल नाम, अपलोड पाथ, OCR/ट्रांसक्रिप्शन आउटपुट, निजी दस्तावेज़ टेक्स्ट या कच्चे त्रुटि लॉग नहीं जोड़ता।",
     },
     dataStorage: {
       heading: "डेटा स्टोरेज",
@@ -5806,11 +5806,11 @@ export const hi: TranslationKeys = {
     },
     openSource: {
       heading: "ओपन सोर्स",
-      body: "SnapOtter पूरी तरह ओपन सोर्स है। इन दावों की पुष्टि के लिए आप कभी भी सोर्स कोड की जांच कर सकते हैं। पारदर्शिता इस प्रोजेक्ट का मूल सिद्धांत है।",
+      body: "Konvertt पूरी तरह ओपन सोर्स है। इन दावों की पुष्टि के लिए आप कभी भी सोर्स कोड की जांच कर सकते हैं। पारदर्शिता इस प्रोजेक्ट का मूल सिद्धांत है।",
     },
     yourControl: {
       heading: "आपका नियंत्रण",
-      body: "चूंकि SnapOtter सेल्फ-होस्टेड है, इंस्टेंस संचालक का सारे डेटा पर पूरा नियंत्रण होता है। आप सर्वर से फ़ाइलें हटाकर या डेटाबेस मिटाकर कभी भी अपना डेटा हटा सकते हैं। आपके इंफ्रास्ट्रक्चर के बाहर कोई डेटा मौजूद नहीं रहता।",
+      body: "चूंकि Konvertt सेल्फ-होस्टेड है, इंस्टेंस संचालक का सारे डेटा पर पूरा नियंत्रण होता है। आप सर्वर से फ़ाइलें हटाकर या डेटाबेस मिटाकर कभी भी अपना डेटा हटा सकते हैं। आपके इंफ्रास्ट्रक्चर के बाहर कोई डेटा मौजूद नहीं रहता।",
     },
   },
 } as const;

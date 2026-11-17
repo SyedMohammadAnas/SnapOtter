@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const zhTW: TranslationKeys = {
   migrationBanner: {
-    successTitle: "已匯入 SnapOtter 1.x 資料。",
+    successTitle: "已匯入 Konvertt 1.x 資料。",
     successBody: "已從舊版本移轉 {users} 位使用者與 {files} 個已儲存檔案。",
     warningTitle: "偵測到 1.x 資料庫，但未匯入。",
     warningBody:
@@ -59,11 +59,11 @@ export const zhTW: TranslationKeys = {
     adminDialogTitle: "架設體驗如何？",
     closeLabel: "關閉意見回饋對話框",
     privacyNote:
-      "意見回饋只有在你送出時才會傳送。SnapOtter 不會包含你的檔案、檔案內容、檔案名稱或私人輸出結果。",
+      "意見回饋只有在你送出時才會傳送。Konvertt 不會包含你的檔案、檔案內容、檔案名稱或私人輸出結果。",
     typeLabel: "意見回饋類型",
     sentimentLabel: "快速評分",
     messageLabel: "意見回饋",
-    messagePlaceholder: "告訴我們哪裡好用、哪裡出了問題，或是怎麼做能讓 SnapOtter 更好。",
+    messagePlaceholder: "告訴我們哪裡好用、哪裡出了問題，或是怎麼做能讓 Konvertt 更好。",
     improveFirstLabel: "我們應該優先改善什麼？",
     improveFirstPlaceholder: "告訴我們是什麼讓架設變得比預期更困難。",
     contactOkLabel: "可以就這則意見回饋與我聯絡。",
@@ -77,16 +77,16 @@ export const zhTW: TranslationKeys = {
     searchMissContext: "你搜尋了：{query}",
     searchMissDiscussionsFallback: "我們無法記錄。請在 Discussions 中發起請求。",
     offlineDescription:
-      "此執行個體已關閉分析功能，因此意見回饋不會記錄在這裡。你仍然可以直接聯絡 SnapOtter 團隊。",
+      "此執行個體已關閉分析功能，因此意見回饋不會記錄在這裡。你仍然可以直接聯絡 Konvertt 團隊。",
     offlinePublicNote: "GitHub issue 是公開的。",
     offlineGithubButton: "建立 GitHub issue",
     offlineEmailButton: "寄電子郵件給我們",
     thanksTitle: "感謝你的意見回饋。",
-    thanksDescription: "這能幫助我們改善 SnapOtter，同時不會收集你的檔案或私人內容。",
+    thanksDescription: "這能幫助我們改善 Konvertt，同時不會收集你的檔案或私人內容。",
     quickThanks: "感謝你的回饋。",
     reportIssue: "回報問題",
     toolPromptTitle: "這個工具用起來如何？",
-    toolPromptDescription: "一個簡單的回饋就能幫助我們改善 SnapOtter。",
+    toolPromptDescription: "一個簡單的回饋就能幫助我們改善 Konvertt。",
     dismissPrompt: "關閉意見回饋提示",
     workedWell: "運作良好",
     dontAskAgain: "不要再詢問",
@@ -169,7 +169,7 @@ export const zhTW: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "您如何使用 SnapOtter?",
+    usageSurveyTitle: "您如何使用 Konvertt?",
     priorToolLabel: "您之前用的是什麼?",
     selfHostMotivationLabel: "為什麼選擇自架?",
     discoverySourceLabel: "您是如何得知我們的?",
@@ -2532,7 +2532,7 @@ export const zhTW: TranslationKeys = {
       mosaic: "馬賽克",
       uploadingImages: "正在上傳影像...",
       processingCollage: "正在處理拼貼畫...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "背景",
       format: "格式",
       uploadImagesForCollage: "上傳影像以建立拼貼畫",
@@ -3913,7 +3913,7 @@ export const zhTW: TranslationKeys = {
     pdf: "PDF",
     files: "檔案",
     toolCount: "{count} 個工具",
-    heading: "SnapOtter 工具",
+    heading: "Konvertt 工具",
   },
   fullscreenGrid: {
     searchPlaceholder: "搜尋工具...",
@@ -4047,7 +4047,7 @@ export const zhTW: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "返回SnapOtter",
+      backTitle: "返回Konvertt",
     },
     welcome: {
       ariaLabel: "影像拖放區域",
@@ -4468,7 +4468,7 @@ export const zhTW: TranslationKeys = {
         tooLarge: "匯出內容太大，瀏覽器無法產生。請嘗試較小的尺寸。",
         saveProject: "儲存專案",
         loadProject: "載入專案",
-        invalidProject: "此檔案不是有效的 SnapOtter 專案。",
+        invalidProject: "此檔案不是有效的 Konvertt 專案。",
       },
       autosaveRecovery: {
         message: "已復原 {time} 尚未儲存的工作內容。",
@@ -4557,7 +4557,7 @@ export const zhTW: TranslationKeys = {
       sidebarOption: "側邊欄",
       fullscreenGridOption: "全螢幕格線",
       appVersionLabel: "應用程式版本",
-      appVersionDescription: "SnapOtter目前版本",
+      appVersionDescription: "Konvertt目前版本",
       saveButton: "儲存設定",
       saveSuccess: "設定已儲存。",
       saveFailed: "儲存設定失敗。",
@@ -4610,7 +4610,7 @@ export const zhTW: TranslationKeys = {
     privacy: {
       title: "隱私",
       description:
-        "匿名產品分析有助於改進 SnapOtter。此功能預設開啟，並由管理員為整個實例統一設定。",
+        "匿名產品分析有助於改進 Konvertt。此功能預設開啟，並由管理員為整個實例統一設定。",
       analyticsLabel: "匿名產品分析",
       analyticsDescription:
         "分享匿名使用資料（執行了哪些工具、時長、錯誤代碼）與當機報告。不含 IP 位址，不含帳戶身分。我們絕不收集您的檔案名稱、檔案內容、OCR 輸出、影像中繼資料或文件文字。關閉此項即可停止上述所有收集。",
@@ -4873,7 +4873,7 @@ export const zhTW: TranslationKeys = {
     },
     apiKeys: {
       heading: "API金鑰",
-      description: "管理用於程式化存取SnapOtter的API金鑰。",
+      description: "管理用於程式化存取Konvertt的API金鑰。",
       keyNamePlaceholder: "金鑰名稱（選填）",
       generateButton: "產生API金鑰",
       removeScopingLabel: "移除權限範圍",
@@ -4965,7 +4965,7 @@ export const zhTW: TranslationKeys = {
     },
     about: {
       heading: "關於",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "自架式、隱私優先的檔案處理套件，內含200+個工具。轉檔、壓縮、編輯、轉錄、OCR，自動化影像、影片、音訊、PDF 和檔案工作流程，無需將資料傳送到雲端。",
       versionLabel: "版本：",
@@ -4983,7 +4983,7 @@ export const zhTW: TranslationKeys = {
     logout: "登出",
     logoutFailed: "無法登出。請再試一次。",
     idpLogoutFailed:
-      "您已登出 SnapOtter，但 SSO 提供者的工作階段可能仍處於開啟狀態。請一併從該處登出。",
+      "您已登出 Konvertt，但 SSO 提供者的工作階段可能仍處於開啟狀態。請一併從該處登出。",
     username: "使用者名稱",
     password: "密碼",
     loginButton: "登入",
@@ -5087,8 +5087,8 @@ export const zhTW: TranslationKeys = {
   },
   automate: {
     title: "自動化",
-    invalidPipelineFile: "不是有效的SnapOtter Pipeline檔案",
-    newerVersion: "此Pipeline是用更新版本的SnapOtter建立的",
+    invalidPipelineFile: "不是有效的Konvertt Pipeline檔案",
+    newerVersion: "此Pipeline是用更新版本的Konvertt建立的",
     missingName: "Pipeline檔案缺少名稱",
     noSteps: "Pipeline檔案沒有步驟",
     importFailed: "匯入失敗",
@@ -5318,7 +5318,7 @@ export const zhTW: TranslationKeys = {
       docsLink: "說明文件",
       apiRefLink: "API參考（Swagger）",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "網路錯誤",
@@ -5497,14 +5497,14 @@ export const zhTW: TranslationKeys = {
       bundlesQueued: "{count} 個等待中",
     },
     updateNotice: {
-      available: "SnapOtter {version} 已發布。你目前使用的是 {current}。",
+      available: "Konvertt {version} 已發布。你目前使用的是 {current}。",
       whatsNew: "查看新功能",
       dismiss: "關閉更新提示",
     },
   },
   a11y: {
     comparisonScroller: "對比捲動區域",
-    sponsorLink: "在 GitHub Sponsors 上支持 SnapOtter",
+    sponsorLink: "在 GitHub Sponsors 上支持 Konvertt",
     skipToContent: "跳至主要內容",
     openSidebar: "開啟側邊欄",
     closeSidebar: "關閉側邊欄",
@@ -5568,7 +5568,7 @@ export const zhTW: TranslationKeys = {
     settingsDialog: "設定",
     helpDialog: "說明",
     navigationMenu: "導覽選單",
-    homeLink: "SnapOtter 首頁",
+    homeLink: "Konvertt 首頁",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5679,17 +5679,17 @@ export const zhTW: TranslationKeys = {
     lastUpdated: "最後更新：2026 年 6 月 24 日",
     overview: {
       heading: "總覽",
-      body: "SnapOtter 是一套自架、開放原始碼的檔案處理應用程式。您的執行個體完全由部署它的人營運與掌控。本政策說明軟體本身如何處理您的資料。",
+      body: "Konvertt 是一套自架、開放原始碼的檔案處理應用程式。您的執行個體完全由部署它的人營運與掌控。本政策說明軟體本身如何處理您的資料。",
     },
     localProcessing: {
       heading: "本機處理",
-      body: "所有檔案處理都完全在部署 SnapOtter 的伺服器上進行。您的檔案絕不會傳送到外部服務或第三方 API。當您上傳檔案進行處理時，檔案會保存在主機的記憶體或暫存空間中，操作完成後即不再保留。",
+      body: "所有檔案處理都完全在部署 Konvertt 的伺服器上進行。您的檔案絕不會傳送到外部服務或第三方 API。當您上傳檔案進行處理時，檔案會保存在主機的記憶體或暫存空間中，操作完成後即不再保留。",
     },
     analytics: {
       heading: "分析",
-      body: "SnapOtter 內建基本分析功能（工具使用情形、錯誤報告），用來協助改進軟體。您的檔案、檔案名稱與個人資料絕不會包含在內。分析預設開啟，並可在執行階段關閉。管理員可在「設定 > 系統 > {privacy}」中關閉匿名產品分析，不需重新啟動或重新建置。若要在編譯階段徹底關閉，請以 {code} 建置，這會將分析程式完全從套件中移除。少了它，一切功能照常運作。",
+      body: "Konvertt 內建基本分析功能（工具使用情形、錯誤報告），用來協助改進軟體。您的檔案、檔案名稱與個人資料絕不會包含在內。分析預設開啟，並可在執行階段關閉。管理員可在「設定 > 系統 > {privacy}」中關閉匿名產品分析，不需重新啟動或重新建置。若要在編譯階段徹底關閉，請以 {code} 建置，這會將分析程式完全從套件中移除。少了它，一切功能照常運作。",
       feedbackBody:
-        "SnapOtter 也內建選用的意見回饋提示。意見回饋只有在您送出時才會傳送，而且僅限分析功能已啟用時。意見回饋事件會以 {code} 傳送至 PostHog。聯絡姓名、電子郵件與公司名稱，只有在您勾選聯絡同意方塊時才會一併傳送。SnapOtter 不會在意見回饋中附上檔案、檔案名稱、上傳路徑、OCR/轉錄輸出、私人文件文字或原始錯誤記錄。",
+        "Konvertt 也內建選用的意見回饋提示。意見回饋只有在您送出時才會傳送，而且僅限分析功能已啟用時。意見回饋事件會以 {code} 傳送至 PostHog。聯絡姓名、電子郵件與公司名稱，只有在您勾選聯絡同意方塊時才會一併傳送。Konvertt 不會在意見回饋中附上檔案、檔案名稱、上傳路徑、OCR/轉錄輸出、私人文件文字或原始錯誤記錄。",
     },
     dataStorage: {
       heading: "資料儲存",
@@ -5701,11 +5701,11 @@ export const zhTW: TranslationKeys = {
     },
     openSource: {
       heading: "開放原始碼",
-      body: "SnapOtter 完全開放原始碼。您隨時可以稽核原始碼來驗證上述說明。透明是這個專案的核心原則。",
+      body: "Konvertt 完全開放原始碼。您隨時可以稽核原始碼來驗證上述說明。透明是這個專案的核心原則。",
     },
     yourControl: {
       heading: "由您掌控",
-      body: "因為 SnapOtter 是自架的，執行個體的營運者對所有資料擁有完整掌控權。您隨時可以刪除伺服器上的檔案或刪除資料庫，藉此清除自己的資料。沒有任何資料存在於您的基礎架構之外。",
+      body: "因為 Konvertt 是自架的，執行個體的營運者對所有資料擁有完整掌控權。您隨時可以刪除伺服器上的檔案或刪除資料庫，藉此清除自己的資料。沒有任何資料存在於您的基礎架構之外。",
     },
   },
 } as const;

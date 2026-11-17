@@ -90,17 +90,6 @@ export function AiFeaturesSection() {
           <h3 className="text-lg font-semibold text-foreground">{t.settings.aiFeatures.title}</h3>
           <p className="text-sm text-muted-foreground mt-1">{t.settings.aiFeatures.description}</p>
         </div>
-        <button
-          type="button"
-          onClick={installAll}
-          disabled={
-            installAllActive || installableBundles.every((bundle) => bundle.status === "installed")
-          }
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
-        >
-          <Download className="h-4 w-4" />
-          {t.settings.aiFeatures.installAll}
-        </button>
       </div>
 
       <div className="space-y-3">

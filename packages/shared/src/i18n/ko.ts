@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const ko: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x 데이터를 가져왔습니다.",
+    successTitle: "Konvertt 1.x 데이터를 가져왔습니다.",
     successBody: "이전 버전에서 사용자 {users}명과 저장된 파일 {files}개를 이전했습니다.",
     warningTitle: "1.x 데이터베이스를 찾았지만 가져오지 않았습니다.",
     warningBody:
@@ -59,12 +59,12 @@ export const ko: TranslationKeys = {
     adminDialogTitle: "설치는 어떠셨나요?",
     closeLabel: "피드백 대화 상자 닫기",
     privacyNote:
-      "피드백은 제출할 때만 전송됩니다. SnapOtter는 파일, 파일 내용, 파일 이름, 비공개 결과물을 포함하지 않습니다.",
+      "피드백은 제출할 때만 전송됩니다. Konvertt는 파일, 파일 내용, 파일 이름, 비공개 결과물을 포함하지 않습니다.",
     typeLabel: "피드백 유형",
     sentimentLabel: "빠른 평가",
     messageLabel: "피드백",
     messagePlaceholder:
-      "무엇이 잘 되었는지, 무엇이 문제였는지, 또는 SnapOtter를 어떻게 개선하면 좋을지 알려 주세요.",
+      "무엇이 잘 되었는지, 무엇이 문제였는지, 또는 Konvertt를 어떻게 개선하면 좋을지 알려 주세요.",
     improveFirstLabel: "무엇을 먼저 개선해야 할까요?",
     improveFirstPlaceholder: "설치 과정에서 필요 이상으로 어렵게 느껴졌던 부분을 알려 주세요.",
     contactOkLabel: "이 피드백에 대해 연락받는 데 동의합니다.",
@@ -78,17 +78,17 @@ export const ko: TranslationKeys = {
     searchMissContext: "검색한 내용: {query}",
     searchMissDiscussionsFallback: "기록하지 못했습니다. Discussions에서 요청을 열어 주세요.",
     offlineDescription:
-      "이 인스턴스는 분석이 꺼져 있어 피드백이 여기에 기록되지 않습니다. 그래도 SnapOtter 팀에 직접 연락할 수 있습니다.",
+      "이 인스턴스는 분석이 꺼져 있어 피드백이 여기에 기록되지 않습니다. 그래도 Konvertt 팀에 직접 연락할 수 있습니다.",
     offlinePublicNote: "GitHub 이슈는 공개됩니다.",
     offlineGithubButton: "GitHub 이슈 열기",
     offlineEmailButton: "이메일 보내기",
     thanksTitle: "피드백 감사합니다.",
     thanksDescription:
-      "파일이나 비공개 콘텐츠를 수집하지 않고도 SnapOtter를 개선하는 데 도움이 됩니다.",
+      "파일이나 비공개 콘텐츠를 수집하지 않고도 Konvertt를 개선하는 데 도움이 됩니다.",
     quickThanks: "의견 감사합니다.",
     reportIssue: "문제 보고",
     toolPromptTitle: "이 도구는 어떠셨나요?",
-    toolPromptDescription: "간단한 의견 하나가 SnapOtter를 개선하는 데 도움이 됩니다.",
+    toolPromptDescription: "간단한 의견 하나가 Konvertt를 개선하는 데 도움이 됩니다.",
     dismissPrompt: "피드백 안내 닫기",
     workedWell: "잘 작동함",
     dontAskAgain: "다시 묻지 않기",
@@ -172,10 +172,10 @@ export const ko: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "SnapOtter를 어떻게 사용하고 계신가요?",
+    usageSurveyTitle: "Konvertt를 어떻게 사용하고 계신가요?",
     priorToolLabel: "이전에는 무엇을 사용하셨나요?",
     selfHostMotivationLabel: "직접 호스팅하는 이유는 무엇인가요?",
-    discoverySourceLabel: "SnapOtter를 어떻게 알게 되셨나요?",
+    discoverySourceLabel: "Konvertt를 어떻게 알게 되셨나요?",
     optionalHint: "(선택 사항)",
     continueLabel: "계속",
   },
@@ -2729,7 +2729,7 @@ export const ko: TranslationKeys = {
       mosaic: "모자이크",
       uploadingImages: "이미지 업로드 중...",
       processingCollage: "콜라주 처리 중...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "배경",
       format: "포맷",
       uploadImagesForCollage: "콜라주용 이미지 업로드",
@@ -4118,7 +4118,7 @@ export const ko: TranslationKeys = {
     pdf: "PDF",
     files: "파일",
     toolCount: "{count}개 도구",
-    heading: "SnapOtter 도구",
+    heading: "Konvertt 도구",
   },
   fullscreenGrid: {
     searchPlaceholder: "도구 검색...",
@@ -4252,7 +4252,7 @@ export const ko: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "SnapOtter로 돌아가기",
+      backTitle: "Konvertt로 돌아가기",
     },
     welcome: {
       ariaLabel: "이미지 드롭 영역",
@@ -4676,7 +4676,7 @@ export const ko: TranslationKeys = {
         tooLarge: "이 내보내기는 너무 커서 브라우저에서 처리할 수 없습니다. 크기를 줄여 보세요.",
         saveProject: "프로젝트 저장",
         loadProject: "프로젝트 불러오기",
-        invalidProject: "이 파일은 유효한 SnapOtter 프로젝트가 아닙니다.",
+        invalidProject: "이 파일은 유효한 Konvertt 프로젝트가 아닙니다.",
       },
       autosaveRecovery: {
         message: "{time}의 저장되지 않은 작업을 복구했습니다.",
@@ -4766,7 +4766,7 @@ export const ko: TranslationKeys = {
       sidebarOption: "사이드바",
       fullscreenGridOption: "전체화면 그리드",
       appVersionLabel: "앱 버전",
-      appVersionDescription: "SnapOtter 현재 버전",
+      appVersionDescription: "Konvertt 현재 버전",
       saveButton: "설정 저장",
       saveSuccess: "설정이 저장되었습니다.",
       saveFailed: "설정 저장에 실패했습니다.",
@@ -4820,7 +4820,7 @@ export const ko: TranslationKeys = {
     privacy: {
       title: "개인정보",
       description:
-        "익명 제품 분석은 SnapOtter 개선에 도움이 됩니다. 기본적으로 켜져 있으며 관리자가 전체 인스턴스에 대해 설정합니다.",
+        "익명 제품 분석은 Konvertt 개선에 도움이 됩니다. 기본적으로 켜져 있으며 관리자가 전체 인스턴스에 대해 설정합니다.",
       analyticsLabel: "익명 제품 분석",
       analyticsDescription:
         "익명 사용 데이터(실행된 도구, 소요 시간, 오류 코드)와 충돌 보고서를 공유합니다. IP 주소나 계정 정보는 포함되지 않습니다. 파일 이름, 파일 내용, OCR 결과, 이미지 메타데이터, 문서 텍스트는 절대 수집하지 않습니다. 모두 중단하려면 이 옵션을 끄세요.",
@@ -5089,7 +5089,7 @@ export const ko: TranslationKeys = {
     },
     apiKeys: {
       heading: "API 키",
-      description: "SnapOtter에 프로그래밍 방식으로 접근하기 위한 API 키를 관리하세요.",
+      description: "Konvertt에 프로그래밍 방식으로 접근하기 위한 API 키를 관리하세요.",
       keyNamePlaceholder: "키 이름 (선택)",
       generateButton: "API 키 생성",
       removeScopingLabel: "권한 범위 해제",
@@ -5183,7 +5183,7 @@ export const ko: TranslationKeys = {
     },
     about: {
       heading: "정보",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "셀프 호스팅, 개인정보 우선의 파일 처리 도구 모음으로 200+개의 도구를 제공합니다. 변환, 압축, 편집, 전사, OCR 등 이미지, 동영상, 오디오, PDF, 파일 워크플로를 클라우드에 데이터를 보내지 않고 자동화할 수 있습니다.",
       versionLabel: "버전:",
@@ -5201,7 +5201,7 @@ export const ko: TranslationKeys = {
     logout: "로그아웃",
     logoutFailed: "로그아웃하지 못했습니다. 다시 시도하세요.",
     idpLogoutFailed:
-      "SnapOtter에서 로그아웃되었지만 SSO 제공자 세션이 아직 열려 있을 수 있습니다. 해당 서비스에서도 로그아웃하세요.",
+      "Konvertt에서 로그아웃되었지만 SSO 제공자 세션이 아직 열려 있을 수 있습니다. 해당 서비스에서도 로그아웃하세요.",
     username: "사용자명",
     password: "비밀번호",
     loginButton: "로그인",
@@ -5306,8 +5306,8 @@ export const ko: TranslationKeys = {
   },
   automate: {
     title: "자동화",
-    invalidPipelineFile: "유효한 SnapOtter Pipeline 파일이 아닙니다",
-    newerVersion: "이 Pipeline은 더 최신 버전의 SnapOtter에서 생성되었습니다",
+    invalidPipelineFile: "유효한 Konvertt Pipeline 파일이 아닙니다",
+    newerVersion: "이 Pipeline은 더 최신 버전의 Konvertt에서 생성되었습니다",
     missingName: "Pipeline 파일에 이름이 없습니다",
     noSteps: "Pipeline 파일에 단계가 없습니다",
     importFailed: "가져오기 실패",
@@ -5543,7 +5543,7 @@ export const ko: TranslationKeys = {
       docsLink: "문서",
       apiRefLink: "API 레퍼런스 (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "네트워크 오류",
@@ -5739,14 +5739,14 @@ export const ko: TranslationKeys = {
       bundlesQueued: "{count}개 대기 중",
     },
     updateNotice: {
-      available: "SnapOtter {version}이 출시되었습니다. 현재 버전은 {current}입니다.",
+      available: "Konvertt {version}이 출시되었습니다. 현재 버전은 {current}입니다.",
       whatsNew: "새로운 기능",
       dismiss: "업데이트 알림 닫기",
     },
   },
   a11y: {
     comparisonScroller: "비교 스크롤 영역",
-    sponsorLink: "GitHub Sponsors에서 SnapOtter 후원하기",
+    sponsorLink: "GitHub Sponsors에서 Konvertt 후원하기",
     skipToContent: "본문으로 건너뛰기",
     openSidebar: "사이드바 열기",
     closeSidebar: "사이드바 닫기",
@@ -5810,7 +5810,7 @@ export const ko: TranslationKeys = {
     settingsDialog: "설정",
     helpDialog: "도움말",
     navigationMenu: "탐색 메뉴",
-    homeLink: "SnapOtter 홈",
+    homeLink: "Konvertt 홈",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5922,17 +5922,17 @@ export const ko: TranslationKeys = {
     lastUpdated: "최종 업데이트: 2026년 6월 24일",
     overview: {
       heading: "개요",
-      body: "SnapOtter는 자체 호스팅형 오픈소스 파일 처리 애플리케이션입니다. 여러분이 사용하는 인스턴스는 이를 배포한 사람이 전적으로 운영하고 관리합니다. 이 방침은 소프트웨어 자체가 데이터를 어떻게 다루는지 설명합니다.",
+      body: "Konvertt는 자체 호스팅형 오픈소스 파일 처리 애플리케이션입니다. 여러분이 사용하는 인스턴스는 이를 배포한 사람이 전적으로 운영하고 관리합니다. 이 방침은 소프트웨어 자체가 데이터를 어떻게 다루는지 설명합니다.",
     },
     localProcessing: {
       heading: "로컬 처리",
-      body: "모든 파일 처리는 SnapOtter가 배포된 서버에서만 이루어집니다. 파일이 외부 서비스나 서드파티 API로 전송되는 일은 없습니다. 처리를 위해 파일을 업로드하면 호스트 머신의 메모리 또는 임시 저장소에서 처리되며, 작업이 끝난 뒤에는 보관되지 않습니다.",
+      body: "모든 파일 처리는 Konvertt가 배포된 서버에서만 이루어집니다. 파일이 외부 서비스나 서드파티 API로 전송되는 일은 없습니다. 처리를 위해 파일을 업로드하면 호스트 머신의 메모리 또는 임시 저장소에서 처리되며, 작업이 끝난 뒤에는 보관되지 않습니다.",
     },
     analytics: {
       heading: "분석",
-      body: "SnapOtter에는 소프트웨어 개선에 도움이 되는 기본적인 분석(도구 사용량, 오류 보고)이 포함되어 있습니다. 파일, 파일 이름, 개인 데이터는 여기에 절대 포함되지 않습니다. 분석은 기본적으로 켜져 있으며 실행 중에 끌 수 있습니다. 관리자는 설정 > 시스템 > {privacy}에서 익명 제품 분석을 끌 수 있고, 재시작이나 재빌드는 필요하지 않습니다. 컴파일 단계에서 완전히 제외하려면 {code}로 빌드하세요. 번들에서 통째로 빠집니다. 분석 없이도 모든 기능은 정상 동작합니다.",
+      body: "Konvertt에는 소프트웨어 개선에 도움이 되는 기본적인 분석(도구 사용량, 오류 보고)이 포함되어 있습니다. 파일, 파일 이름, 개인 데이터는 여기에 절대 포함되지 않습니다. 분석은 기본적으로 켜져 있으며 실행 중에 끌 수 있습니다. 관리자는 설정 > 시스템 > {privacy}에서 익명 제품 분석을 끌 수 있고, 재시작이나 재빌드는 필요하지 않습니다. 컴파일 단계에서 완전히 제외하려면 {code}로 빌드하세요. 번들에서 통째로 빠집니다. 분석 없이도 모든 기능은 정상 동작합니다.",
       feedbackBody:
-        "SnapOtter에는 선택 사항인 피드백 요청도 포함되어 있습니다. 피드백은 여러분이 직접 제출할 때만, 그리고 분석이 켜져 있을 때만 전송됩니다. 피드백 이벤트는 {code} 형태로 PostHog에 전달됩니다. 연락처 이름, 이메일, 회사는 연락 동의 체크박스를 선택한 경우에만 전송됩니다. SnapOtter는 파일, 파일 이름, 업로드 경로, OCR/전사 결과, 비공개 문서 텍스트, 원본 오류 로그를 피드백에 첨부하지 않습니다.",
+        "Konvertt에는 선택 사항인 피드백 요청도 포함되어 있습니다. 피드백은 여러분이 직접 제출할 때만, 그리고 분석이 켜져 있을 때만 전송됩니다. 피드백 이벤트는 {code} 형태로 PostHog에 전달됩니다. 연락처 이름, 이메일, 회사는 연락 동의 체크박스를 선택한 경우에만 전송됩니다. Konvertt는 파일, 파일 이름, 업로드 경로, OCR/전사 결과, 비공개 문서 텍스트, 원본 오류 로그를 피드백에 첨부하지 않습니다.",
     },
     dataStorage: {
       heading: "데이터 저장",
@@ -5944,11 +5944,11 @@ export const ko: TranslationKeys = {
     },
     openSource: {
       heading: "오픈소스",
-      body: "SnapOtter는 완전한 오픈소스입니다. 언제든 소스 코드를 직접 확인해 여기 적힌 내용을 검증할 수 있습니다. 투명성은 이 프로젝트의 핵심 원칙입니다.",
+      body: "Konvertt는 완전한 오픈소스입니다. 언제든 소스 코드를 직접 확인해 여기 적힌 내용을 검증할 수 있습니다. 투명성은 이 프로젝트의 핵심 원칙입니다.",
     },
     yourControl: {
       heading: "사용자의 통제권",
-      body: "SnapOtter는 자체 호스팅이므로 인스턴스 운영자가 모든 데이터를 완전히 통제합니다. 서버에서 파일을 지우거나 데이터베이스를 삭제하면 언제든 데이터를 없앨 수 있습니다. 여러분의 인프라 밖에는 어떤 데이터도 존재하지 않습니다.",
+      body: "Konvertt는 자체 호스팅이므로 인스턴스 운영자가 모든 데이터를 완전히 통제합니다. 서버에서 파일을 지우거나 데이터베이스를 삭제하면 언제든 데이터를 없앨 수 있습니다. 여러분의 인프라 밖에는 어떤 데이터도 존재하지 않습니다.",
     },
   },
 } as const;

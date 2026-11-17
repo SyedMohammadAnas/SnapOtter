@@ -2046,9 +2046,9 @@ function reportAutosaveFailure(
 ): void {
   const isQuota = isQuotaExceededError(err);
   if (phase === "storage") {
-    console.warn("[SnapOtter] Autosave failed (localStorage quota may be exceeded):", err);
+    console.warn("[Konvertt] Autosave failed (localStorage quota may be exceeded):", err);
   } else {
-    console.warn("[SnapOtter] Autosave serialization failed:", err);
+    console.warn("[Konvertt] Autosave serialization failed:", err);
   }
   if (options?.manual || !autosaveFailureReported) {
     autosaveFailureReported = true;

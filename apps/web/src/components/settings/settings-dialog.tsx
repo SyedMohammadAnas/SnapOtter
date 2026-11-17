@@ -88,6 +88,8 @@ interface SettingsDialogProps {
   onClose: () => void;
 }
 
+const KONVERTT_ADMIN = import.meta.env.VITE_KONVERTT_ADMIN === "true";
+
 type Section =
   | "general"
   | "system"
@@ -193,6 +195,9 @@ export function SettingsDialog({ open, onClose }: SettingsDialogProps) {
   useFocusTrap(mobileDialogRef, open && isMobile);
 
   const visibleNavItems = NAV_ITEMS.filter((item) => {
+    // Public Konvertt shows General only. Admin tools live on the Cloudflare
+    // Access gated admin host, which builds with VITE_KONVERTT_ADMIN=true.
+    if (!KONVERTT_ADMIN && item.id !== "general") return false;
     const permitted =
       (!item.requiredPermission || hasPermission(item.requiredPermission)) &&
       (!item.requiredPermissions || item.requiredPermissions.every((p) => hasPermission(p))) &&
@@ -4391,7 +4396,7 @@ function AboutSection() {
         <div className="flex items-center gap-3">
           <OtterLogo className="h-8 w-8 text-primary" />
           <div className="text-2xl font-bold text-foreground">
-            <span className="text-primary-ink">SnapOtter</span>
+            <span className="text-primary-ink">Konvertt</span>
           </div>
         </div>
         <p className="text-sm text-muted-foreground">{t.settings.about.appDescription}</p>

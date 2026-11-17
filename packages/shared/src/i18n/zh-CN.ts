@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const zhCN: TranslationKeys = {
   migrationBanner: {
-    successTitle: "已导入 SnapOtter 1.x 数据。",
+    successTitle: "已导入 Konvertt 1.x 数据。",
     successBody: "已从旧版本迁移 {users} 个用户和 {files} 个已保存文件。",
     warningTitle: "发现 1.x 数据库，但未导入。",
     warningBody: "此实例已有数据，因此未导入你的 1.x 数据库。导入需要一个空实例。请参阅升级指南。",
@@ -58,11 +58,11 @@ export const zhCN: TranslationKeys = {
     adminDialogTitle: "安装体验如何？",
     closeLabel: "关闭反馈对话框",
     privacyNote:
-      "只有在你提交时才会发送反馈。SnapOtter 不会包含你的文件、文件内容、文件名或私密输出。",
+      "只有在你提交时才会发送反馈。Konvertt 不会包含你的文件、文件内容、文件名或私密输出。",
     typeLabel: "反馈类型",
     sentimentLabel: "快速评分",
     messageLabel: "反馈",
-    messagePlaceholder: "告诉我们哪些功能好用、哪些出了问题，或者怎样能让 SnapOtter 更好。",
+    messagePlaceholder: "告诉我们哪些功能好用、哪些出了问题，或者怎样能让 Konvertt 更好。",
     improveFirstLabel: "我们应该优先改进什么？",
     improveFirstPlaceholder: "告诉我们是什么让安装比预期更麻烦。",
     contactOkLabel: "可以就此反馈与我联系。",
@@ -76,16 +76,16 @@ export const zhCN: TranslationKeys = {
     searchMissContext: "你搜索了：{query}",
     searchMissDiscussionsFallback: "我们无法记录。请在 Discussions 中发起请求。",
     offlineDescription:
-      "此实例已关闭分析功能，因此反馈不会记录在这里。你仍然可以直接联系 SnapOtter 团队。",
+      "此实例已关闭分析功能，因此反馈不会记录在这里。你仍然可以直接联系 Konvertt 团队。",
     offlinePublicNote: "GitHub issue 是公开的。",
     offlineGithubButton: "创建 GitHub issue",
     offlineEmailButton: "给我们发邮件",
     thanksTitle: "感谢你的反馈。",
-    thanksDescription: "这能帮助我们改进 SnapOtter，同时不会收集任何文件或私密内容。",
+    thanksDescription: "这能帮助我们改进 Konvertt，同时不会收集任何文件或私密内容。",
     quickThanks: "感谢反馈！",
     reportIssue: "报告问题",
     toolPromptTitle: "这个工具好用吗？",
-    toolPromptDescription: "一个简单的反馈就能帮助我们改进 SnapOtter。",
+    toolPromptDescription: "一个简单的反馈就能帮助我们改进 Konvertt。",
     dismissPrompt: "关闭反馈提示",
     workedWell: "很好用",
     dontAskAgain: "不再询问",
@@ -168,7 +168,7 @@ export const zhCN: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "您如何使用 SnapOtter?",
+    usageSurveyTitle: "您如何使用 Konvertt?",
     priorToolLabel: "您之前用的是什么?",
     selfHostMotivationLabel: "为什么选择自托管?",
     discoverySourceLabel: "您是如何了解到我们的?",
@@ -2532,7 +2532,7 @@ export const zhCN: TranslationKeys = {
       mosaic: "马赛克",
       uploadingImages: "正在上传图片...",
       processingCollage: "正在处理拼贴...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "背景",
       format: "格式",
       uploadImagesForCollage: "上传图片以创建拼贴",
@@ -3913,7 +3913,7 @@ export const zhCN: TranslationKeys = {
     pdf: "PDF",
     files: "文件",
     toolCount: "{count} 个工具",
-    heading: "SnapOtter 工具",
+    heading: "Konvertt 工具",
   },
   fullscreenGrid: {
     searchPlaceholder: "搜索工具...",
@@ -4047,7 +4047,7 @@ export const zhCN: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "返回 SnapOtter",
+      backTitle: "返回 Konvertt",
     },
     welcome: {
       ariaLabel: "图片拖放区域",
@@ -4468,7 +4468,7 @@ export const zhCN: TranslationKeys = {
         tooLarge: "导出内容太大，浏览器无法生成。请尝试更小的尺寸。",
         saveProject: "保存项目",
         loadProject: "载入项目",
-        invalidProject: "此文件不是有效的 SnapOtter 项目。",
+        invalidProject: "此文件不是有效的 Konvertt 项目。",
       },
       autosaveRecovery: {
         message: "已恢复 {time} 未保存的内容。",
@@ -4557,7 +4557,7 @@ export const zhCN: TranslationKeys = {
       sidebarOption: "侧边栏",
       fullscreenGridOption: "全屏网格",
       appVersionLabel: "应用版本",
-      appVersionDescription: "SnapOtter 当前版本",
+      appVersionDescription: "Konvertt 当前版本",
       saveButton: "保存设置",
       saveSuccess: "设置已保存。",
       saveFailed: "保存设置失败。",
@@ -4610,7 +4610,7 @@ export const zhCN: TranslationKeys = {
     privacy: {
       title: "隐私",
       description:
-        "匿名产品分析有助于改进 SnapOtter。该功能默认开启，并由管理员为整个实例统一设置。",
+        "匿名产品分析有助于改进 Konvertt。该功能默认开启，并由管理员为整个实例统一设置。",
       analyticsLabel: "匿名产品分析",
       analyticsDescription:
         "共享匿名使用数据（运行了哪些工具、时长、错误代码）和崩溃报告。不含 IP 地址，不含账户身份。我们绝不收集您的文件名、文件内容、OCR 输出、图像元数据或文档文本。关闭此项即可停止所有这些收集。",
@@ -4873,7 +4873,7 @@ export const zhCN: TranslationKeys = {
     },
     apiKeys: {
       heading: "API 密钥",
-      description: "管理用于程序化访问 SnapOtter 的 API 密钥。",
+      description: "管理用于程序化访问 Konvertt 的 API 密钥。",
       keyNamePlaceholder: "密钥名称（可选）",
       generateButton: "生成 API 密钥",
       removeScopingLabel: "移除权限范围限制",
@@ -4965,7 +4965,7 @@ export const zhCN: TranslationKeys = {
     },
     about: {
       heading: "关于",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "自托管、隐私优先的文件处理套件，包含 200+ 种工具。转换、压缩、编辑、转录、OCR，自动化图片、视频、音频、PDF 和文件工作流，无需将数据发送到云端。",
       versionLabel: "版本：",
@@ -4982,7 +4982,7 @@ export const zhCN: TranslationKeys = {
     logout: "退出登录",
     logoutFailed: "无法退出登录。请重试。",
     idpLogoutFailed:
-      "您已退出 SnapOtter，但 SSO 提供商的会话可能仍处于打开状态。请同时在提供商处退出登录。",
+      "您已退出 Konvertt，但 SSO 提供商的会话可能仍处于打开状态。请同时在提供商处退出登录。",
     username: "用户名",
     password: "密码",
     loginButton: "登录",
@@ -5086,8 +5086,8 @@ export const zhCN: TranslationKeys = {
   },
   automate: {
     title: "自动化",
-    invalidPipelineFile: "不是有效的 SnapOtter Pipeline 文件",
-    newerVersion: "此 Pipeline 由更新版本的 SnapOtter 创建",
+    invalidPipelineFile: "不是有效的 Konvertt Pipeline 文件",
+    newerVersion: "此 Pipeline 由更新版本的 Konvertt 创建",
     missingName: "Pipeline 文件缺少名称",
     noSteps: "Pipeline 文件没有步骤",
     importFailed: "导入失败",
@@ -5316,7 +5316,7 @@ export const zhCN: TranslationKeys = {
       docsLink: "文档",
       apiRefLink: "API 参考（Swagger）",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "网络错误",
@@ -5496,14 +5496,14 @@ export const zhCN: TranslationKeys = {
       bundlesQueued: "{count} 个排队中",
     },
     updateNotice: {
-      available: "SnapOtter {version} 已发布。你当前使用的是 {current}。",
+      available: "Konvertt {version} 已发布。你当前使用的是 {current}。",
       whatsNew: "查看新功能",
       dismiss: "关闭更新提示",
     },
   },
   a11y: {
     comparisonScroller: "对比滚动区域",
-    sponsorLink: "在 GitHub Sponsors 上支持 SnapOtter",
+    sponsorLink: "在 GitHub Sponsors 上支持 Konvertt",
     skipToContent: "跳到主要内容",
     openSidebar: "打开侧边栏",
     closeSidebar: "关闭侧边栏",
@@ -5567,7 +5567,7 @@ export const zhCN: TranslationKeys = {
     settingsDialog: "设置",
     helpDialog: "帮助",
     navigationMenu: "导航",
-    homeLink: "SnapOtter 首页",
+    homeLink: "Konvertt 首页",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5678,17 +5678,17 @@ export const zhCN: TranslationKeys = {
     lastUpdated: "最后更新：2026 年 6 月 24 日",
     overview: {
       heading: "概述",
-      body: "SnapOtter 是一款自托管的开源文件处理应用。您的实例完全由部署它的人运营和掌控。本政策说明的是软件本身如何处理您的数据。",
+      body: "Konvertt 是一款自托管的开源文件处理应用。您的实例完全由部署它的人运营和掌控。本政策说明的是软件本身如何处理您的数据。",
     },
     localProcessing: {
       heading: "本地处理",
-      body: "所有文件处理都完全在部署 SnapOtter 的服务器上完成。您的文件绝不会被发送到外部服务或第三方 API。上传文件进行处理时，文件在宿主机的内存或临时存储中处理，操作完成后不会保留。",
+      body: "所有文件处理都完全在部署 Konvertt 的服务器上完成。您的文件绝不会被发送到外部服务或第三方 API。上传文件进行处理时，文件在宿主机的内存或临时存储中处理，操作完成后不会保留。",
     },
     analytics: {
       heading: "使用分析",
-      body: "SnapOtter 内置了基础的分析功能（工具使用情况、错误报告），用于改进软件。其中绝不包含您的文件、文件名和个人数据。分析默认开启，可在运行时关闭。管理员可在「设置 > 系统 > {privacy}」中关闭匿名产品分析，无需重启或重新构建。若想在编译期彻底关闭，可使用 {code} 构建，这会将它从打包产物中完全剔除。关闭之后一切功能照常运行。",
+      body: "Konvertt 内置了基础的分析功能（工具使用情况、错误报告），用于改进软件。其中绝不包含您的文件、文件名和个人数据。分析默认开启，可在运行时关闭。管理员可在「设置 > 系统 > {privacy}」中关闭匿名产品分析，无需重启或重新构建。若想在编译期彻底关闭，可使用 {code} 构建，这会将它从打包产物中完全剔除。关闭之后一切功能照常运行。",
       feedbackBody:
-        "SnapOtter 还提供可选的反馈提示。只有在您提交时才会发送反馈，且仅在分析功能开启时发送。反馈事件以 {code} 的形式发送到 PostHog。只有当您勾选了联系授权选项，才会发送联系人姓名、邮箱和公司。SnapOtter 不会在反馈中附带文件、文件名、上传路径、OCR/转录结果、私密文档内容或原始错误日志。",
+        "Konvertt 还提供可选的反馈提示。只有在您提交时才会发送反馈，且仅在分析功能开启时发送。反馈事件以 {code} 的形式发送到 PostHog。只有当您勾选了联系授权选项，才会发送联系人姓名、邮箱和公司。Konvertt 不会在反馈中附带文件、文件名、上传路径、OCR/转录结果、私密文档内容或原始错误日志。",
     },
     dataStorage: {
       heading: "数据存储",
@@ -5700,11 +5700,11 @@ export const zhCN: TranslationKeys = {
     },
     openSource: {
       heading: "开源",
-      body: "SnapOtter 完全开源。您随时可以审查源代码来验证以上说明。透明是这个项目的核心原则。",
+      body: "Konvertt 完全开源。您随时可以审查源代码来验证以上说明。透明是这个项目的核心原则。",
     },
     yourControl: {
       heading: "您的控制权",
-      body: "由于 SnapOtter 是自托管的，实例运营者对所有数据拥有完全控制权。您随时可以删除服务器上的文件或删除数据库，从而清除自己的数据。您的基础设施之外不存在任何数据。",
+      body: "由于 Konvertt 是自托管的，实例运营者对所有数据拥有完全控制权。您随时可以删除服务器上的文件或删除数据库，从而清除自己的数据。您的基础设施之外不存在任何数据。",
     },
   },
 } as const;

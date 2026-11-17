@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const id: TranslationKeys = {
   migrationBanner: {
-    successTitle: "Data SnapOtter 1.x diimpor.",
+    successTitle: "Data Konvertt 1.x diimpor.",
     successBody: "Memindahkan {users} pengguna dan {files} file tersimpan dari versi sebelumnya.",
     warningTitle: "Database 1.x ditemukan, tetapi tidak diimpor.",
     warningBody:
@@ -59,12 +59,12 @@ export const id: TranslationKeys = {
     adminDialogTitle: "Bagaimana proses penyiapannya?",
     closeLabel: "Tutup dialog masukan",
     privacyNote:
-      "Masukan hanya dikirim saat Anda mengirimkannya. SnapOtter tidak menyertakan file, isi file, nama file, atau hasil pribadi Anda.",
+      "Masukan hanya dikirim saat Anda mengirimkannya. Konvertt tidak menyertakan file, isi file, nama file, atau hasil pribadi Anda.",
     typeLabel: "Jenis masukan",
     sentimentLabel: "Penilaian cepat",
     messageLabel: "Masukan",
     messagePlaceholder:
-      "Ceritakan apa yang berhasil, apa yang bermasalah, atau apa yang bisa membuat SnapOtter lebih baik.",
+      "Ceritakan apa yang berhasil, apa yang bermasalah, atau apa yang bisa membuat Konvertt lebih baik.",
     improveFirstLabel: "Apa yang harus kami tingkatkan lebih dulu?",
     improveFirstPlaceholder: "Ceritakan apa yang membuat penyiapan lebih sulit dari seharusnya.",
     contactOkLabel: "Anda boleh menghubungi saya terkait masukan ini.",
@@ -78,17 +78,17 @@ export const id: TranslationKeys = {
     searchMissContext: "Anda mencari: {query}",
     searchMissDiscussionsFallback: "Kami tidak dapat mencatatnya. Buka permintaan di Discussions.",
     offlineDescription:
-      "Instance ini menonaktifkan analitik, jadi masukan tidak dicatat di sini. Anda tetap bisa menghubungi tim SnapOtter secara langsung.",
+      "Instance ini menonaktifkan analitik, jadi masukan tidak dicatat di sini. Anda tetap bisa menghubungi tim Konvertt secara langsung.",
     offlinePublicNote: "Issue GitHub bersifat publik.",
     offlineGithubButton: "Buka issue GitHub",
     offlineEmailButton: "Kirim email ke kami",
     thanksTitle: "Terima kasih atas masukannya.",
     thanksDescription:
-      "Ini membantu kami meningkatkan SnapOtter tanpa mengumpulkan file atau konten pribadi.",
+      "Ini membantu kami meningkatkan Konvertt tanpa mengumpulkan file atau konten pribadi.",
     quickThanks: "Terima kasih atas tanggapannya.",
     reportIssue: "Laporkan masalah",
     toolPromptTitle: "Bagaimana kinerja alat ini?",
-    toolPromptDescription: "Satu tanggapan singkat membantu kami meningkatkan SnapOtter.",
+    toolPromptDescription: "Satu tanggapan singkat membantu kami meningkatkan Konvertt.",
     dismissPrompt: "Tutup ajakan masukan",
     workedWell: "Berfungsi dengan baik",
     dontAskAgain: "Jangan tanya lagi",
@@ -172,7 +172,7 @@ export const id: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "Bagaimana Anda menggunakan SnapOtter?",
+    usageSurveyTitle: "Bagaimana Anda menggunakan Konvertt?",
     priorToolLabel: "Apa yang Anda gunakan sebelumnya?",
     selfHostMotivationLabel: "Mengapa meng-host sendiri?",
     discoverySourceLabel: "Dari mana Anda mengetahui kami?",
@@ -2798,7 +2798,7 @@ export const id: TranslationKeys = {
       mosaic: "Mosaik",
       uploadingImages: "Mengunggah gambar...",
       processingCollage: "Memproses kolase...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Latar Belakang",
       format: "Format",
       uploadImagesForCollage: "Unggah gambar untuk kolase",
@@ -4191,7 +4191,7 @@ export const id: TranslationKeys = {
     pdf: "PDF",
     files: "File",
     toolCount: "{count} alat",
-    heading: "Alat SnapOtter",
+    heading: "Alat Konvertt",
   },
   fullscreenGrid: {
     searchPlaceholder: "Cari alat...",
@@ -4325,7 +4325,7 @@ export const id: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "Kembali ke SnapOtter",
+      backTitle: "Kembali ke Konvertt",
     },
     welcome: {
       ariaLabel: "Area seret gambar",
@@ -4750,7 +4750,7 @@ export const id: TranslationKeys = {
         tooLarge: "Ekspor ini terlalu besar untuk dirender browser. Coba dimensi yang lebih kecil.",
         saveProject: "Simpan Proyek",
         loadProject: "Muat Proyek",
-        invalidProject: "File ini bukan proyek SnapOtter yang valid.",
+        invalidProject: "File ini bukan proyek Konvertt yang valid.",
       },
       autosaveRecovery: {
         message: "Memulihkan pekerjaan yang belum tersimpan dari {time}.",
@@ -4840,7 +4840,7 @@ export const id: TranslationKeys = {
       sidebarOption: "Bilah Sisi",
       fullscreenGridOption: "Grid Layar Penuh",
       appVersionLabel: "Versi Aplikasi",
-      appVersionDescription: "Versi SnapOtter saat ini",
+      appVersionDescription: "Versi Konvertt saat ini",
       saveButton: "Simpan Pengaturan",
       saveSuccess: "Pengaturan disimpan.",
       saveFailed: "Gagal menyimpan pengaturan.",
@@ -4894,7 +4894,7 @@ export const id: TranslationKeys = {
     privacy: {
       title: "Privasi",
       description:
-        "Analitik Produk Anonim membantu meningkatkan SnapOtter. Fitur ini aktif secara default dan diatur untuk seluruh instance oleh administrator.",
+        "Analitik Produk Anonim membantu meningkatkan Konvertt. Fitur ini aktif secara default dan diatur untuk seluruh instance oleh administrator.",
       analyticsLabel: "Analitik Produk Anonim",
       analyticsDescription:
         "Bagikan data penggunaan anonim (alat mana yang dijalankan, durasi, kode kesalahan) dan laporan kerusakan. Tanpa alamat IP, tanpa identitas akun. Kami tidak pernah mengumpulkan nama file, isi file, keluaran OCR, metadata gambar, atau teks dokumen Anda. Matikan ini untuk menghentikan semuanya.",
@@ -5169,7 +5169,7 @@ export const id: TranslationKeys = {
     },
     apiKeys: {
       heading: "Kunci API",
-      description: "Kelola kunci API untuk akses programatik ke SnapOtter.",
+      description: "Kelola kunci API untuk akses programatik ke Konvertt.",
       keyNamePlaceholder: "Nama kunci (opsional)",
       generateButton: "Buat Kunci API",
       removeScopingLabel: "Hapus pembatasan izin",
@@ -5268,7 +5268,7 @@ export const id: TranslationKeys = {
     },
     about: {
       heading: "Tentang",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Suite pemrosesan file self-hosted yang mengutamakan privasi dengan 200+ alat. Konversi, kompres, edit, transkrip, OCR, dan otomasi alur kerja gambar, video, audio, PDF, dan file tanpa mengirim data ke cloud.",
       versionLabel: "Versi:",
@@ -5286,7 +5286,7 @@ export const id: TranslationKeys = {
     logout: "Keluar",
     logoutFailed: "Gagal keluar. Coba lagi.",
     idpLogoutFailed:
-      "Anda telah keluar dari SnapOtter, tetapi sesi penyedia SSO Anda mungkin masih terbuka. Keluar juga dari sana.",
+      "Anda telah keluar dari Konvertt, tetapi sesi penyedia SSO Anda mungkin masih terbuka. Keluar juga dari sana.",
     username: "Nama pengguna",
     password: "Kata sandi",
     loginButton: "Masuk",
@@ -5396,8 +5396,8 @@ export const id: TranslationKeys = {
   },
   automate: {
     title: "Otomasi",
-    invalidPipelineFile: "Bukan file Pipeline SnapOtter yang valid",
-    newerVersion: "Pipeline ini dibuat dengan versi SnapOtter yang lebih baru",
+    invalidPipelineFile: "Bukan file Pipeline Konvertt yang valid",
+    newerVersion: "Pipeline ini dibuat dengan versi Konvertt yang lebih baru",
     missingName: "File Pipeline tidak memiliki nama",
     noSteps: "File Pipeline tidak memiliki langkah",
     importFailed: "Impor gagal",
@@ -5634,7 +5634,7 @@ export const id: TranslationKeys = {
       docsLink: "Dokumentasi",
       apiRefLink: "Referensi API (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Kesalahan jaringan",
@@ -5835,14 +5835,14 @@ export const id: TranslationKeys = {
       bundlesQueued: "{count} dalam antrean",
     },
     updateNotice: {
-      available: "SnapOtter {version} sudah tersedia. Anda memakai {current}.",
+      available: "Konvertt {version} sudah tersedia. Anda memakai {current}.",
       whatsNew: "Yang baru",
       dismiss: "Tutup pemberitahuan pembaruan",
     },
   },
   a11y: {
     comparisonScroller: "Area perbandingan",
-    sponsorLink: "Dukung SnapOtter di GitHub Sponsors",
+    sponsorLink: "Dukung Konvertt di GitHub Sponsors",
     skipToContent: "Lewati ke konten utama",
     openSidebar: "Buka bilah sisi",
     closeSidebar: "Tutup bilah sisi",
@@ -5906,7 +5906,7 @@ export const id: TranslationKeys = {
     settingsDialog: "Pengaturan",
     helpDialog: "Bantuan",
     navigationMenu: "Navigasi",
-    homeLink: "Beranda SnapOtter",
+    homeLink: "Beranda Konvertt",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6019,17 +6019,17 @@ export const id: TranslationKeys = {
     lastUpdated: "Terakhir diperbarui: 24 Juni 2026",
     overview: {
       heading: "Ikhtisar",
-      body: "SnapOtter adalah aplikasi pemrosesan file sumber terbuka yang di-host sendiri. Instance Anda dioperasikan dan dikendalikan sepenuhnya oleh pihak yang memasangnya. Kebijakan ini menjelaskan cara perangkat lunaknya sendiri menangani data Anda.",
+      body: "Konvertt adalah aplikasi pemrosesan file sumber terbuka yang di-host sendiri. Instance Anda dioperasikan dan dikendalikan sepenuhnya oleh pihak yang memasangnya. Kebijakan ini menjelaskan cara perangkat lunaknya sendiri menangani data Anda.",
     },
     localProcessing: {
       heading: "Pemrosesan Lokal",
-      body: "Semua pemrosesan file terjadi sepenuhnya di server tempat SnapOtter dipasang. File Anda tidak pernah dikirim ke layanan eksternal atau API pihak ketiga. Saat Anda mengunggah file untuk diproses, file itu ditangani di memori atau di penyimpanan sementara pada mesin host, dan tidak disimpan setelah operasi selesai.",
+      body: "Semua pemrosesan file terjadi sepenuhnya di server tempat Konvertt dipasang. File Anda tidak pernah dikirim ke layanan eksternal atau API pihak ketiga. Saat Anda mengunggah file untuk diproses, file itu ditangani di memori atau di penyimpanan sementara pada mesin host, dan tidak disimpan setelah operasi selesai.",
     },
     analytics: {
       heading: "Analitik",
-      body: "SnapOtter menyertakan analitik dasar (penggunaan alat, laporan kesalahan) untuk membantu meningkatkan perangkat lunak ini. File, nama file, dan data pribadi Anda tidak pernah termasuk di dalamnya. Analitik aktif secara default dan dapat dimatikan saat aplikasi berjalan. Administrator dapat mematikan analitik produk anonim di Pengaturan > Sistem > {privacy}, tanpa perlu restart atau build ulang. Untuk mematikannya secara permanen pada saat kompilasi, build dengan {code}, yang menghapusnya sepenuhnya dari bundel. Semuanya tetap berfungsi normal tanpa itu.",
+      body: "Konvertt menyertakan analitik dasar (penggunaan alat, laporan kesalahan) untuk membantu meningkatkan perangkat lunak ini. File, nama file, dan data pribadi Anda tidak pernah termasuk di dalamnya. Analitik aktif secara default dan dapat dimatikan saat aplikasi berjalan. Administrator dapat mematikan analitik produk anonim di Pengaturan > Sistem > {privacy}, tanpa perlu restart atau build ulang. Untuk mematikannya secara permanen pada saat kompilasi, build dengan {code}, yang menghapusnya sepenuhnya dari bundel. Semuanya tetap berfungsi normal tanpa itu.",
       feedbackBody:
-        "SnapOtter juga menyertakan ajakan masukan yang bersifat opsional. Masukan hanya dikirim saat Anda mengirimkannya, dan hanya jika analitik aktif. Peristiwa masukan dikirim ke PostHog sebagai {code}. Nama kontak, email, dan perusahaan hanya dikirim jika Anda mencentang kotak izin kontak. SnapOtter tidak melampirkan file, nama file, jalur unggahan, hasil OCR/transkripsi, teks dokumen pribadi, atau log kesalahan mentah pada masukan.",
+        "Konvertt juga menyertakan ajakan masukan yang bersifat opsional. Masukan hanya dikirim saat Anda mengirimkannya, dan hanya jika analitik aktif. Peristiwa masukan dikirim ke PostHog sebagai {code}. Nama kontak, email, dan perusahaan hanya dikirim jika Anda mencentang kotak izin kontak. Konvertt tidak melampirkan file, nama file, jalur unggahan, hasil OCR/transkripsi, teks dokumen pribadi, atau log kesalahan mentah pada masukan.",
     },
     dataStorage: {
       heading: "Penyimpanan Data",
@@ -6041,11 +6041,11 @@ export const id: TranslationKeys = {
     },
     openSource: {
       heading: "Sumber Terbuka",
-      body: "SnapOtter sepenuhnya sumber terbuka. Anda dapat mengaudit kode sumbernya kapan saja untuk memverifikasi klaim ini. Transparansi adalah prinsip utama proyek ini.",
+      body: "Konvertt sepenuhnya sumber terbuka. Anda dapat mengaudit kode sumbernya kapan saja untuk memverifikasi klaim ini. Transparansi adalah prinsip utama proyek ini.",
     },
     yourControl: {
       heading: "Kendali Anda",
-      body: "Karena SnapOtter di-host sendiri, operator instance memegang kendali penuh atas semua data. Anda dapat menghapus data kapan saja dengan menghapus file dari server atau menghapus database. Tidak ada data yang berada di luar infrastruktur Anda.",
+      body: "Karena Konvertt di-host sendiri, operator instance memegang kendali penuh atas semua data. Anda dapat menghapus data kapan saja dengan menghapus file dari server atau menghapus database. Tidak ada data yang berada di luar infrastruktur Anda.",
     },
   },
 } as const;

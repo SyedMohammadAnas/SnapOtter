@@ -1,6 +1,6 @@
 export const en = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x data imported.",
+    successTitle: "Konvertt 1.x data imported.",
     successBody: "Brought over {users} users and {files} saved files from your previous version.",
     warningTitle: "1.x database found but not imported.",
     warningBody:
@@ -57,11 +57,11 @@ export const en = {
     adminDialogTitle: "How was setup?",
     closeLabel: "Close feedback dialog",
     privacyNote:
-      "Feedback is sent only when you submit it. SnapOtter does not include your files, file contents, file names, or private outputs.",
+      "Feedback is sent only when you submit it. Konvertt does not include your files, file contents, file names, or private outputs.",
     typeLabel: "Feedback type",
     sentimentLabel: "Quick rating",
     messageLabel: "Feedback",
-    messagePlaceholder: "Tell us what worked, what broke, or what would make SnapOtter better.",
+    messagePlaceholder: "Tell us what worked, what broke, or what would make Konvertt better.",
     improveFirstLabel: "What should we improve first?",
     improveFirstPlaceholder: "Tell us what made setup harder than it should be.",
     contactOkLabel: "You can contact me about this feedback.",
@@ -75,16 +75,16 @@ export const en = {
     searchMissContext: "You searched for: {query}",
     searchMissDiscussionsFallback: "We couldn't record that. Open a request in Discussions.",
     offlineDescription:
-      "This instance has analytics turned off, so feedback isn't recorded here. You can still reach the SnapOtter team directly.",
+      "This instance has analytics turned off, so feedback isn't recorded here. You can still reach the Konvertt team directly.",
     offlinePublicNote: "GitHub issues are public.",
     offlineGithubButton: "Open a GitHub issue",
     offlineEmailButton: "Email us",
     thanksTitle: "Thanks for the feedback.",
-    thanksDescription: "It helps us improve SnapOtter without collecting files or private content.",
+    thanksDescription: "It helps us improve Konvertt without collecting files or private content.",
     quickThanks: "Thanks for the signal.",
     reportIssue: "Report issue",
     toolPromptTitle: "How did this tool work?",
-    toolPromptDescription: "One quick signal helps us improve SnapOtter.",
+    toolPromptDescription: "One quick signal helps us improve Konvertt.",
     dismissPrompt: "Dismiss feedback prompt",
     workedWell: "Worked well",
     dontAskAgain: "Don't ask again",
@@ -168,7 +168,7 @@ export const en = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "How are you using SnapOtter?",
+    usageSurveyTitle: "How are you using Konvertt?",
     priorToolLabel: "What were you using before?",
     selfHostMotivationLabel: "Why self-host it?",
     discoverySourceLabel: "How did you hear about us?",
@@ -2751,7 +2751,7 @@ export const en = {
       imagesLoadedOne: "{count} image loaded",
       sizeKbOut: "{size} KB out",
       sizeKbIn: "{size} KB in",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       uploadImagesForCollage: "Upload images for collage",
       drop2OrMoreImages: "Drop 2 or more images here to get started",
       resetPositionAndZoom: "Reset position and zoom",
@@ -4127,7 +4127,7 @@ export const en = {
     pdf: "PDF",
     files: "Files",
     toolCount: "{count} tools",
-    heading: "SnapOtter Tools",
+    heading: "Konvertt Tools",
   },
   fullscreenGrid: {
     searchPlaceholder: "Search tools...",
@@ -4261,7 +4261,7 @@ export const en = {
       },
     },
     menuBar: {
-      backTitle: "Back to SnapOtter",
+      backTitle: "Back to Konvertt",
     },
     welcome: {
       ariaLabel: "Image drop zone",
@@ -4685,7 +4685,7 @@ export const en = {
         tooLarge: "This export is too big for your browser to render. Try smaller dimensions.",
         saveProject: "Save Project",
         loadProject: "Load Project",
-        invalidProject: "This file isn't a valid SnapOtter project.",
+        invalidProject: "This file isn't a valid Konvertt project.",
       },
       autosaveRecovery: {
         message: "Recovered unsaved work from {time}.",
@@ -4775,7 +4775,7 @@ export const en = {
       sidebarOption: "Sidebar",
       fullscreenGridOption: "Fullscreen Grid",
       appVersionLabel: "App Version",
-      appVersionDescription: "Current version of SnapOtter",
+      appVersionDescription: "Current version of Konvertt",
       saveButton: "Save Settings",
       saveSuccess: "Settings saved.",
       saveFailed: "Failed to save settings.",
@@ -4829,7 +4829,7 @@ export const en = {
     privacy: {
       title: "Privacy",
       description:
-        "Anonymous Product Analytics helps improve SnapOtter. It is on by default and set for the whole instance by an administrator.",
+        "Anonymous Product Analytics helps improve Konvertt. It is on by default and set for the whole instance by an administrator.",
       analyticsLabel: "Anonymous Product Analytics",
       analyticsDescription:
         "Share anonymous usage data (which tools run, durations, error codes) and crash reports. No IP address, no account identity. We never collect your file names, file contents, OCR output, image metadata, or document text. Turn this off to stop all of it.",
@@ -5102,7 +5102,7 @@ export const en = {
     },
     apiKeys: {
       heading: "API Keys",
-      description: "Manage API keys for programmatic access to SnapOtter.",
+      description: "Manage API keys for programmatic access to Konvertt.",
       keyNamePlaceholder: "Key name (optional)",
       generateButton: "Generate API Key",
       removeScopingLabel: "Remove permission scoping",
@@ -5195,7 +5195,7 @@ export const en = {
     },
     about: {
       heading: "About",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "Open-source, self-hosted file-processing infrastructure with 200+ tools. Convert, compress, edit, transcribe, OCR, and automate image, video, audio, PDF, and document workflows without sending data to the cloud.",
       versionLabel: "Version:",
@@ -5213,7 +5213,7 @@ export const en = {
     logout: "Log out",
     logoutFailed: "Couldn't sign you out. Try again.",
     idpLogoutFailed:
-      "You're signed out of SnapOtter, but your SSO provider session may still be open. Sign out there too.",
+      "You're signed out of Konvertt, but your SSO provider session may still be open. Sign out there too.",
     username: "Username",
     password: "Password",
     loginButton: "Login",
@@ -5321,8 +5321,8 @@ export const en = {
   },
   automate: {
     title: "Automate",
-    invalidPipelineFile: "Not a valid SnapOtter pipeline file",
-    newerVersion: "This pipeline was created with a newer version of SnapOtter",
+    invalidPipelineFile: "Not a valid Konvertt pipeline file",
+    newerVersion: "This pipeline was created with a newer version of Konvertt",
     missingName: "Pipeline file is missing a name",
     noSteps: "Pipeline file has no steps",
     importFailed: "Import failed",
@@ -5557,7 +5557,7 @@ export const en = {
       docsLink: "Documentation",
       apiRefLink: "API Reference (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Network error",
@@ -5752,7 +5752,7 @@ export const en = {
       bundlesQueued: "{count} queued",
     },
     updateNotice: {
-      available: "SnapOtter {version} is available. You're on {current}.",
+      available: "Konvertt {version} is available. You're on {current}.",
       whatsNew: "What's new",
       dismiss: "Dismiss update notice",
     },
@@ -5822,8 +5822,8 @@ export const en = {
     settingsDialog: "Settings",
     helpDialog: "Help",
     navigationMenu: "Navigation",
-    homeLink: "SnapOtter home",
-    sponsorLink: "Support SnapOtter on GitHub Sponsors",
+    homeLink: "Konvertt home",
+    sponsorLink: "Support Konvertt on GitHub Sponsors",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -5935,17 +5935,17 @@ export const en = {
     lastUpdated: "Last updated: June 24, 2026",
     overview: {
       heading: "Overview",
-      body: "SnapOtter is a self-hosted, open-source file processing application. Your instance is operated and controlled entirely by whoever deployed it. This policy describes how the software itself handles your data.",
+      body: "Konvertt is a self-hosted, open-source file processing application. Your instance is operated and controlled entirely by whoever deployed it. This policy describes how the software itself handles your data.",
     },
     localProcessing: {
       heading: "Local Processing",
-      body: "All file processing happens entirely on the server where SnapOtter is deployed. Your files are never sent to external services or third-party APIs. When you upload a file for processing, it is handled in memory or in temporary storage on the host machine and is not retained after the operation completes.",
+      body: "All file processing happens entirely on the server where Konvertt is deployed. Your files are never sent to external services or third-party APIs. When you upload a file for processing, it is handled in memory or in temporary storage on the host machine and is not retained after the operation completes.",
     },
     analytics: {
       heading: "Analytics",
-      body: "SnapOtter includes basic analytics (tool usage, error reports) to help improve the software. Your files, file names, and personal data are never part of this. Analytics is on by default and can be disabled at runtime. An administrator can turn anonymous product analytics off under Settings > System > {privacy}, with no restart or rebuild needed. For a compile-time hard-off, build with {code}, which strips it from the bundle entirely. Everything works normally without it.",
+      body: "Konvertt includes basic analytics (tool usage, error reports) to help improve the software. Your files, file names, and personal data are never part of this. Analytics is on by default and can be disabled at runtime. An administrator can turn anonymous product analytics off under Settings > System > {privacy}, with no restart or rebuild needed. For a compile-time hard-off, build with {code}, which strips it from the bundle entirely. Everything works normally without it.",
       feedbackBody:
-        "SnapOtter also includes optional feedback prompts. Feedback is sent only when you submit it, and only when analytics is enabled. Feedback events go to PostHog as {code}. Contact name, email, and company are sent only if you check the contact permission box. SnapOtter does not attach files, file names, upload paths, OCR/transcription output, private document text, or raw error logs to feedback.",
+        "Konvertt also includes optional feedback prompts. Feedback is sent only when you submit it, and only when analytics is enabled. Feedback events go to PostHog as {code}. Contact name, email, and company are sent only if you check the contact permission box. Konvertt does not attach files, file names, upload paths, OCR/transcription output, private document text, or raw error logs to feedback.",
     },
     dataStorage: {
       heading: "Data Storage",
@@ -5957,11 +5957,11 @@ export const en = {
     },
     openSource: {
       heading: "Open Source",
-      body: "SnapOtter is fully open source. You can audit the source code to verify these claims at any time. Transparency is a core principle of this project.",
+      body: "Konvertt is fully open source. You can audit the source code to verify these claims at any time. Transparency is a core principle of this project.",
     },
     yourControl: {
       heading: "Your Control",
-      body: "Because SnapOtter is self-hosted, the instance operator has full control over all data. You can delete your data at any time by removing files from the server or deleting the database. No data exists outside of your infrastructure.",
+      body: "Because Konvertt is self-hosted, the instance operator has full control over all data. You can delete your data at any time by removing files from the server or deleting the database. No data exists outside of your infrastructure.",
     },
   },
 } as const;

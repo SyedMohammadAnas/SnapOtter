@@ -16,7 +16,7 @@ export function buildToolRequestDiscussionUrl(query: string): string {
   const q = sanitizeQuery(query);
   const title = `Tool request: ${q}`;
   const body = [
-    `I searched SnapOtter for "${q}" and could not find a tool for it.`,
+    `I searched Konvertt for "${q}" and could not find a tool for it.`,
     "",
     "What I'm trying to do:",
     "",

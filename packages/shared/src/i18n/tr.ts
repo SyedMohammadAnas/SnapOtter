@@ -2,7 +2,7 @@ import type { TranslationKeys } from "./en.js";
 
 export const tr: TranslationKeys = {
   migrationBanner: {
-    successTitle: "SnapOtter 1.x verileri içe aktarıldı.",
+    successTitle: "Konvertt 1.x verileri içe aktarıldı.",
     successBody: "Önceki sürümünüzden {users} kullanıcı ve {files} kayıtlı dosya taşındı.",
     warningTitle: "1.x veritabanı bulundu ancak içe aktarılmadı.",
     warningBody:
@@ -59,12 +59,12 @@ export const tr: TranslationKeys = {
     adminDialogTitle: "Kurulum nasıldı?",
     closeLabel: "Geri bildirim penceresini kapat",
     privacyNote:
-      "Geri bildirim yalnızca sen gönderdiğinde iletilir. SnapOtter; dosyalarını, dosya içeriklerini, dosya adlarını veya özel çıktılarını içermez.",
+      "Geri bildirim yalnızca sen gönderdiğinde iletilir. Konvertt; dosyalarını, dosya içeriklerini, dosya adlarını veya özel çıktılarını içermez.",
     typeLabel: "Geri bildirim türü",
     sentimentLabel: "Hızlı değerlendirme",
     messageLabel: "Geri bildirim",
     messagePlaceholder:
-      "Neyin işe yaradığını, neyin bozulduğunu veya SnapOtter'ı neyin daha iyi hale getireceğini bize anlat.",
+      "Neyin işe yaradığını, neyin bozulduğunu veya Konvertt'ı neyin daha iyi hale getireceğini bize anlat.",
     improveFirstLabel: "Önce neyi iyileştirmeliyiz?",
     improveFirstPlaceholder: "Kurulumu olması gerekenden zorlaştıran neydi, bize anlat.",
     contactOkLabel: "Bu geri bildirimle ilgili benimle iletişime geçilebilir.",
@@ -78,17 +78,17 @@ export const tr: TranslationKeys = {
     searchMissContext: "Şunu aradın: {query}",
     searchMissDiscussionsFallback: "Bunu kaydedemedik. Discussions'ta bir istek aç.",
     offlineDescription:
-      "Bu örnekte analiz kapalı, bu yüzden geri bildirim burada kaydedilmez. Yine de SnapOtter ekibine doğrudan ulaşabilirsin.",
+      "Bu örnekte analiz kapalı, bu yüzden geri bildirim burada kaydedilmez. Yine de Konvertt ekibine doğrudan ulaşabilirsin.",
     offlinePublicNote: "GitHub issue'ları herkese açıktır.",
     offlineGithubButton: "GitHub'da issue aç",
     offlineEmailButton: "Bize e-posta gönder",
     thanksTitle: "Geri bildirim için teşekkürler.",
     thanksDescription:
-      "Dosya veya özel içerik toplamadan SnapOtter'ı iyileştirmemize yardımcı olur.",
+      "Dosya veya özel içerik toplamadan Konvertt'ı iyileştirmemize yardımcı olur.",
     quickThanks: "Bildirdiğin için teşekkürler.",
     reportIssue: "Sorun bildir",
     toolPromptTitle: "Bu araç nasıl çalıştı?",
-    toolPromptDescription: "Hızlı bir geri bildirim SnapOtter'ı iyileştirmemize yardımcı olur.",
+    toolPromptDescription: "Hızlı bir geri bildirim Konvertt'ı iyileştirmemize yardımcı olur.",
     dismissPrompt: "Geri bildirim istemini kapat",
     workedWell: "İyi çalıştı",
     dontAskAgain: "Bir daha sorma",
@@ -172,7 +172,7 @@ export const tr: TranslationKeys = {
     },
   },
   onboarding: {
-    usageSurveyTitle: "SnapOtter'ı nasıl kullanıyorsunuz?",
+    usageSurveyTitle: "Konvertt'ı nasıl kullanıyorsunuz?",
     priorToolLabel: "Daha önce ne kullanıyordunuz?",
     selfHostMotivationLabel: "Neden kendi sunucunuzda barındırıyorsunuz?",
     discoverySourceLabel: "Bizi nereden duydunuz?",
@@ -2802,7 +2802,7 @@ export const tr: TranslationKeys = {
       mosaic: "Mozaik",
       uploadingImages: "Görüntüler yükleniyor...",
       processingCollage: "Kolaj işleniyor...",
-      snapotter: "SnapOtter",
+      snapotter: "Konvertt",
       background: "Arka Plan",
       format: "Biçim",
       uploadImagesForCollage: "Kolaj için görüntü yükleyin",
@@ -4194,7 +4194,7 @@ export const tr: TranslationKeys = {
     pdf: "PDF",
     files: "Dosyalar",
     toolCount: "{count} araç",
-    heading: "SnapOtter Araçları",
+    heading: "Konvertt Araçları",
   },
   fullscreenGrid: {
     searchPlaceholder: "Araç ara...",
@@ -4328,7 +4328,7 @@ export const tr: TranslationKeys = {
       },
     },
     menuBar: {
-      backTitle: "SnapOtter'a Dön",
+      backTitle: "Konvertt'a Dön",
     },
     welcome: {
       ariaLabel: "Görüntü bırakma alanı",
@@ -4754,7 +4754,7 @@ export const tr: TranslationKeys = {
           "Bu dışa aktarma, tarayıcının oluşturamayacağı kadar büyük. Daha küçük boyutlar deneyin.",
         saveProject: "Projeyi Kaydet",
         loadProject: "Projeyi Yükle",
-        invalidProject: "Bu dosya geçerli bir SnapOtter projesi değil.",
+        invalidProject: "Bu dosya geçerli bir Konvertt projesi değil.",
       },
       autosaveRecovery: {
         message: "{time} tarihinden kaydedilmemiş çalışma kurtarıldı.",
@@ -4844,7 +4844,7 @@ export const tr: TranslationKeys = {
       sidebarOption: "Kenar Çubuğu",
       fullscreenGridOption: "Tam Ekran Izgara",
       appVersionLabel: "Uygulama Sürümü",
-      appVersionDescription: "SnapOtter'ın mevcut sürümü",
+      appVersionDescription: "Konvertt'ın mevcut sürümü",
       saveButton: "Ayarları Kaydet",
       saveSuccess: "Ayarlar kaydedildi.",
       saveFailed: "Ayarlar kaydedilemedi.",
@@ -4899,7 +4899,7 @@ export const tr: TranslationKeys = {
     privacy: {
       title: "Gizlilik",
       description:
-        "Anonim Ürün Analitiği, SnapOtter'ı geliştirmeye yardımcı olur. Varsayılan olarak açıktır ve tüm örnek için bir yönetici tarafından ayarlanır.",
+        "Anonim Ürün Analitiği, Konvertt'ı geliştirmeye yardımcı olur. Varsayılan olarak açıktır ve tüm örnek için bir yönetici tarafından ayarlanır.",
       analyticsLabel: "Anonim Ürün Analitiği",
       analyticsDescription:
         "Anonim kullanım verilerini (hangi araçların çalıştığı, süreler, hata kodları) ve çökme raporlarını paylaşın. IP adresi yok, hesap kimliği yok. Dosya adlarınızı, dosya içeriklerinizi, OCR çıktısını, görüntü meta verilerini veya belge metnini asla toplamayız. Hepsini durdurmak için bunu kapatın.",
@@ -5177,7 +5177,7 @@ export const tr: TranslationKeys = {
     },
     apiKeys: {
       heading: "API Anahtarları",
-      description: "SnapOtter'a programatik erişim için API anahtarlarını yönetin.",
+      description: "Konvertt'a programatik erişim için API anahtarlarını yönetin.",
       keyNamePlaceholder: "Anahtar adı (isteğe bağlı)",
       generateButton: "API Anahtarı Oluştur",
       removeScopingLabel: "İzin kapsamını kaldır",
@@ -5275,7 +5275,7 @@ export const tr: TranslationKeys = {
     },
     about: {
       heading: "Hakkında",
-      appName: "SnapOtter",
+      appName: "Konvertt",
       appDescription:
         "200+ araçla gizlilik odaklı, kendi sunucunuzda barındırılan bir dosya işleme paketi. Buluta veri göndermeden dönüştürme, sıkıştırma, düzenleme, transkripsiyon, OCR ve görüntü, video, ses, PDF ve dosya iş akışlarınızı otomatikleştirme.",
       versionLabel: "Sürüm:",
@@ -5293,7 +5293,7 @@ export const tr: TranslationKeys = {
     logout: "Çıkış yap",
     logoutFailed: "Çıkış yapılamadı. Tekrar deneyin.",
     idpLogoutFailed:
-      "SnapOtter oturumunuz kapatıldı, ancak SSO sağlayıcınızdaki oturumunuz hâlâ açık olabilir. Oradan da çıkış yapın.",
+      "Konvertt oturumunuz kapatıldı, ancak SSO sağlayıcınızdaki oturumunuz hâlâ açık olabilir. Oradan da çıkış yapın.",
     username: "Kullanıcı adı",
     password: "Parola",
     loginButton: "Giriş Yap",
@@ -5403,8 +5403,8 @@ export const tr: TranslationKeys = {
   },
   automate: {
     title: "Otomatikleştir",
-    invalidPipelineFile: "Geçerli bir SnapOtter Pipeline dosyası değil",
-    newerVersion: "Bu Pipeline, SnapOtter'ın daha yeni bir sürümüyle oluşturuldu",
+    invalidPipelineFile: "Geçerli bir Konvertt Pipeline dosyası değil",
+    newerVersion: "Bu Pipeline, Konvertt'ın daha yeni bir sürümüyle oluşturuldu",
     missingName: "Pipeline dosyasında ad eksik",
     noSteps: "Pipeline dosyasında adım yok",
     importFailed: "İçe aktarma başarısız",
@@ -5641,7 +5641,7 @@ export const tr: TranslationKeys = {
       docsLink: "Dokümantasyon",
       apiRefLink: "API Referansı (Swagger)",
     },
-    versionLabel: "SnapOtter v{version}",
+    versionLabel: "Konvertt v{version}",
   },
   errors: {
     networkFailed: "Ağ hatası",
@@ -5837,14 +5837,14 @@ export const tr: TranslationKeys = {
       bundlesQueued: "{count} sırada",
     },
     updateNotice: {
-      available: "SnapOtter {version} yayımlandı. Şu an {current} sürümünü kullanıyorsunuz.",
+      available: "Konvertt {version} yayımlandı. Şu an {current} sürümünü kullanıyorsunuz.",
       whatsNew: "Yenilikler",
       dismiss: "Güncelleme bildirimini kapat",
     },
   },
   a11y: {
     comparisonScroller: "Karşılaştırma alanı",
-    sponsorLink: "SnapOtter'ı GitHub Sponsors'ta destekleyin",
+    sponsorLink: "Konvertt'ı GitHub Sponsors'ta destekleyin",
     skipToContent: "Ana içeriğe geç",
     openSidebar: "Kenar çubuğunu aç",
     closeSidebar: "Kenar çubuğunu kapat",
@@ -5908,7 +5908,7 @@ export const tr: TranslationKeys = {
     settingsDialog: "Ayarlar",
     helpDialog: "Yardım",
     navigationMenu: "Gezinme",
-    homeLink: "SnapOtter ana sayfa",
+    homeLink: "Konvertt ana sayfa",
   },
   pipelineTemplates: {
     "web-optimize": {
@@ -6022,17 +6022,17 @@ export const tr: TranslationKeys = {
     lastUpdated: "Son güncelleme: 24 Haziran 2026",
     overview: {
       heading: "Genel Bakış",
-      body: "SnapOtter, kendi sunucunuzda barındırılan açık kaynaklı bir dosya işleme uygulamasıdır. Örneğiniz tamamen onu kuran kişi tarafından işletilir ve denetlenir. Bu politika, yazılımın verilerinizi nasıl ele aldığını anlatır.",
+      body: "Konvertt, kendi sunucunuzda barındırılan açık kaynaklı bir dosya işleme uygulamasıdır. Örneğiniz tamamen onu kuran kişi tarafından işletilir ve denetlenir. Bu politika, yazılımın verilerinizi nasıl ele aldığını anlatır.",
     },
     localProcessing: {
       heading: "Yerel İşleme",
-      body: "Tüm dosya işleme, SnapOtter'ın kurulu olduğu sunucuda gerçekleşir. Dosyalarınız hiçbir zaman harici servislere veya üçüncü taraf API'lere gönderilmez. İşlenmek üzere bir dosya yüklediğinizde dosya, sunucunun belleğinde ya da geçici depolamasında tutulur ve işlem bittikten sonra saklanmaz.",
+      body: "Tüm dosya işleme, Konvertt'ın kurulu olduğu sunucuda gerçekleşir. Dosyalarınız hiçbir zaman harici servislere veya üçüncü taraf API'lere gönderilmez. İşlenmek üzere bir dosya yüklediğinizde dosya, sunucunun belleğinde ya da geçici depolamasında tutulur ve işlem bittikten sonra saklanmaz.",
     },
     analytics: {
       heading: "Analitik",
-      body: "SnapOtter, yazılımı geliştirmeye yardımcı olması için temel analitik (araç kullanımı, hata raporları) içerir. Dosyalarınız, dosya adlarınız ve kişisel verileriniz buna hiçbir zaman dahil edilmez. Analitik varsayılan olarak açıktır ve çalışma sırasında kapatılabilir. Bir yönetici, anonim ürün analitiğini Ayarlar > Sistem > {privacy} altından kapatabilir; yeniden başlatma veya yeniden derleme gerekmez. Derleme aşamasında tümüyle kapatmak için {code} ile derleyin; bu, analitiği paketten tamamen çıkarır. Analitik olmadan da her şey normal çalışır.",
+      body: "Konvertt, yazılımı geliştirmeye yardımcı olması için temel analitik (araç kullanımı, hata raporları) içerir. Dosyalarınız, dosya adlarınız ve kişisel verileriniz buna hiçbir zaman dahil edilmez. Analitik varsayılan olarak açıktır ve çalışma sırasında kapatılabilir. Bir yönetici, anonim ürün analitiğini Ayarlar > Sistem > {privacy} altından kapatabilir; yeniden başlatma veya yeniden derleme gerekmez. Derleme aşamasında tümüyle kapatmak için {code} ile derleyin; bu, analitiği paketten tamamen çıkarır. Analitik olmadan da her şey normal çalışır.",
       feedbackBody:
-        "SnapOtter ayrıca isteğe bağlı geri bildirim istemleri içerir. Geri bildirim yalnızca siz gönderdiğinizde ve yalnızca analitik açıkken iletilir. Geri bildirim olayları PostHog'a {code} olarak gider. İletişim adı, e-posta ve şirket bilgisi yalnızca iletişim izni kutusunu işaretlerseniz gönderilir. SnapOtter geri bildirime dosya, dosya adı, yükleme yolu, OCR/transkripsiyon çıktısı, özel belge metni veya ham hata günlüğü eklemez.",
+        "Konvertt ayrıca isteğe bağlı geri bildirim istemleri içerir. Geri bildirim yalnızca siz gönderdiğinizde ve yalnızca analitik açıkken iletilir. Geri bildirim olayları PostHog'a {code} olarak gider. İletişim adı, e-posta ve şirket bilgisi yalnızca iletişim izni kutusunu işaretlerseniz gönderilir. Konvertt geri bildirime dosya, dosya adı, yükleme yolu, OCR/transkripsiyon çıktısı, özel belge metni veya ham hata günlüğü eklemez.",
     },
     dataStorage: {
       heading: "Veri Depolama",
@@ -6044,11 +6044,11 @@ export const tr: TranslationKeys = {
     },
     openSource: {
       heading: "Açık Kaynak",
-      body: "SnapOtter tümüyle açık kaynaklıdır. Bu iddiaları doğrulamak için kaynak kodunu istediğiniz zaman inceleyebilirsiniz. Şeffaflık, bu projenin temel ilkelerinden biridir.",
+      body: "Konvertt tümüyle açık kaynaklıdır. Bu iddiaları doğrulamak için kaynak kodunu istediğiniz zaman inceleyebilirsiniz. Şeffaflık, bu projenin temel ilkelerinden biridir.",
     },
     yourControl: {
       heading: "Denetim Sizde",
-      body: "SnapOtter kendi sunucunuzda barındırıldığı için tüm veriler üzerindeki tam denetim, örneği işleten kişidedir. Sunucudaki dosyaları kaldırarak veya veritabanını silerek verilerinizi istediğiniz zaman silebilirsiniz. Altyapınızın dışında hiçbir veri bulunmaz.",
+      body: "Konvertt kendi sunucunuzda barındırıldığı için tüm veriler üzerindeki tam denetim, örneği işleten kişidedir. Sunucudaki dosyaları kaldırarak veya veritabanını silerek verilerinizi istediğiniz zaman silebilirsiniz. Altyapınızın dışında hiçbir veri bulunmaz.",
     },
   },
 } as const;
