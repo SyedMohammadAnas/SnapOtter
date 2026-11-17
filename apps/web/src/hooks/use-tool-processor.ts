@@ -985,6 +985,12 @@ export function useToolProcessor(toolId: string) {
             }
 
             if (data.phase === "failed") {
+              // Sync mode: the POST is still open and its response carries the
+              // real outcome. The progress stream can report a failed frame for
+              // a job that was never enqueued (e.g. a 429 daily-limit reject),
+              // and ending the run here would race that answer and show
+              // "Canceled". Let the XHR settle it.
+              if (!asyncModeRef.current && xhrRef.current) return;
               endFailedRun(
                 failedFrameMessage(data, tRef.current.errors.processingFailedNoDetail),
                 undefined,
