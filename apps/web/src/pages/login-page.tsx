@@ -306,6 +306,18 @@ function LanguageSelector() {
   );
 }
 
+// A password session token left in localStorage outranks the SSO session
+// cookie on every API call, so a Google sign-in would keep acting as the old
+// account. Drop it before the SSO redirect starts.
+function clearStoredSession() {
+  clearToken();
+  try {
+    localStorage.removeItem("snapotter-username");
+  } catch {
+    // storage unavailable: nothing stored to clear
+  }
+}
+
 export function LoginPage() {
   const { t } = useTranslation();
   const {
@@ -835,6 +847,7 @@ export function LoginPage() {
                   {oidcEnabled && (
                     <a
                       href={appUrl("/api/auth/oidc/login")}
+                      onClick={clearStoredSession}
                       className="w-full py-3 px-4 rounded-lg bg-primary text-primary-foreground font-medium shadow-sm hover:bg-primary-light transition-colors flex items-center justify-center gap-2.5"
                     >
                       <KeyRound className="w-[18px] h-[18px]" aria-hidden="true" />
@@ -925,6 +938,7 @@ export function LoginPage() {
                   {oidcEnabled && (
                     <a
                       href={appUrl("/api/auth/oidc/login")}
+                      onClick={clearStoredSession}
                       className="group w-full py-3 px-4 rounded-lg border border-border bg-card text-foreground font-medium shadow-sm hover:border-primary hover:bg-primary-subtle transition-colors flex items-center justify-center gap-2.5"
                     >
                       <KeyRound
