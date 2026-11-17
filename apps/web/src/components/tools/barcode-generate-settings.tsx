@@ -7,6 +7,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 const BARCODE_TYPES = [
@@ -83,7 +84,7 @@ export function BarcodeGenerateSettings() {
     controller.signal.addEventListener("abort", unsubscribe, { once: true });
 
     try {
-      const res = await fetch(appUrl("/api/v1/tools/image/barcode-generate"), {
+      const res = await uploadFetch(appUrl("/api/v1/tools/image/barcode-generate"), {
         method: "POST",
         headers: {
           ...formatHeaders(),

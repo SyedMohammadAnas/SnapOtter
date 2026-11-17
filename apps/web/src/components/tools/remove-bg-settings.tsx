@@ -17,6 +17,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders } from "@/lib/api";
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 type SubjectType = "people" | "products" | "general";
@@ -1088,7 +1089,7 @@ export function RemoveBgSettings({ onBgPreview }: RemoveBgSettingsProps = {}) {
 
     const formData = new FormData();
     formData.append("file", bgImageFile);
-    fetch(appUrl("/api/v1/preview"), {
+    uploadFetch(appUrl("/api/v1/preview"), {
       method: "POST",
       headers: formatHeaders(),
       body: formData,
@@ -1420,7 +1421,7 @@ export function RemoveBgSettings({ onBgPreview }: RemoveBgSettingsProps = {}) {
       }
 
       const headers = formatHeaders();
-      const response = await fetch(appUrl("/api/v1/tools/image/remove-background/effects"), {
+      const response = await uploadFetch(appUrl("/api/v1/tools/image/remove-background/effects"), {
         method: "POST",
         headers,
         body: formData,

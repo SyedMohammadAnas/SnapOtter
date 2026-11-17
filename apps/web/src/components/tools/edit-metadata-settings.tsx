@@ -10,6 +10,7 @@ import { failedAnswerMessage, formatHeaders } from "@/lib/api";
 import { appUrl } from "@/lib/app-url";
 import { format } from "@/lib/format";
 import { countDisplayableMetadata, EXIF_LABELS, exifStr } from "@/lib/metadata-utils";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 interface InspectResult {
@@ -296,7 +297,7 @@ export function EditMetadataSettings() {
       try {
         const formData = new FormData();
         formData.append("file", currentFile);
-        const res = await fetch(appUrl("/api/v1/tools/image/edit-metadata/inspect"), {
+        const res = await uploadFetch(appUrl("/api/v1/tools/image/edit-metadata/inspect"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,

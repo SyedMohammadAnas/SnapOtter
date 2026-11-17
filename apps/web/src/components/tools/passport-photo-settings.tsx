@@ -27,6 +27,7 @@ import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api"
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { format } from "@/lib/format";
 import { passportCountryName, passportDocLabel } from "@/lib/passport-i18n";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 import {
   type AnalyzeResult,
@@ -410,7 +411,7 @@ export function PassportPhotoSettings() {
         formData.append("settings", JSON.stringify({}));
 
         const headers = formatHeaders();
-        const response = await fetch(appUrl("/api/v1/tools/image/passport-photo/analyze"), {
+        const response = await uploadFetch(appUrl("/api/v1/tools/image/passport-photo/analyze"), {
           method: "POST",
           headers,
           body: formData,
@@ -527,7 +528,7 @@ export function PassportPhotoSettings() {
         imageHeight: analyzeResult.imageHeight,
       };
 
-      const response = await fetch(appUrl("/api/v1/tools/image/passport-photo/generate"), {
+      const response = await uploadFetch(appUrl("/api/v1/tools/image/passport-photo/generate"), {
         method: "POST",
         headers,
         body: JSON.stringify(body),

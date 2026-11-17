@@ -6,6 +6,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl } from "@/lib/app-url";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import {
   type Base64Error,
   type Base64Result,
@@ -148,7 +149,7 @@ export function ImageToBase64Settings() {
           formData.append("files", file);
           formData.append("settings", settings);
 
-          res = await fetch(appUrl("/api/v1/tools/image/image-to-base64"), {
+          res = await uploadFetch(appUrl("/api/v1/tools/image/image-to-base64"), {
             method: "POST",
             headers: formatHeaders(),
             body: formData,

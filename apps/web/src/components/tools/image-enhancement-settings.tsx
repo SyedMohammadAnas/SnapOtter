@@ -6,6 +6,7 @@ import { useTranslation } from "@/contexts/i18n-context";
 import { useToolProcessor } from "@/hooks/use-tool-processor";
 import { appUrl } from "@/lib/app-url";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 type EnhancementMode = "auto" | "portrait" | "landscape" | "low-light" | "food" | "document";
@@ -181,7 +182,7 @@ export function ImageEnhancementControls({
     const formData = new FormData();
     formData.append("file", files[0]);
 
-    fetch(appUrl("/api/v1/tools/image/image-enhancement/analyze"), {
+    uploadFetch(appUrl("/api/v1/tools/image/image-enhancement/analyze"), {
       method: "POST",
       body: formData,
       signal: controller.signal,

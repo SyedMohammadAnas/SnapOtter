@@ -11,6 +11,7 @@ import { appUrl } from "@/lib/app-url";
 import { format as formatMessage } from "@/lib/format";
 import { isIgnoredError } from "@/lib/sentry-scrub";
 import type { ComparisonPreview } from "@/lib/tool-registry";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 type WebFormat = "webp" | "jpeg" | "avif" | "png" | "jxl";
@@ -152,7 +153,7 @@ export function OptimizeForWebSettings({ onComparisonPreview }: OptimizeForWebSe
     formData.append("file", file);
     formData.append("settings", JSON.stringify(settings));
 
-    fetch(appUrl("/api/v1/tools/image/optimize-for-web/preview"), {
+    uploadFetch(appUrl("/api/v1/tools/image/optimize-for-web/preview"), {
       method: "POST",
       headers: formatHeaders(),
       body: formData,

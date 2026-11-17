@@ -1,4 +1,5 @@
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
+import { uploadFetch } from "@/lib/upload-fetch";
 // apps/web/src/components/editor/common/export-dialog.tsx
 
 import {
@@ -597,7 +598,7 @@ export function ExportDialog({ onClose }: { onClose: () => void }) {
             );
             let res: Response;
             try {
-              res = await fetch(appUrl(apiToolPath("convert")), {
+              res = await uploadFetch(appUrl(apiToolPath("convert")), {
                 method: "POST",
                 headers: formatHeaders(),
                 body: formData,

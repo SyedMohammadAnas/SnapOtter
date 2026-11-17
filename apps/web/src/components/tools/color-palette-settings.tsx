@@ -8,6 +8,7 @@ import { useTimeouts } from "@/hooks/use-timeouts";
 import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl } from "@/lib/app-url";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { copyToClipboard } from "@/lib/utils";
 import { useFileStore } from "@/stores/file-store";
 
@@ -114,7 +115,7 @@ export function ColorPaletteSettings() {
       formData.append("file", targetFile);
       formData.append("settings", JSON.stringify({ count, format }));
 
-      const res = await fetch(appUrl("/api/v1/tools/image/color-palette"), {
+      const res = await uploadFetch(appUrl("/api/v1/tools/image/color-palette"), {
         method: "POST",
         headers: formatHeaders(),
         body: formData,

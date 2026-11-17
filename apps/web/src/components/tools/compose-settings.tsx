@@ -9,6 +9,7 @@ import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api"
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { FeedbackCategoryError, feedbackCategoryOf } from "@/lib/feedback";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { displayStoredError, useFileStore } from "@/stores/file-store";
 
 interface ComposeEntryResult {
@@ -134,7 +135,7 @@ export function ComposeSettings() {
       formData.append("overlay", overlayFile);
       formData.append("settings", JSON.stringify({ x, y, opacity, blendMode }));
 
-      const res = await fetch(appUrl("/api/v1/tools/image/compose"), {
+      const res = await uploadFetch(appUrl("/api/v1/tools/image/compose"), {
         method: "POST",
         headers: formatHeaders(),
         body: formData,

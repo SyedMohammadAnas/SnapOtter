@@ -11,6 +11,7 @@ import { FeedbackCategoryError, feedbackCategoryOf } from "@/lib/feedback";
 import { format } from "@/lib/format";
 import { reportRunEndFailure } from "@/lib/run-end-report";
 import { runEndWrites } from "@/lib/run-teardown";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { displayStoredError, useFileStore } from "@/stores/file-store";
 
 type Position = "center" | "top-left" | "top-right" | "bottom-left" | "bottom-right";
@@ -210,7 +211,7 @@ export function WatermarkImageSettings() {
         formData.append("watermark", watermarkFile);
         formData.append("settings", settingsJson);
 
-        const res = await fetch(appUrl("/api/v1/tools/image/watermark-image"), {
+        const res = await uploadFetch(appUrl("/api/v1/tools/image/watermark-image"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,
@@ -333,7 +334,7 @@ export function WatermarkImageSettings() {
             formData.append("watermark", watermarkFile);
             formData.append("settings", settingsJson);
 
-            const res = await fetch(appUrl("/api/v1/tools/image/watermark-image"), {
+            const res = await uploadFetch(appUrl("/api/v1/tools/image/watermark-image"), {
               method: "POST",
               headers: formatHeaders(),
               body: formData,

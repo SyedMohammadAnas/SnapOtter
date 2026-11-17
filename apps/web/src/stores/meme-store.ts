@@ -4,6 +4,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { currentTranslations } from "@/lib/current-translations";
+import { uploadFetch } from "@/lib/upload-fetch";
 
 // ── Types ────────────────────────────────────────────────────────────
 
@@ -433,14 +434,14 @@ export const useMemeStore = create<MemeState>((set, get) => ({
         const formData = new FormData();
         formData.append("file", state.customFile);
         formData.append("settings", JSON.stringify(apiSettings));
-        response = await fetch(appUrl("/api/v1/tools/image/meme-generator"), {
+        response = await uploadFetch(appUrl("/api/v1/tools/image/meme-generator"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,
           signal: controller.signal,
         });
       } else {
-        response = await fetch(appUrl("/api/v1/tools/image/meme-generator"), {
+        response = await uploadFetch(appUrl("/api/v1/tools/image/meme-generator"), {
           method: "POST",
           headers: formatHeaders({ "Content-Type": "application/json" }),
           body: JSON.stringify(apiSettings),

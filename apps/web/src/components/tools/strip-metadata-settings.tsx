@@ -10,6 +10,7 @@ import { failedAnswerMessage, formatHeaders } from "@/lib/api";
 import { appUrl } from "@/lib/app-url";
 import { format, plural } from "@/lib/format";
 import { countDisplayableMetadata, EXIF_LABELS } from "@/lib/metadata-utils";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 interface MetadataResult {
@@ -257,7 +258,7 @@ export function StripMetadataSettings() {
       try {
         const formData = new FormData();
         formData.append("file", currentFile);
-        const res = await fetch(appUrl("/api/v1/tools/image/strip-metadata/inspect"), {
+        const res = await uploadFetch(appUrl("/api/v1/tools/image/strip-metadata/inspect"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,

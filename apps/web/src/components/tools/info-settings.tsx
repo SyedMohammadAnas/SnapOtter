@@ -7,6 +7,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl } from "@/lib/app-url";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 interface ImageInfoData {
@@ -127,7 +128,7 @@ export function InfoSettings() {
         const formData = new FormData();
         formData.append("file", file);
 
-        const res = await fetch(appUrl("/api/v1/tools/image/info"), {
+        const res = await uploadFetch(appUrl("/api/v1/tools/image/info"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,

@@ -4,6 +4,7 @@ import { track } from "@/lib/analytics";
 import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api";
 import { appUrl, resolveServerUrls } from "@/lib/app-url";
 import { currentTranslations } from "@/lib/current-translations";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 
 export function isPdfFile(file: File): boolean {
@@ -327,7 +328,7 @@ export const usePdfToImageStore = create<PdfToImageState>((set, get) => ({
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await fetch(appUrl("/api/v1/tools/pdf/pdf-to-image/preview"), {
+      const res = await uploadFetch(appUrl("/api/v1/tools/pdf/pdf-to-image/preview"), {
         method: "POST",
         headers: formatHeaders(),
         body: formData,
@@ -406,7 +407,7 @@ export const usePdfToImageStore = create<PdfToImageState>((set, get) => ({
         "settings",
         JSON.stringify({ format, dpi, quality, colorMode, pages: pagesValue }),
       );
-      const res = await fetch(appUrl("/api/v1/tools/pdf/pdf-to-image"), {
+      const res = await uploadFetch(appUrl("/api/v1/tools/pdf/pdf-to-image"), {
         method: "POST",
         headers: formatHeaders(),
         body: formData,

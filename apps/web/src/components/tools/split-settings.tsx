@@ -8,6 +8,7 @@ import { failedAnswerMessage, formatHeaders, userErrorMessage } from "@/lib/api"
 import { appUrl } from "@/lib/app-url";
 import { quietImport } from "@/lib/chunk-reload";
 import { format } from "@/lib/format";
+import { uploadFetch } from "@/lib/upload-fetch";
 import { useFileStore } from "@/stores/file-store";
 import type { SplitMode } from "@/stores/split-store";
 import { beginSplitRun, useSplitStore } from "@/stores/split-store";
@@ -181,7 +182,7 @@ export function SplitSettings() {
         formData.append("file", file);
         formData.append("settings", settingsJson);
 
-        const res = await fetch(appUrl("/api/v1/tools/image/split"), {
+        const res = await uploadFetch(appUrl("/api/v1/tools/image/split"), {
           method: "POST",
           headers: formatHeaders(),
           body: formData,
