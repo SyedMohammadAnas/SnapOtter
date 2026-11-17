@@ -24,6 +24,7 @@ import {
   parseSaveModeField,
   type ToolJobData,
 } from "../jobs/types.js";
+import { reserveDailyCredit } from "../lib/daily-credits.js";
 import { reportEngineUnavailable } from "../lib/engine-unavailable.js";
 import { markQueueEventsJobFailure, markUpstreamError, reportError } from "../lib/error-report.js";
 import { formatZodErrors, friendlyError } from "../lib/errors.js";
@@ -656,6 +657,22 @@ export function createToolRoute<T>(app: FastifyInstance, config: ToolRouteConfig
               error: "Too many concurrent jobs. Please wait for existing jobs to complete.",
               activeJobs: activeJobs[0].count,
               limit: maxConcurrent,
+            });
+          }
+        }
+
+        // Daily allowance per account (credits). Counted before enqueue so a
+        // burst of parallel requests cannot overshoot the limit.
+        if (userId) {
+          const credit = await reserveDailyCredit(
+            userId,
+            Number(request.headers["content-length"] ?? 0),
+          );
+          if (!credit.allowed) {
+            return reply.status(429).send({
+              error: "Daily limit reached. Try again tomorrow (resets at 00:00 UTC).",
+              code: "DAILY_LIMIT_REACHED",
+              limit: credit.limit,
             });
           }
         }

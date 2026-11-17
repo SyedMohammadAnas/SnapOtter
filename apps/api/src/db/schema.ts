@@ -2,6 +2,7 @@ import { sql } from "drizzle-orm";
 import {
   bigint,
   boolean,
+  date,
   index,
   integer,
   jsonb,
@@ -259,4 +260,18 @@ export const userPreferences = pgTable(
       .$onUpdate(() => new Date()),
   },
   (table) => [primaryKey({ columns: [table.userId, table.key] })],
+);
+
+// Daily allowance per account (UTC day). See routes/tool-factory.ts.
+export const dailyUsage = pgTable(
+  "daily_usage",
+  {
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    day: date("day").notNull(),
+    files: integer("files").notNull().default(0),
+    bytes: bigint("bytes", { mode: "number" }).notNull().default(0),
+  },
+  (table) => [primaryKey({ columns: [table.userId, table.day] })],
 );
