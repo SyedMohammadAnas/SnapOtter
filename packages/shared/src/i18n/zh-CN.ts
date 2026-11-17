@@ -4971,6 +4971,7 @@ export const zhCN: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "自托管、隐私优先的文件处理套件，包含 200+ 种工具。转换、压缩、编辑、转录、OCR，自动化图片、视频、音频、PDF 和文件工作流，无需将数据发送到云端。",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "版本：",
       linksHeading: "链接",
     },

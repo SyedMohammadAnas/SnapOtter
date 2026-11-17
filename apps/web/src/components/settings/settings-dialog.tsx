@@ -4429,6 +4429,7 @@ function AboutSection() {
           </div>
         </div>
         <p className="text-sm text-muted-foreground">{t.settings.about.appDescription}</p>
+        <p className="text-sm text-muted-foreground">{t.settings.about.poweredBySnapOtter}</p>
         <div className="flex items-center gap-4 text-sm">
           <span className="text-muted-foreground">{t.settings.about.versionLabel}</span>
           <span data-testid="app-version" className="font-mono text-foreground">

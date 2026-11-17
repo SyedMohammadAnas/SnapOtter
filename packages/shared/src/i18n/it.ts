@@ -5293,6 +5293,7 @@ export const it: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Una suite di elaborazione file self-hosted e orientata alla privacy, con 200+ strumenti. Converti, comprimi, modifica, trascrivi, OCR e automatizza flussi di lavoro per immagini, video, audio, PDF e file senza inviare dati al cloud.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Versione:",
       linksHeading: "Link",
     },

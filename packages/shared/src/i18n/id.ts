@@ -5274,6 +5274,7 @@ export const id: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Suite pemrosesan file self-hosted yang mengutamakan privasi dengan 200+ alat. Konversi, kompres, edit, transkrip, OCR, dan otomasi alur kerja gambar, video, audio, PDF, dan file tanpa mengirim data ke cloud.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Versi:",
       linksHeading: "Tautan",
     },

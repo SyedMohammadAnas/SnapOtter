@@ -5260,6 +5260,7 @@ export const vi: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Bộ công cụ xử lý tệp tự lưu trữ, ưu tiên quyền riêng tư với 200+ công cụ. Chuyển đổi, nén, chỉnh sửa, phiên âm, OCR và tự động hóa quy trình xử lý ảnh, video, âm thanh, PDF và tệp mà không cần gửi dữ liệu lên đám mây.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Phiên bản:",
       linksHeading: "Liên kết",
     },

@@ -5056,6 +5056,7 @@ export const hi: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "200+ टूल्स के साथ गोपनीयता-पहले, सेल्फ-होस्टेड फ़ाइल प्रोसेसिंग सूट। क्लाउड को डेटा भेजे बिना कन्वर्ट, कंप्रेस, एडिट, ट्रांसक्राइब, OCR और इमेज, वीडियो, ऑडियो, PDF और फ़ाइल वर्कफ्लो ऑटोमेट करें।",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "वर्शन:",
       linksHeading: "लिंक्स",
     },

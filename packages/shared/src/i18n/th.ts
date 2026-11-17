@@ -5193,6 +5193,7 @@ export const th: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "ชุดเครื่องมือประมวลผลไฟล์แบบโฮสต์เองที่เน้นความเป็นส่วนตัวพร้อม 200+ เครื่องมือ แปลง บีบอัด แก้ไข ถอดเสียง OCR และทำงานอัตโนมัติกับภาพ วิดีโอ เสียง PDF และไฟล์โดยไม่ต้องส่งข้อมูลไปคลาวด์",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "เวอร์ชัน:",
       linksHeading: "ลิงก์",
     },

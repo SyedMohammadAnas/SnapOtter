@@ -5229,6 +5229,7 @@ export const ar: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "مجموعة أدوات معالجة ملفات ذاتية الاستضافة تركز على الخصوصية مع 200+ أداة. تحويل وضغط وتحرير ونسخ صوتي وتعرّف ضوئي وأتمتة سير عمل الصور والفيديو والصوت وPDF والملفات دون إرسال البيانات إلى السحابة.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "الإصدار:",
       linksHeading: "روابط",
     },

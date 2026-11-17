@@ -5281,6 +5281,7 @@ export const tr: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "200+ araçla gizlilik odaklı, kendi sunucunuzda barındırılan bir dosya işleme paketi. Buluta veri göndermeden dönüştürme, sıkıştırma, düzenleme, transkripsiyon, OCR ve görüntü, video, ses, PDF ve dosya iş akışlarınızı otomatikleştirme.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Sürüm:",
       linksHeading: "Bağlantılar",
     },

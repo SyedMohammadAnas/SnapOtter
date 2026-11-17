@@ -5292,6 +5292,7 @@ export const pl: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Samoobsługowy pakiet narzędzi do przetwarzania plików z priorytetem prywatności. 200+ narzędzi. Konwersja, kompresja, edycja, transkrypcja, OCR i automatyzacja procesów obrazów, wideo, audio, PDF i plików bez wysyłania danych do chmury.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Wersja:",
       linksHeading: "Odnośniki",
     },

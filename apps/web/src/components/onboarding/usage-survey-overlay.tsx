@@ -198,15 +198,15 @@ export function UsageSurveyOverlay() {
         <div className="flex items-start gap-3">
           <div
             aria-hidden="true"
-            className="h-8 w-8 shrink-0 rounded-full bg-primary flex items-center justify-center text-base"
+            className="h-8 w-8 shrink-0 rounded-full bg-primary flex items-center justify-center text-sm font-bold text-primary-foreground"
           >
-            🦦
+            K
           </div>
           {/*
             An h2, not an h1. RouteAnnouncer focuses and announces
             document.querySelector("h1") on every route change, so while this
             prompt claimed the page's h1 it stole focus on appear and made every
-            subsequent navigation announce "How are you using SnapOtter?"
+            subsequent navigation announce "the usage survey title"
             instead of the page the user actually opened.
           */}
           <h2 id="usage-survey-title" className="grow text-sm font-semibold text-foreground">

@@ -5296,6 +5296,7 @@ export const nl: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Een zelf-gehoste, privacy-first bestandsverwerkingssuite met 200+ tools. Converteren, comprimeren, bewerken, transcriberen, OCR en automatiseer je beeld-, video-, audio-, PDF- en bestandsworkflows zonder data naar de cloud te sturen.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Versie:",
       linksHeading: "Koppelingen",
     },

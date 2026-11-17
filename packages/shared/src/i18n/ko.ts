@@ -5189,6 +5189,7 @@ export const ko: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "셀프 호스팅, 개인정보 우선의 파일 처리 도구 모음으로 200+개의 도구를 제공합니다. 변환, 압축, 편집, 전사, OCR 등 이미지, 동영상, 오디오, PDF, 파일 워크플로를 클라우드에 데이터를 보내지 않고 자동화할 수 있습니다.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "버전:",
       linksHeading: "링크",
     },

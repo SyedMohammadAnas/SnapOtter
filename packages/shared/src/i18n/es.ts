@@ -5282,6 +5282,7 @@ export const es: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Una suite de procesamiento de archivos autoalojada y con privacidad como prioridad, con 200+ herramientas. Convierte, comprime, edita, transcribe, OCR y automatiza flujos de trabajo de imágenes, video, audio, PDF y archivos sin enviar datos a la nube.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Versión:",
       linksHeading: "Enlaces",
     },

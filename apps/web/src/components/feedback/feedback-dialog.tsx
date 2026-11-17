@@ -9,7 +9,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "@/contexts/i18n-context";
 import { useFocusTrap } from "@/hooks/use-focus-trap";
 import {
-  buildFeedbackGithubUrl,
   buildFeedbackMailtoUrl,
   type FeedbackErrorCategory,
   type FeedbackFrictionArea,
@@ -241,16 +240,8 @@ export function FeedbackDialog({
                   <p className="text-xs text-muted-foreground">{t.feedback.offlinePublicNote}</p>
                   <div className="flex flex-col gap-2">
                     <a
-                      href={buildFeedbackGithubUrl(handoffMessage)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full text-center py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90"
-                    >
-                      {t.feedback.offlineGithubButton}
-                    </a>
-                    <a
                       href={buildFeedbackMailtoUrl(handoffMessage)}
-                      className="w-full text-center py-2 rounded-lg border border-border text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                      className="w-full text-center py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90"
                     >
                       {t.feedback.offlineEmailButton}
                     </a>

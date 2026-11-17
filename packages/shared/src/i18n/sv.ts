@@ -5272,6 +5272,7 @@ export const sv: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "En självhostad, integritetsfokuserad filbehandlingssvit med 200+ verktyg. Konvertera, komprimera, redigera, transkribera, OCR, och automatisera bild-, video-, ljud-, PDF- och filarbetsflöden utan att skicka data till molnet.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Version:",
       linksHeading: "Länkar",
     },

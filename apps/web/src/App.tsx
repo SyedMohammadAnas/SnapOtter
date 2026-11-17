@@ -233,7 +233,7 @@ export function App() {
     try {
       if (localStorage.getItem("snapotter-welcome") === "1") {
         localStorage.removeItem("snapotter-welcome");
-        toast("Hello from the otter side! 🦦", {
+        toast("Welcome to Konvertt", {
           duration: 5000,
         });
       }

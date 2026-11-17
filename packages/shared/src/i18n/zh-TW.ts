@@ -4971,6 +4971,7 @@ export const zhTW: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "自架式、隱私優先的檔案處理套件，內含200+個工具。轉檔、壓縮、編輯、轉錄、OCR，自動化影像、影片、音訊、PDF 和檔案工作流程，無需將資料傳送到雲端。",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "版本：",
       linksHeading: "連結",
     },

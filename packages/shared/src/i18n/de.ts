@@ -5317,6 +5317,7 @@ export const de: TranslationKeys = {
       appName: "Konvertt",
       appDescription:
         "Eine selbst gehostete, datenschutzorientierte Dateiverarbeitungssuite mit 200+ Werkzeugen. Konvertieren, komprimieren, bearbeiten, transkribieren, OCR und Bild-, Video-, Audio-, PDF- und Dateiabläufe automatisieren, ohne Daten in die Cloud zu senden.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Version:",
       linksHeading: "Links",
     },
@@ -5810,7 +5811,8 @@ export const de: TranslationKeys = {
     connectionError: "Verbindungsfehler",
     fileTooLarge:
       "Diese Datei ist zu groß zum Hochladen. Versuchen Sie es mit einer kleineren Datei oder bitten Sie Ihren Server-Administrator, das Upload-Limit zu erhöhen.",
-    dailyLimitReached: "Das tägliche Limit ist aufgebraucht. Es wird um Mitternacht UTC zurückgesetzt.",
+    dailyLimitReached:
+      "Das tägliche Limit ist aufgebraucht. Es wird um Mitternacht UTC zurückgesetzt.",
     featureNotInstalledForTool:
       "{tool} benötigt die Funktion „{feature}“. Aktivieren Sie sie unter Einstellungen → AI-Funktionen.",
     featureNotInstalled:

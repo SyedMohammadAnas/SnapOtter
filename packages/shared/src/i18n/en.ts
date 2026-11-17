@@ -76,7 +76,7 @@ export const en = {
     searchMissDiscussionsFallback: "We couldn't record that. Open a request in Discussions.",
     offlineDescription:
       "This instance has analytics turned off, so feedback isn't recorded here. You can still reach the Konvertt team directly.",
-    offlinePublicNote: "GitHub issues are public.",
+    offlinePublicNote: "Email reaches the Konvertt team directly.",
     offlineGithubButton: "Open a GitHub issue",
     offlineEmailButton: "Email us",
     thanksTitle: "Thanks for the feedback.",
@@ -5201,6 +5201,7 @@ export const en = {
       appName: "Konvertt",
       appDescription:
         "200+ file tools. Convert, compress, edit, transcribe, OCR, and automate image, video, audio, PDF, and document workflows.",
+      poweredBySnapOtter: "Powered by SnapOtter",
       versionLabel: "Version:",
       linksHeading: "Links",
     },
