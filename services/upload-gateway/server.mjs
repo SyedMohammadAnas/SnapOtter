@@ -189,6 +189,10 @@ async function handleRun(req, res, id, section, toolId) {
   const form = new FormData();
   form.append("file", new Blob([await readFile(file)]), meta.name);
   form.append("settings", JSON.stringify(settings));
+  // The engine tracks live progress (SSE) under this id; keep it intact.
+  if (typeof body.clientJobId === "string" && body.clientJobId.length <= 100) {
+    form.append("clientJobId", body.clientJobId);
+  }
 
   const upstream = await fetch(
     `${ENGINE_URL}/api/v1/tools/${encodeURIComponent(section)}/${encodeURIComponent(toolId)}`,
