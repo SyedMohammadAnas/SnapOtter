@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: SnapOtter API
+  title: Konvertt API
   version: 2.0.0
   description: |
     REST API voor SnapOtter, een zelf-gehoste infrastructuur voor bestandsverwerking met 200+ tools voor image, video, audio, PDF en documenten.

@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: SnapOtter API
+  title: Konvertt API
   version: 2.0.0
   description: |
     SnapOtter 的 REST API，一套自架的檔案處理基礎架構，提供 200+ 工具，涵蓋 image、video、audio、PDF 和文件。

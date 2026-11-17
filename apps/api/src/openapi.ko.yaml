@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: SnapOtter API
+  title: Konvertt API
   version: 2.0.0
   description: |
     SnapOtter의 REST API로, image, video, audio, PDF, 문서 전반에 걸쳐 200+ 도구를 제공하는 자체 호스팅 파일 처리 인프라입니다.

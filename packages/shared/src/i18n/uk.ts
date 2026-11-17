@@ -4842,9 +4842,9 @@ export const uk: TranslationKeys = {
     },
     general: {
       heading: "Загальні",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Денна квота",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "Сьогодні використано {files} з {fileLimit} файлів і {used} з {byteLimit}. Скидається опівночі UTC.",
       description: "Налаштування користувача та параметри відображення.",
       loading: "Завантаження...",
       logOut: "Вийти",
@@ -5758,7 +5758,7 @@ export const uk: TranslationKeys = {
     connectionError: "Помилка з'єднання",
     fileTooLarge:
       "Цей файл занадто великий для завантаження. Спробуйте менший файл або попросіть адміністратора сервера збільшити ліміт завантаження.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Денний ліміт вичерпано. Він скидається опівночі UTC.",
     featureNotInstalledForTool:
       "Для «{tool}» потрібна функція «{feature}». Увімкніть її в Налаштування → AI-функції.",
     featureNotInstalled:

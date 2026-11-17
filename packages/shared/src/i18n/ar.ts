@@ -4799,9 +4799,9 @@ export const ar: TranslationKeys = {
     },
     general: {
       heading: "عام",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "الحصة اليومية",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "{files} من {fileLimit} ملفًا و{used} من {byteLimit} مستخدمة اليوم. تُعاد التهيئة عند منتصف الليل بتوقيت UTC.",
       description: "تفضيلات المستخدم وإعدادات العرض.",
       loading: "جاري التحميل...",
       logOut: "تسجيل الخروج",
@@ -5688,7 +5688,7 @@ export const ar: TranslationKeys = {
     connectionError: "خطأ في الاتصال",
     fileTooLarge:
       "هذا الملف أكبر من الحد المسموح لرفعه. جرّب ملفاً أصغر أو اطلب من مسؤول الخادم رفع حد الحجم.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "تم استنفاد الحد اليومي. يُعاد الضبط عند منتصف الليل بتوقيت UTC.",
     featureNotInstalledForTool:
       'تتطلب أداة {tool} ميزة "{feature}". فعّلها من الإعدادات ← ميزات AI.',
     featureNotInstalled: 'ميزة "{feature}" غير مثبتة. فعّلها من الإعدادات ← ميزات AI.',

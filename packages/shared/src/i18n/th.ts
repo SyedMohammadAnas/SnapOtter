@@ -4770,9 +4770,9 @@ export const th: TranslationKeys = {
     },
     general: {
       heading: "ทั่วไป",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "โควตารายวัน",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "วันนี้ใช้ไป {files} จาก {fileLimit} ไฟล์ และ {used} จาก {byteLimit} ระบบรีเซ็ตเที่ยงคืน UTC",
       description: "การตั้งค่าผู้ใช้และการแสดงผล",
       loading: "กำลังโหลด...",
       logOut: "ออกจากระบบ",
@@ -5637,7 +5637,7 @@ export const th: TranslationKeys = {
     connectionError: "ข้อผิดพลาดในการเชื่อมต่อ",
     fileTooLarge:
       "ไฟล์นี้มีขนาดใหญ่เกินกว่าจะอัปโหลดได้ ลองใช้ไฟล์ที่เล็กลง หรือขอให้ผู้ดูแลเซิร์ฟเวอร์เพิ่มขีดจำกัดการอัปโหลด",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "ใช้โควตารายวันหมดแล้ว ระบบจะรีเซ็ตเที่ยงคืน UTC",
     featureNotInstalledForTool: '{tool} ต้องใช้ฟีเจอร์ "{feature}" เปิดใช้ได้ที่ ตั้งค่า → ฟีเจอร์ AI',
     featureNotInstalled: 'ยังไม่ได้ติดตั้งฟีเจอร์ "{feature}" เปิดใช้ได้ที่ ตั้งค่า → ฟีเจอร์ AI',
     featureIncompatible: 'ฟีเจอร์ "{feature}" ไม่สามารถทำงานบนฮาร์ดแวร์ของเซิร์ฟเวอร์นี้ได้',

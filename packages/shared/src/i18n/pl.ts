@@ -4842,9 +4842,9 @@ export const pl: TranslationKeys = {
     },
     general: {
       heading: "Ogólne",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Dzienny limit",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "{files} z {fileLimit} plików i {used} z {byteLimit} wykorzystane dziś. Resetuje się o północy UTC.",
       description: "Preferencje użytkownika i ustawienia wyświetlania.",
       loading: "Ładowanie...",
       logOut: "Wyloguj",
@@ -5770,7 +5770,7 @@ export const pl: TranslationKeys = {
     connectionError: "Błąd połączenia",
     fileTooLarge:
       "Ten plik jest za duży, aby go przesłać. Spróbuj użyć mniejszego pliku lub poproś administratora serwera o zwiększenie limitu przesyłania.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Dzienny limit został wyczerpany. Resetuje się o północy UTC.",
     featureNotInstalledForTool:
       '{tool} wymaga funkcji "{feature}". Włącz ją w Ustawienia → Funkcje AI.',
     featureNotInstalled:

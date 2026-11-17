@@ -4758,9 +4758,9 @@ export const ko: TranslationKeys = {
     },
     general: {
       heading: "일반",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "일일 할당량",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "오늘 {fileLimit}개 중 {files}개 파일, {byteLimit} 중 {used} 사용. 매일 UTC 자정에 초기화됩니다.",
       description: "사용자 환경설정 및 표시 설정.",
       loading: "로딩 중...",
       logOut: "로그아웃",
@@ -5651,7 +5651,7 @@ export const ko: TranslationKeys = {
     connectionError: "연결 오류",
     fileTooLarge:
       "이 파일은 너무 커서 업로드할 수 없습니다. 더 작은 파일을 시도하거나 서버 관리자에게 업로드 용량 제한을 늘려달라고 요청하세요.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "오늘의 일일 한도를 모두 사용했습니다. UTC 자정에 초기화됩니다.",
     featureNotInstalledForTool:
       '{tool}에는 "{feature}" 기능이 필요합니다. 설정 → AI 기능에서 활성화하세요.',
     featureNotInstalled: '"{feature}" 기능이 설치되지 않았습니다. 설정 → AI 기능에서 활성화하세요.',

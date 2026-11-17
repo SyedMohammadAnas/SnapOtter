@@ -4549,9 +4549,9 @@ export const zhCN: TranslationKeys = {
     },
     general: {
       heading: "通用",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "每日配额",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "今日已用 {files}/{fileLimit} 个文件和 {used}/{byteLimit}。将于 UTC 午夜重置。",
       description: "用户偏好与显示设置。",
       loading: "加载中...",
       logOut: "退出登录",
@@ -5414,7 +5414,7 @@ export const zhCN: TranslationKeys = {
     invalidCredentials: "用户名或密码错误",
     connectionError: "连接错误",
     fileTooLarge: "此文件太大，无法上传。请尝试较小的文件，或联系服务器管理员提高上传大小限制。",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "今日配额已用完。将于 UTC 午夜重置。",
     featureNotInstalledForTool: "{tool}需要「{feature}」功能。请在 设置 → AI 功能 中启用。",
     featureNotInstalled: "「{feature}」功能未安装。请在 设置 → AI 功能 中启用。",
     featureIncompatible: "「{feature}」功能无法在此服务器的硬件上运行。",

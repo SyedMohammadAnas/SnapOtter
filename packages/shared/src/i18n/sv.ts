@@ -4830,9 +4830,9 @@ export const sv: TranslationKeys = {
     },
     general: {
       heading: "Allmänt",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Dagskvot",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "{files} av {fileLimit} filer och {used} av {byteLimit} använda idag. Återställs vid midnatt UTC.",
       description: "Användarinställningar och visningsinställningar.",
       loading: "Laddar...",
       logOut: "Logga ut",
@@ -5745,7 +5745,7 @@ export const sv: TranslationKeys = {
     connectionError: "Anslutningsfel",
     fileTooLarge:
       "Den här filen är för stor för att laddas upp. Prova en mindre fil eller be serveradministratören att höja uppladdningsgränsen.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Dagsgränsen är slut. Den återställs vid midnatt UTC.",
     featureNotInstalledForTool:
       '{tool} kräver funktionen "{feature}". Aktivera den under Inställningar → AI-funktioner.',
     featureNotInstalled:

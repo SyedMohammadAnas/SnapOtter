@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: SnapOtter API
+  title: Konvertt API
   version: 2.0.0
   description: |
     REST API لـ SnapOtter، بنية تحتية ذاتية الاستضافة لمعالجة الملفات تضم 200+ أداة عبر image وvideo وaudio وPDF والمستندات.

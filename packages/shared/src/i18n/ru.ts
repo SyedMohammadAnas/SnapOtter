@@ -4841,9 +4841,9 @@ export const ru: TranslationKeys = {
     },
     general: {
       heading: "Общие",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Дневная квота",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "Сегодня использовано {files} из {fileLimit} файлов и {used} из {byteLimit}. Сбрасывается в полночь UTC.",
       description: "Пользовательские настройки и параметры отображения.",
       loading: "Загрузка...",
       logOut: "Выйти",
@@ -5759,7 +5759,7 @@ export const ru: TranslationKeys = {
     connectionError: "Ошибка подключения",
     fileTooLarge:
       "Этот файл слишком большой для загрузки. Попробуйте файл меньшего размера или попросите администратора сервера увеличить лимит загрузки.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Дневной лимит исчерпан. Он сбрасывается в полночь UTC.",
     featureNotInstalledForTool:
       "Для «{tool}» нужна функция «{feature}». Включите её в Настройки → AI-функции.",
     featureNotInstalled:

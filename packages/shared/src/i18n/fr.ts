@@ -4854,9 +4854,9 @@ export const fr: TranslationKeys = {
     },
     general: {
       heading: "Général",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Quota quotidien",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "{files} fichiers sur {fileLimit} et {used} sur {byteLimit} utilisés aujourd'hui. Réinitialisé à minuit UTC.",
       description: "Préférences utilisateur et paramètres d'affichage.",
       loading: "Chargement...",
       logOut: "Se déconnecter",
@@ -5793,7 +5793,7 @@ export const fr: TranslationKeys = {
     connectionError: "Erreur de connexion",
     fileTooLarge:
       "Ce fichier est trop volumineux pour être envoyé. Essayez avec un fichier plus léger ou demandez à l'administrateur du serveur d'augmenter la limite d'envoi.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "La limite quotidienne est atteinte. Elle se réinitialise à minuit UTC.",
     featureNotInstalledForTool:
       "{tool} nécessite la fonctionnalité « {feature} ». Activez-la dans Paramètres → Fonctionnalités AI.",
     featureNotInstalled:

@@ -355,7 +355,7 @@ export async function docsRoutes(app: FastifyInstance): Promise<void> {
     agent?: { disabled?: boolean };
   } = {
     content: specContent,
-    pageTitle: "SnapOtter API Reference",
+    pageTitle: "Konvertt API Reference",
     agent: { disabled: true },
     mcp: { disabled: true },
     hideClientButton: true,

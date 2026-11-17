@@ -4836,9 +4836,9 @@ export const tr: TranslationKeys = {
     },
     general: {
       heading: "Genel",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Günlük kota",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "Bugün {fileLimit} dosyanın {files} tanesi ve {byteLimit} kotanın {used} kadarı kullanıldı. Gece yarısı UTC'de sıfırlanır.",
       description: "Kullanıcı tercihleri ve görüntüleme ayarları.",
       loading: "Yükleniyor...",
       logOut: "Çıkış yap",
@@ -5748,7 +5748,7 @@ export const tr: TranslationKeys = {
     connectionError: "Bağlantı hatası",
     fileTooLarge:
       "Bu dosya yüklemek için çok büyük. Daha küçük bir dosya deneyin veya sunucu yöneticinizden yükleme sınırını artırmasını isteyin.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Günlük limit doldu. Gece yarısı UTC'de sıfırlanır.",
     featureNotInstalledForTool:
       '{tool} için "{feature}" özelliği gerekiyor. Ayarlar → AI Özellikleri bölümünden etkinleştirin.',
     featureNotInstalled:

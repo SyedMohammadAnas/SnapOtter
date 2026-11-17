@@ -4832,9 +4832,9 @@ export const id: TranslationKeys = {
     },
     general: {
       heading: "Umum",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "Kuota harian",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "{files} dari {fileLimit} file dan {used} dari {byteLimit} terpakai hari ini. Diatur ulang pada tengah malam UTC.",
       description: "Preferensi pengguna dan pengaturan tampilan.",
       loading: "Memuat...",
       logOut: "Keluar",
@@ -5745,7 +5745,7 @@ export const id: TranslationKeys = {
     connectionError: "Kesalahan koneksi",
     fileTooLarge:
       "File ini terlalu besar untuk diunggah. Coba file yang lebih kecil, atau minta admin server Anda untuk menaikkan batas unggahan.",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "Batas harian sudah habis. Akan diatur ulang pada tengah malam UTC.",
     featureNotInstalledForTool:
       '{tool} memerlukan fitur "{feature}". Aktifkan di Pengaturan → Fitur AI.',
     featureNotInstalled: 'Fitur "{feature}" belum terpasang. Aktifkan di Pengaturan → Fitur AI.',

@@ -4549,9 +4549,9 @@ export const zhTW: TranslationKeys = {
     },
     general: {
       heading: "一般",
-      creditsTitle: "Daily allowance",
+      creditsTitle: "每日配額",
       creditsSummary:
-        "{files} of {fileLimit} files and {used} of {byteLimit} used today. Resets at midnight UTC.",
+        "今日已用 {files}/{fileLimit} 個檔案和 {used}/{byteLimit}。將於 UTC 午夜重設。",
       description: "使用者偏好和顯示設定。",
       loading: "載入中...",
       logOut: "登出",
@@ -5414,7 +5414,7 @@ export const zhTW: TranslationKeys = {
     invalidCredentials: "使用者名稱或密碼無效",
     connectionError: "連線錯誤",
     fileTooLarge: "此檔案太大，無法上傳。請嘗試較小的檔案，或聯絡伺服器管理員提高上傳大小限制。",
-    dailyLimitReached: "Today's daily limit is used up. It resets at midnight UTC.",
+    dailyLimitReached: "今日配額已用完。將於 UTC 午夜重設。",
     featureNotInstalledForTool: "{tool}需要「{feature}」功能。請在 設定 → AI功能 中啟用。",
     featureNotInstalled: "「{feature}」功能未安裝。請在 設定 → AI功能 中啟用。",
     featureIncompatible: "「{feature}」功能無法在此伺服器的硬體上執行。",
